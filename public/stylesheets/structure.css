@@ -57,7 +57,9 @@
 /*fonts*/
 
 /*base layout styling*/
-
+        iframe {
+            border-radius: 1rem;
+        }
     #flex {
         display: flex;
     }
