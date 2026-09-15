@@ -99,7 +99,6 @@ const headerE1 = `
                         <button class="stop-gif">Stop GIFs</button>
                         <button class="colortheme" onclick="darkmode(), location.reload()">DARK</button>
                         <button class="colortheme" onclick="lightmode(), location.reload()">LIGHT</button>
-                    
                     </div>
                     </div class="box">
                     </details>

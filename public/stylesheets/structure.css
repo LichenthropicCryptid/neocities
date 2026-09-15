@@ -57,6 +57,12 @@
 /*fonts*/
 
 /*base layout styling*/
+
+#accessability  {
+    background: black;
+    border-radius: 1rem;
+}
+
         iframe {
             border-radius: 1rem;
             border: .5rem solid black;
@@ -70,7 +76,7 @@
     #header {
         width: 100%;
         height: 2.5rem;
-        background-size: 100%
+        background-size: 50%
     }
     
     #navbar {
