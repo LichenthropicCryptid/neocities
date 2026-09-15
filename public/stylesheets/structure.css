@@ -58,7 +58,7 @@
 
 /*base layout styling*/
 
-#accessability  {
+.accessability  {
     background: black;
     border-radius: 1rem;
 }
@@ -75,8 +75,9 @@
 
     #header {
         width: 100%;
-        height: 2.5rem;
-        background-size:contain;
+        height: 150px;
+        background-size:100%;
+        overflow-y: hidden;
     }
     
     #navbar {
