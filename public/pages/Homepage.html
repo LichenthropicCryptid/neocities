@@ -208,8 +208,8 @@
             localStorage.setItem('theme', 'darkmode');}
   
             function crtfilter() {
-                document.getElementById('filter').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/crt.css');
-            localStorage.setItem('filter', 'crtfilter');}
+                document.getElementById('filter').toggleAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/crt.css');
+            localStorage.toggleItem('filter', 'crtfilter');}
                 
             if(localStorage.getItem('theme') == 'lightmode'){
             lightmode();
