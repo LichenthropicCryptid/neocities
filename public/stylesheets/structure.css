@@ -280,6 +280,7 @@
 /*buttons*/
 
     .accessability  {
+        position: fixed;
         background: black;
         border-radius: 1rem;
         width: 12rem;
