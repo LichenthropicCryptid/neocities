@@ -90,8 +90,8 @@
     main {
         position: center;
         flex: 1;
-        margin: 1rem;
-        padding: 1rem;
+        margin: 5rem;
+        padding: 5rem;
         order: 2;  
         height:auto;
         width: 40rem;
