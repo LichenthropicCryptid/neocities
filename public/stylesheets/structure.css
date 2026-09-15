@@ -97,14 +97,15 @@
         font-size: smaller;
         cursor: var(--cursor) 0 0, auto !important;
         width: auto;
-        height: 200rem;
+        height: 2000px;
         border: none;
         background-color: transparent;
     }
 
     #sidebar    {
         width: fill;
-        height: fill;
+        height: 100%;
+        overflow-x: hidden;
     }
 
     #leftSidebar {
