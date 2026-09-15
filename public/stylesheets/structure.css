@@ -103,7 +103,7 @@
     }
 
     #sidebar    {
-        width: 10rem;
+        width: fill;
         height: fill;
     }
 
@@ -122,7 +122,7 @@
     #container {
         max-width: 60rem;
         margin: 0 auto;
-        height: fill;
+        height: 100%;
     }
 
     #wrapper {
