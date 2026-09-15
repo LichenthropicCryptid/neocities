@@ -93,7 +93,6 @@
     }
 
     aside {
-        padding: 1rem;
         font-size: smaller;
         cursor: var(--cursor) 0 0, auto !important;
         width: auto;
@@ -102,8 +101,6 @@
     }
 
     #sidebar    {
-        padding: 1rem 1rem;
-        border-radius: 5rem;
         width: 100%;
         height: 100%;
         overflow-x: hidden;
