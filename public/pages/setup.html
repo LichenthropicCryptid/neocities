@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+  
+  <meta charset="UTF-8">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>SETUP</title>
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS feed for my site" href="https://lichenthropic.neocities.org/rss.xml"/>
+        
+    <link id="structure" rel=""stylesheet" href="../stylesheets/structure.css" type="text/css" media="all">
+
+    <link id="colortheme" rel="stylesheet" href="../stylesheets/dark.css" type="text/css" media="all">
+
+    <link id="crt-filter" rel="stylesheet" href="../stylesheets/crt.css" type="text/css" media="all">
+    
+       <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+       
+       <script src="../layout.js"></script>
+       
+       <script src="../freezeframe.js"></script>
+       
+                 <script type="module">
+                 
+  import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+
+  new fairyDustCursor({
+  
+  colors: ["#8EBD00", "#A4FF2E", "#DCFF0F"],
+  
+  fairySymbol: "★",
+  
+});
+  
+</script>
+
+  </head>
+  
+   <body class="crt">
+  
+        <div id="preloader"></div>
+        
+            <div id="flex">
+                
+                <main style="text-align:center;">
+                
+                            <h1 style="text-align:center;">-- SETUP --</h1>
+                            
+                            <div class="box">
+                            
+                     
+                     
+                        </div>
+                          
+                </main>
+             <aside id="rightSidebar">
+                <iframe src="/pages/sidebars/rightsidebar.html" style="center; border:6px solid black;" scrolling="no" width="100%" height="100%">
+                </iframe>
+            </aside>
+            
+            <aside id="leftSidebar">
+                <iframe src="/pages/sidebars/leftsidebar.html" style="center; border:6px solid black;" scrolling="no" width="100%" height="100%">
+                </iframe>
+            </aside>
+        </div>
+            <footer id="footer" style="margin-top: 10px;"></footer>
+        <style>
+        
+            important   {
+                background-color: orange;
+                border-radius: .5rem;
+                color: black;
+                font-weight: bold;
+                font-size: 2.5rem;
+                margin: 0 auto;
+            }
+        </style>
+<script>
+        
+            function lightmode() {
+                document.getElementById('colortheme').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/light.css');
+            localStorage.setItem('theme', 'lightmode');}
+  
+            function darkmode() {
+                document.getElementById('colortheme').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/dark.css');
+            localStorage.setItem('theme', 'darkmode');}
+  
+            function crtfilter() {
+                document.getElementById('filter').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/crt.css');
+            localStorage.setItem('theme', 'crtfilter');}
+                
+            if(localStorage.getItem('theme') == 'lightmode'){
+            lightmode();
+            }
+            
+            if(localStorage.getItem('theme') == 'darkmode'){
+            darkmode();
+            }
+            
+            if(localStorage.getItem('theme') == 'crt-filter'){
+            crtfilter();
+            }    
+            
+        </script>
+       <style>
+            /* Preloader */
+        #preloader {
+        background: black
+            url("https://file.garden/anb5fb-RvmNCRWUD/misc/weed-orb.gif")
+            no-repeat center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        display: flex;
+        position: fixed;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        z-index: 9999;
+        }
+            </style>
+            <script>
+            var loader = document.getElementById("preloader");
+
+        function hideLoader() {
+        if (!loader) return;
+        fadeOut();
+        }
+
+        function fadeOut() {
+          var op = 1;
+          var fade = setInterval(function () {
+            op -= 0.1;
+            if (op <= 0) {
+              clearInterval(fade);
+              loader.style.display = "none";
+            } else {
+              loader.style.opacity = op;
+            }
+          }, 40);
+        }
+
+        // Hide once everything has loaded
+        window.addEventListener("load", hideLoader);
+
+        // Force-hide after 8 seconds even if it can't load
+        setTimeout(hideLoader, 8000);
+            </script>
+  </body>
+ 
+  </html>

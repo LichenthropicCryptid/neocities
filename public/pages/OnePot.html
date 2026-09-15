@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+  
+  <meta charset="UTF-8">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>ONE POT</title>
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS feed for my site" href="https://lichenthropic.neocities.org/rss.xml"/>
+        
+    <link id="structure" rel=""stylesheet" href="../stylesheets/structure.css" type="text/css" media="all">
+
+    <link id="colortheme" rel="stylesheet" href="../stylesheets/dark.css" type="text/css" media="all">
+
+    <link id="crt-filter" rel="stylesheet" href="../stylesheets/crt.css" type="text/css" media="all">
+
+    <script src="https://u.widget.st/ar.js"></script>
+    
+    <script src="../freezeframe.js"></script>
+    
+       <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+       
+       <script src="../layout.js"></script>
+       
+                 <script type="module">
+                 
+  import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+
+  new fairyDustCursor({
+  
+  colors: ["#8EBD00", "#A4FF2E", "#DCFF0F"],
+  
+  fairySymbol: "★",
+  
+});
+  
+</script>
+
+  </head>
+  <div id="preloader"></div>
+  <body class="crt">
+  
+            <div id="flex">
+            
+                <main style="text-align:center;">
+                
+                <div class="draggable" style="position: absolute; left: 2.5%; top: 30rem;"><img id="cloud1" src="https://file.garden/anb5fb-RvmNCRWUD/misc/misc9.png" style="pointer-events:none;" title="DRAGGABLE"></div>
+                
+                <div class="draggable" style="position: absolute; left: 75%; top: 30rem;"><img id="cloud2" src="https://file.garden/anb5fb-RvmNCRWUD/misc/misc8.png" style="pointer-events:none;" title="DRAGGABLE"></div>
+                
+                <div class="draggable" style="position: absolute; left: 20%; top: 75rem;"><img id="cloud3" src="https://file.garden/anb5fb-RvmNCRWUD/misc/misc13.png" style="pointer-events:none;" title="DRAGGABLE"></div>
+                
+                <div class="draggable" style="position: absolute; left: 80%; top: 65rem;"><img id="cloud4" src="https://file.garden/anb5fb-RvmNCRWUD/misc/misc11.png" style="pointer-events:none;" title="DRAGGABLE"></div>
+                
+                <div class="box" id="OnePot">
+                
+               <iframe id="One-Pot" width="1200" height="800;" src="https://www.youtube.com/embed/nCWWmGLApYE?si=YdTibtvmUfnscBPE&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                
+                </div>
+                
+                </main>
+              
+            </div>
+            <img id="cloudcover" src="https://file.garden/anb5fb-RvmNCRWUD/borders/bgs10.png">
+            <footer id="footer" style="margin-top: 1rem;">  </footer>
+            <style>  
+            
+            #cloudcover {
+                height: 25rem;
+                width: 115%;
+                position: absolute;
+                left:0.1rem;
+                top: 175%;
+                opacity: 75%;
+            }
+            
+        
+            html    {
+                width: 100%;
+                overflow-x: hidden;
+            }
+            
+            #cloud1 {
+                transform: scale(3);
+                
+            }
+            
+            #cloud2 {
+                transform: scale(2.5);
+            }
+            
+            #cloud3 {
+               transform: scale(5.5);
+            }
+            
+            #cloud4 {
+                transform: scale(5);
+            }
+            
+            #One-Pot {
+                box-shadow: 0 0 10rem 0 black;
+            }
+            
+            #OnePot {
+                box-shadow: 0 0 10rem 0 black;
+               margin: 0.25rem;
+               padding: 5rem; 
+            }
+            
+            @media only screen and (max-width: 1500px) {
+                
+                #OnePot {
+                    display: inline-block;
+                    width: 100%;
+                }
+                #One-Pot {
+                    display: inline-block;
+                    width: 100%;
+                }
+            
+            }
+ 
+             
+            </style>
+            <style>
+            /* Preloader */
+        #preloader {
+        background: black
+            url("https://file.garden/anb5fb-RvmNCRWUD/misc/weed-orb.gif")
+            no-repeat center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        display: flex;
+        position: fixed;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        z-index: 9999;
+        }
+            </style>
+            <script>
+            var loader = document.getElementById("preloader");
+
+        function hideLoader() {
+        if (!loader) return;
+        fadeOut();
+        }
+
+        function fadeOut() {
+          var op = 1;
+          var fade = setInterval(function () {
+            op -= 0.1;
+            if (op <= 0) {
+              clearInterval(fade);
+              loader.style.display = "none";
+            } else {
+              loader.style.opacity = op;
+            }
+          }, 40);
+        }
+
+        // Hide once everything has loaded
+        window.addEventListener("load", hideLoader);
+
+        // Force-hide after 8 seconds even if it can't load
+        setTimeout(hideLoader, 8000);
+            </script>
+            
+            <script>
+            document.querySelectorAll('.draggable').forEach(el => {
+              let isDragging = false;
+              let offsetX, offsetY;
+  
+              el.addEventListener('mousedown', (e) => {
+                isDragging = true;
+                offsetX = e.clientX - el.offsetLeft;
+                offsetY = e.clientY - el.offsetTop;
+                el.style.cursor = 'grabbing';
+              });
+  
+              document.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                el.style.left = (e.clientX - offsetX) + 'px';
+                el.style.top = (e.clientY - offsetY) + 'px';
+              });
+  
+              document.addEventListener('mouseup', () => {
+                isDragging = false;
+                el.style.cursor = 'grab';
+              });
+            });
+            </script>
+             <script>
+        
+            function lightmode() {
+                document.getElementById('colortheme').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/light.css');
+            localStorage.setItem('theme', 'lightmode');}
+  
+            function darkmode() {
+                document.getElementById('colortheme').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/dark.css');
+            localStorage.setItem('theme', 'darkmode');}
+  
+            function crtfilter() {
+                document.getElementById('filter').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/crt.css');
+            localStorage.setItem('theme', 'crtfilter');}
+                
+            if(localStorage.getItem('theme') == 'lightmode'){
+            lightmode();
+            }
+            
+            if(localStorage.getItem('theme') == 'darkmode'){
+            darkmode();
+            }
+            
+            if(localStorage.getItem('theme') == 'crt-filter'){
+            crtfilter();
+            }    
+            
+        </script>
+  </body>
+  </html>

@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>MP3 PLAYER</title>
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS feed for my site" href="https://lichenthropic.neocities.org/rss.xml"/>
+    
+        
+    <link id="structure" rel=""stylesheet" href="../stylesheets/structure.css" type="text/css" media="all">
+
+    <link id="colortheme" rel="stylesheet" href="../stylesheets/dark.css" type="text/css" media="all">
+
+    <link id="crt-filter" rel="stylesheet" href="../stylesheets/crt.css" type="text/css" media="all">
+    
+    
+<script type="module">
+
+  import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+
+  new fairyDustCursor({
+      
+  colors: ["#8EBD00", "#A4FF2E", "#DCFF0F"],
+  
+  fairySymbol: "★",
+  
+});
+  
+</script>
+
+<!----
+ ~ 2010s apple style music player made by @b8nadryl on twitter/x
+ ~ code pastebin link:
+ ~ source code: https://github.com/sayantanm19/js-music-player
+---->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  
+</head>
+
+<body>
+
+  <div class="box" id="mp3-page">
+
+  <div class="player">
+  
+    <div class="window">
+
+      <div class="window-body">
+      
+        <div class="flex">
+        
+          <div class="wheel" style="height:100px;width:100px;">
+          
+            <div class="wheelcontrols">
+            
+              <button class="fas fa-plus" onclick="volumeUp()" style="padding-top:4px; padding-bottom:0;"></button>
+              
+            </div>
+            
+            <table class="wheelcontrols">
+  <th>
+  
+    <button class="fas fa-backward" onclick="prevTrack()"></button>
+    
+  </th>
+  
+  <th class="innerwheel">
+  
+    <button class="playpause-track fas fa-play" onclick="playpauseTrack()"></button>
+    
+  </th>
+  
+  <th>
+  
+    <button class="fas fa-forward" onclick="nextTrack()"></button>
+    
+  </th>
+  
+</table>
+            <div class="wheelcontrols" style="padding:0;">
+            
+              <button class="fas fa-minus" onclick="volumeDown()"></button>
+              
+            </div>
+            
+          </div>
+
+          <div id="musicplayer">
+
+            <div class="flex">
+            
+              <marquee scrollamount="4" class="songtitle"></marquee>
+              
+            </div>
+
+            <div class="seeking">
+            
+              <div class="current-time">00:00</div>
+
+              <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+
+              <div class="total-duration">0:00</div>
+              
+            </div>
+
+            <table class="controls">
+            
+              <tr>
+              
+                <td>
+                
+                  <button><div class="fas fa-sync"></div></button>
+                  
+                </td>
+                
+                <td>
+                
+                  <button><div class="fas fa-music"></div></button>
+                  
+                </td>
+                
+                <td>
+                
+                  <button><div class="fas fa-random"></div></button>
+                  
+                </td>
+                
+              </tr>
+              
+            </table>
+
+            <audio id="music" src=""></audio>
+            
+          </div>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <div class="box" id="mp3-tracklist">
+  
+  <h3 style="text-align:center;">MIXTAPE</h3>
+  
+  </div>
+  
+  <a id="close-window" href="javascript:window.close()">Close window.</a>
+  
+  </div>
+  
+</body>
+
+<script>
+  // initiate variables
+  let track_name = document.querySelector(".songtitle");
+  let playpause_btn = document.querySelector(".playpause-track");
+  let next_btn = document.querySelector(".next-track");
+  let prev_btn = document.querySelector(".prev-track");
+  let seek_slider = document.querySelector(".seek_slider");
+  let curr_time = document.querySelector(".current-time");
+  let total_duration = document.querySelector(".total-duration");
+  let track_index = 0;
+  let isPlaying = false;
+  let updateTimer;
+  // create new audio element
+  let curr_track = document.getElementById("music");
+  //
+  // DEFINE YOUR SONGS HERE!!!!!
+  // MORE THAN FOUR SONGS CAN BE ADDED!!
+  // JUST ADD ANOTHER BRACKET WITH NAME AND PATH
+  // CATBOX.MOE IS RECOMMENDED FOR UPLOADING MP3 FILES
+ let track_list = [
+{
+    name: "Bong Break",
+    artist: "Michael Serroul",
+    path: "https://files.catbox.moe/7d1fyv.mp3"
+},
+{
+    name: "Moonlight Ginga",
+    artist: "Soutasei Riron",
+    path: "https://files.catbox.moe/5zy3qy.mp3"
+},
+{   
+    name: "Home",
+    artist: "Bleujetta",
+    path: "https://files.catbox.moe/qha3hq.mp3"
+},
+{
+    name: "No One To Kill In The Sky",
+    artist: "Seb Lowe",
+    path: "https://files.catbox.moe/tcec0z.mp3"
+},
+{
+    name: "Same Old Story",
+    artist: "Naethan Apollo",
+    path: "https://files.catbox.moe/4g9dhm.mp3"
+},
+{
+    name: "Talking Across The Room",
+    artist: "Hearsays",
+    path: "https://files.catbox.moe/sdpjkh.mp3"
+},
+{
+    name: "Drop The Guillotine",
+    artist: "Peach Pit",
+    path: "https://files.catbox.moe/qe2aat.mp3"
+},
+{
+    name: "Anime Song",
+    artist: "Death In Venice",
+    path: "https://files.catbox.moe/t3391s.mp3"
+},
+{
+    name: "Scooby",
+    artist: "Corook",
+    path: "https://files.catbox.moe/nb4j70.mp3"
+},
+{
+    name: "You're Next",
+    artist: "Moon Walker",
+    path: "https://files.catbox.moe/l2fyqt.mp3"
+},
+{
+    name: "Be Gay, Do Drugs, Hail Satan",
+    artist: "Super Cassette",
+    path: "https://files.catbox.moe/ybffho.mp3"
+},
+{
+    name: "The Day The Nazi Died",
+    artist: "Chumbawumba",
+    path: "https://files.catbox.moe/8m2g6q.mp3"
+},
+{
+    name: "Power Trippin' Dipshits",
+    artist: "The Taxpayers",
+    path: "https://files.catbox.moe/5lexjm.mp3"
+},
+{
+    name: "Don't Say No To Hitler",
+    artist: "Seb Lowe",
+    path: "https://files.catbox.moe/1yea46.mp3"
+},
+{
+    name: "Monopoly Money",
+    artist: "Moon Walker",
+    path: "https://files.catbox.moe/l1qp48.mp3"
+},
+{   
+    name: "I Don't Think It's The Right Time For Emojis",
+    artist: "Hot Mulligan",
+    path: "https://files.catbox.moe/py610g.mp3"
+},
+{   
+    name: "Kill The President",
+    artist: "Barnaby Jones",
+    path: "https://files.catbox.moe/1zcw3r.mp3"
+},
+{   
+    name: "Suffer",
+    artist:"Boy Golden",
+    path: "https://files.catbox.moe/5d34az.mp3"
+},
+{   
+    name: "Afraid Of The Dark",
+    artist: "Appleby",
+    path: "https://files.catbox.moe/kbyqnn.mp3"
+},
+{   
+    name: "Cryptid",
+    artist: "Cavetown",
+    path: "https://files.catbox.moe/5cttba.mp3"
+},
+{   
+    name: "Golden Dandelions",
+    artist: "Barns County",
+    path: "https://files.catbox.moe/7vt083.mp3"
+},
+{   
+    name: "Tubthumping",
+    artist: "Chumbawumba",
+    path: "https://files.catbox.moe/ytqo7e.mp3"
+},
+{
+    name: "Teenagers",
+    artist: "My Chemical Romance",
+    path: "https://files.catbox.moe/ezfdw3.mp3"
+},
+{
+    name: "Misery Business",
+    artist: "Paramore",
+    path: "https://files.catbox.moe/109t2u.mp3"
+},
+{
+    name: "Sunlight",
+    artist: "Hozier",
+    path: "https://files.catbox.moe/bwauex.mp3"
+},
+{
+    name: "Nail Polish",
+    artist: "Holywatr",
+    path: "https://files.catbox.moe/hfu66d.mp3"
+},
+{
+    name: "Boomslang",
+    artist: "MS",
+    path: "https://files.catbox.moe/4h2sxz.mp3"
+},
+{
+    name: "Northern Attitude",
+    artist: "Noah Kahan",
+    path: "https://files.catbox.moe/z46l4f.mp3"
+},
+{
+    name: "Heavy Foot",
+    artist: "Mon Rovia",
+    path: "https://files.catbox.moe/oue5me.mp3"
+},
+{
+    name: "Tadow",
+    artist: "Masego",
+    path: "https://files.catbox.moe/67wo4x.mp3"
+},
+{
+    name: "Put Your Records On",
+    artist: "Ritt Momney",
+    path: "https://files.catbox.moe/q0s86w.mp3"
+},
+{   
+    name: "Mykonos",
+    artist: "Fleet Foxes",
+    path: "https://files.catbox.moe/4ln9tm.mp3"
+},
+{   
+    name: "The Moss",
+    artist: "Cosmo Sheldrake",
+    path: "https://files.catbox.moe/8wfa1x.mp3"
+},
+{
+    name: "Always Tired",
+    artist: "The Bootleg Boy 2",
+    path: "https://files.catbox.moe/mebjh5.mp3"
+},
+];
+  //
+  //
+  //
+  //
+  //
+  function loadTrack(track_index) {
+    clearInterval(updateTimer);
+    resetValues();
+    // load a new track
+    curr_track.src = track_list[track_index].path;
+    curr_track.load();
+    // update details of the track
+    track_name.textContent = track_list[track_index].name;
+    // set an interval of 1000 milliseconds for updating the seek slider
+    updateTimer = setInterval(seekUpdate, 1000);
+    // move to the next track if the current one finishes playing 
+    curr_track.addEventListener("ended", nextTrack);
+  }
+  // reset values
+  function resetValues() {
+    curr_time.textContent = "0:00";
+    total_duration.textContent = "0:00";
+    seek_slider.value = 0;
+  }
+  // checks if song is playing
+  function playpauseTrack() {
+    if (!isPlaying) playTrack();
+    else pauseTrack();
+  }
+  // plays track when play button is pressed
+  function playTrack() {
+    curr_track.play();
+    isPlaying = true;
+    // Update the button class directly
+    let playButton = document.querySelector(".playpause-track");
+    playButton.className = "playpause-track fas fa-pause";
+}
+
+function pauseTrack() {
+    curr_track.pause();
+    isPlaying = false;
+    // Update the button class directly  
+    let playButton = document.querySelector(".playpause-track");
+    playButton.className = "playpause-track fas fa-play";
+}
+  // moves to the next track
+  function nextTrack() {
+    if (track_index < track_list.length - 1)
+      track_index += 1;
+    else track_index = 0;
+    loadTrack(track_index);
+
+      if (isPlaying) playTrack(); 
+  }
+  // moves to the previous track
+  function prevTrack() {
+    if (track_index > 0)
+      track_index -= 1;
+    else track_index = track_list.length;
+    loadTrack(track_index);
+      if (isPlaying) playTrack(); 
+  }
+  
+  //volume control
+  var audio = document.getElementById("music");
+var currentVolume = audio.volume;
+
+function volumeUp() {
+    if (currentVolume < 1.0) {
+        currentVolume += 0.2;
+        audio.volume = currentVolume;
+    }
+}
+
+function volumeDown() {
+    if (currentVolume > 0.0) {
+        currentVolume -= 0.2;
+        audio.volume = currentVolume;
+    }
+}
+  
+  // seeker slider
+  function seekTo() {
+    seekto = curr_track.duration * (seek_slider.value / 100);
+    curr_track.currentTime = seekto;
+  }
+
+  function seekUpdate() {
+    let seekPosition = 0;
+    // check if the current track duration is a legible number
+    if (!isNaN(curr_track.duration)) {
+      seekPosition = curr_track.currentTime * (100 / curr_track.duration);
+      seek_slider.value = seekPosition;
+      // calculate the time left and the total duration
+      let currentMinutes = Math.floor(curr_track.currentTime / 60);
+      let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
+      let durationMinutes = Math.floor(curr_track.duration / 60);
+      let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
+      // adding a zero to the single digit time values
+      if (currentSeconds < 10) {
+        currentSeconds = "0" + currentSeconds;
+      }
+      if (durationSeconds < 10) {
+        durationSeconds = "0" + durationSeconds;
+      }
+      if (currentMinutes < 10) {
+        currentMinutes = currentMinutes;
+      }
+      if (durationMinutes < 10) {
+        durationMinutes = durationMinutes;
+      }
+      curr_time.textContent = currentMinutes + ":" + currentSeconds;
+      total_duration.textContent = durationMinutes + ":" + durationSeconds;
+    }
+  }
+  // load the first track in the tracklist
+  loadTrack(track_index);
+</script>
+  
+<script>
+        
+            function lightmode() {
+                document.getElementById('colortheme').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/light.css');
+            localStorage.setItem('theme', 'lightmode');}
+  
+            function darkmode() {
+                document.getElementById('colortheme').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/dark.css');
+            localStorage.setItem('theme', 'darkmode');}
+  
+            function crtfilter() {
+                document.getElementById('filter').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/crt.css');
+            localStorage.setItem('theme', 'crtfilter');}
+                
+            if(localStorage.getItem('theme') == 'lightmode'){
+            lightmode();
+            }
+            
+            if(localStorage.getItem('theme') == 'darkmode'){
+            darkmode();
+            }
+            
+            if(localStorage.getItem('theme') == 'crt-filter'){
+            crtfilter();
+            }    
+            
+        </script>
+        
+<style>
+
+    #close-window   {
+        color: #314D27;
+        background-color: black;
+        border-radius: .25rem;
+        padding: .25rem;
+        font-size: .75rem;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    #mp3-tracklist  {
+        background: #14090B;   
+        padding: 2rem 2rem;
+        margin: 2rem 1rem;
+    }
+
+    #mp3-page   {
+        width:25rem; 
+        height: 100%;
+        padding: 2rem 2rem;
+    }
+    
+    .player {
+        width:fit-content;
+        border: #CECECE solid 2px;
+        border-radius: 100px;
+        margin-left:auto;
+        margin-right:auto;
+      background: linear-gradient(0deg, rgba(205,205,205,1) 0%, rgba(230,230,230,1) 30%, rgba(255,255,255,1) 100%); 
+      padding:5px;
+    }
+
+.seek_slider {
+    
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 6px;
+  background: #e4d5dc;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  border-radius: 8px;
+}
+
+.seek_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 8px;
+  height: 8px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+  border:1px solid #cecece;
+  padding-top:3px;
+  position:relative;
+  bottom:3px;
+}
+ 
+button,input,label,option,select,table,textarea,ul.tree-view{-webkit-font-smoothing:none;font-family:"Myriad Pro";font-size:11px}h1{font-size:5rem}h2{font-size:2.5rem}h3{font-size:2rem}h4{font-size:1.5rem}u{border-bottom:.5px solid #222;text-decoration:none}button,input[type=reset],input[type=submit]{border:none;border-radius:0;box-sizing:border-box;color:transparent;min-height:23px;min-width:75px;padding:0 12px;text-shadow:0 0 #222}.vertical-bar,button,input[type=reset],input[type=submit].vertical-bar{height:20px;width:4px}button:not(:disabled):active,input[type=reset]:not(:disabled):active,input[type=submit]:not(:disabled):active{opacity:0.5}}@media (not(hover)){button:not(:disabled):hover,input[type=reset]:not(:disabled):hover,input[type=submit]:not(:disabled):hover{box-shadow:inset -1px -1px #fff,inset 1px 1px #0a0a0a,inset -2px -2px #dfdfdf,inset 2px 2px grey}}button:focus,input[type=reset]:focus,input[type=submit]:focus{opacity:1}button::-moz-focus-inner,input[type=reset]::-moz-focus-inner,input[type=submit]::-moz-focus-inner{border:0}:disabled,:disabled+label,input[readonly],input[readonly]+label{color:grey}:disabled+label,button:disabled,input[type=reset]:disabled,input[type=submit]:disabled{text-shadow:1px 1px 0 #fff}}
+ 
+
+ 
+ 
+@media (not(hover)){
+	button:not(:disabled):hover {
+    box-shadow:inset -1px -1px #fff,inset 1px 1px #0a0a0a,inset -2px -2px #dfdfdf,inset 2px 2px grey}
+}
+
+ 
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("https://dl.dropbox.com/scl/fi/z8hqw29h8a9i3a3cbbxkt/MYRIADPRO-REGULAR.OTF?rlkey=begwqxljs2gzyw26h00oeovzi&st=px0mbeax&dl=0") format("woff");
+}
+ 
+.window, .title-bar {
+  font-family: "Myriad Pro";
+  -webkit-font-smoothing: none;
+  font-size: 11px;
+}
+ 
+.window {
+  padding:10px;
+  width:290px;
+}
+ 
+ 
+.window-body { 
+  display:block;
+  margin:auto; 
+  border-radius:0em;
+}
+ 
+ 
+input[type=range] {
+        -webkit-appearance: none;
+        appearance:none;
+        width: 100%;
+    }
+ 
+    input[type=range]:focus {
+        outline: none;
+    }
+ 
+    /* settings for chrome browsers */
+    input[type=range]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 2px; /* thickness of seeking track */
+        cursor: pointer;
+    }
+ 
+ 
+    /* settings for firefox browsers */
+    input[type=range]::-moz-range-track {
+        width: 100%;
+        height: 2px; /* thickness of seeking track */
+        cursor: pointer;
+    }
+ 
+    .flex {display: flex;}
+ 
+    #musicplayer {
+        display:block;
+        float:right;
+        background: linear-gradient(0deg, #F1E3F0, white) padding-box, linear-gradient(to top, white, #A2A2A2) border-box;
+        border-radius: 60em;
+        border: 2px solid transparent;
+        margin-left:8px;
+        padding-left:10px;
+        box-shadow: 1px 1px 10px 0px rgba(128,128,128,0.27) inset;
+        -webkit-box-shadow: 1px 1px 10px 0px rgba(128,128,128,0.27) inset;
+        -moz-box-shadow: 1px 1px 10px 0px rgba(128,128,128,0.27) inset;
+        }
+ 
+    .wheel {
+      display: block;
+  justify-content: center;
+        margin:auto;
+      background: linear-gradient(white, white) padding-box, linear-gradient(to top, white, #A2A2A2) border-box;
+  border-radius: 50em;
+  border: 2px solid transparent;
+      padding-top:0px;
+      box-shadow: 1px 1px 10px 0px rgba(128,128,128,0.27) inset;
+-webkit-box-shadow: 1px 1px 10px 0px rgba(128,128,128,0.27) inset;
+-moz-box-shadow: 1px 1px 10px 0px rgba(128,128,128,0.27) inset;
+    }
+
+.innerwheel {
+  border-radius: 50em;
+  border: 2px solid #E2E2E2;
+  
+      padding:9px;
+  padding-left:10px;
+  padding-right:12px;
+  margin:0;
+  box-shadow: 1px 1px 10px 0px rgba(128,128,128,0.17) inset;
+-webkit-box-shadow: 1px 1px 10px 0px rgba(128,128,128,0.17) inset;
+-moz-box-shadow: 1px 1px 10px 0px rgba(128,128,128,0.17) inset;
+  
+}
+th{
+  width:20px;
+ 
+  margin:0;
+}
+.fas fa-minus{
+  margins:0;
+  padding-bottom:5px;
+}
+
+ 
+    .wheelcontrols {
+        font-size:14px !important; /* size of controls */
+        text-align:center;
+        padding-top:2px;
+color: #aaa;
+    opacity: 0.8;
+    }
+
+.wheelcontrols button {
+    background: none;
+    border: none;
+    color: #aaa;
+    opacity: 0.6;
+    font-size: 14px;
+    padding: 2px;
+    cursor: pointer;
+}
+.wheelcontrols button:hover {
+  opacity: 1;
+}
+
+.controls button:hover {
+   opacity: 1;
+  
+}
+
+.playpause-track button{
+  display:block;
+  color:#C1C1C1;
+  font-size: 20px;
+  margin:auto;
+}
+
+.playpause-track {
+    font-size: 22px !important;
+    padding: 3px;
+}
+ 
+    .songtitle {
+        padding:25px; /* padding around song title */
+        color:#A3A3A3;
+      padding-bottom:0;
+      margin-left:15px;
+      margin-right:20px;
+        font-size: 16px;
+        display:block;
+        font-family:Myriad Pro;
+    }
+ 
+    .controls button{
+      display:block;
+      
+      margin-left:15px;
+        font-size:14px !important; /* size of controls */
+        text-align:center;
+        color:#ccb3be;
+      opacity:0.6
+        
+    } 
+ 
+    button {
+      min-width:20px;
+      background:none;
+      
+      text-align:center;
+    }
+button:active {
+    opacity: 0.7;
+}
+
+    .seeking {
+        display:flex;
+        justify-content: space-evenly;
+        padding:10px; /* padding around seeking bar */
+      padding-left:0;
+      padding-bottom:0px;
+      color:#A3A3A3;
+    }
+ 
+    .current-time {
+        padding-right:5px;
+    }
+ 
+    .total-duration {
+        padding-left:5px;
+    }
+    
+</style> 
+    
+</html>
