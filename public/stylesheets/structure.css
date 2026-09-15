@@ -106,7 +106,7 @@
         width: fill;
         height: 100%;
         overflow-x: hidden;
-        border: none;
+        border: 1rem black;
     }
 
     #leftSidebar {
