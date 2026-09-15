@@ -93,7 +93,7 @@
     }
 
     aside {
-        margin: 1rem 0rem;
+        margin: 0rem 1rem;
         overflow:hidden;      
         font-size: smaller;
         cursor: var(--cursor) 0 0, auto !important;
