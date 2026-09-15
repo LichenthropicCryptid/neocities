@@ -58,18 +58,18 @@
 
 /*base layout styling*/
 
-.accessability  {
-    background: black;
-    border-radius: 1rem;
-    width: 13rem;
-    padding: .75rem;
-}
+    .accessability  {
+        background: black;
+        border-radius: 1rem;
+        width: 12rem;
+        padding: .75rem;
+    }
 
-        iframe {
-            border-radius: 1rem;
-            border: .5rem solid black;
-            margin: .15rem;
-        }
+    iframe {
+        border-radius: 1rem;
+        border: .5rem solid black;
+        margin: .15rem;
+    }
 
     #flex {
         display: flex;
