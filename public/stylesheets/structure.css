@@ -27,10 +27,14 @@
                             border-radius: 5rem;
                             border: .15rem solid;
                         }
-        
+
+               * {
+        cursor: var(--cursor) 0 0, auto !important;
+    }
+
         @font-face { font-family:PixelSplitter; src: url(../fonts/PixelSplitter.ttf); }
         
-        }
+        
         details > summary {
             list-style: none;
         }
@@ -419,6 +423,5 @@ table.buttonTable tfoot {
         
     }
     
-       * {
-        cursor: var(--cursor) 0 0, auto !important;
-    }
+
+ }
