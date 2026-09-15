@@ -12,11 +12,7 @@ function toggle() {
         img.dataset.ffOriginal = img.src;
       }
     });
-    ffInstance = new Freezeframe('.freezeframe', {
-      trigger: 'hover',
-      responsive: false,
-      overlay: false
-    });
+    e = new Freezeframe({ trigger: false, responsive: false });
     btn.textContent = "Enable animations";
   } else {
     ffInstance.destroy();
