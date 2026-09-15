@@ -93,8 +93,7 @@
     }
 
     aside {
-        margin: 0rem 1rem;
-        overflow:hidden;      
+        margin: 0rem 1rem;     
         font-size: smaller;
         cursor: var(--cursor) 0 0, auto !important;
         width: auto;
@@ -103,10 +102,8 @@
         background-color: transparent;
     }
     #sidebar    {
-        width: auto;
+        width: 10rem;
         height: 100%;
-
-
     }
 
     #leftSidebar {
