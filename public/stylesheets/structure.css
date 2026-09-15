@@ -390,6 +390,15 @@
         transform: scale(1.25);
     }
     
+    important   {
+        background-color: orange;
+        border-radius: .5rem;
+        color: black;
+        font-weight: bold;
+        font-size: 2.5rem;
+        margin: 0 auto;
+    }
+    
 /*text styling*/
 
 /*media queries*/
