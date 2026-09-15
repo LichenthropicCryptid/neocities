@@ -98,11 +98,12 @@
         cursor: var(--cursor) 0 0, auto !important;
         width: auto;
         height: 5000px;
-        border-radius: 10px;
         background-color: transparent;
     }
 
     #sidebar    {
+        padding: 1rem 1rem;
+        border-radius: 5rem;
         width: 100%;
         height: 100%;
         overflow-x: hidden;
