@@ -232,6 +232,22 @@
         padding:.5em;
     } 
 
+    .thumbnail{
+        width: 12em;
+        display:inline-block;
+        z-index:999;
+        border: .75rem solid black;
+        background: black;
+        cursor: pointer;
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+    }
+
+        .thumbnail:hover {
+            transform: scale(2);
+        }
+
 /*assets*/
 
 /*tables*/
@@ -398,6 +414,8 @@
         font-size: 2.5rem;
         margin: 0 auto;
     }
+    
+
     
 /*text styling*/
 
