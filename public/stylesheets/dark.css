@@ -186,26 +186,6 @@
         color: green; 
     }
 
-    .left-toggle {      
-        color:white;
-        background-color: black;
-    }
-    
-    .left-toggle:hover {
-        box-shadow: 0 0 1.5em 0 limegreen;
-        color: green; 
-    }
-
-    .right-toggle {      
-        color:white;
-        background-color: black;
-    }
-    
-    .right-toggle:hover {
-        box-shadow: 0 0 1.5em 0 limegreen;
-        color: green; 
-    }
-
     .box {
         background-color: #13092D;
         border: .15rem dashed #2E520B;     
