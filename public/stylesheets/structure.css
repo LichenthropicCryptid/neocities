@@ -58,15 +58,10 @@
 
 /*base layout styling*/
 
-.accessability  {
-    background: black;
-    border-radius: 1rem;
-}
-
-        iframe {
-            border-radius: 1rem;
-            border: .5rem solid black;
-            margin: .15rem;
+    iframe {
+        border-radius: 1rem;
+        border: .5rem solid black;
+        margin: .15rem;
         }
 
     #flex {
@@ -75,7 +70,7 @@
 
     #header {
         width: 100%;
-        height: 150px;
+        height: 3rem;
         background-size:100%;
         overflow-y: hidden;
     }
