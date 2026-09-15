@@ -107,7 +107,7 @@
         height: 100%;
         overflow-x: hidden;
         border: 1rem black;
-        align: center;
+        align-items: justify-content;
     }
 
     #leftSidebar {
