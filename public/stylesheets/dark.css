@@ -48,6 +48,9 @@
     #header {
         background-color: #751843;
         background-image: var(--header-image);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
     
     #navbar {
