@@ -13,7 +13,7 @@ function toggle() {
       }
     });
     e = new Freezeframe({ trigger: false, responsive: false });
-    btn.textContent = "Enable animations";
+    btn.textContent = "GIFS";
   } else {
     ffInstance.destroy();
     ffInstance = null;
@@ -30,6 +30,6 @@ function toggle() {
         img.src = img.dataset.ffOriginal;
       }
     });
-    btn.textContent = "Disable animations";
+    btn.textContent = "GIFS";
   }
 }
