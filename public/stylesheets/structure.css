@@ -209,8 +209,8 @@
         margin: 0 auto;
         padding: 0.5rem 0.5rem;
         display: inline-block;
-        width: auto;
-        height: 250px;
+        width: 500px;
+        height: 500px;
     }
     
     #navi    {
