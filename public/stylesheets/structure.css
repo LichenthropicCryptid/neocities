@@ -103,10 +103,11 @@
     }
 
     #sidebar    {
-        width: fill;
+        width: 100%;
         height: 100%;
         overflow-x: hidden;
         border: 1rem black;
+        align-content: center;
     }
 
     #leftSidebar {
