@@ -97,11 +97,11 @@
         font-size: smaller;
         cursor: var(--cursor) 0 0, auto !important;
         width: auto;
-        height: 100%;
+        height: fill;
         border: none;
         background-color: transparent;
     }
-    
+
     #sidebar    {
         width: 10rem;
         height: fill;
