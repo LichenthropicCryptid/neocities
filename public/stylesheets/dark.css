@@ -84,13 +84,12 @@
         background-color: #050D00;
         box-shadow: 0 0 .25em 0 limegreen;
     }
-    
     #leftsidebar a {
-        color: red;
+        color: limegreen;
     }
 
     #rightsidebar a {
-        color: #B00072;
+        color: limegreen;
     }
     
     #rightsidebar li a:hover {
