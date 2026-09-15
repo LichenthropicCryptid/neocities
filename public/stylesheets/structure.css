@@ -71,6 +71,7 @@
     #header {
         width: 100%;
         background-size:100%;
+        height: fit-content;
        
     }
     
