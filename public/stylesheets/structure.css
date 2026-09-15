@@ -28,9 +28,6 @@
                             border: .15rem solid;
                         }
         
-        error {
-            font-family: 'PixelSplitter';
-        }
         @font-face { font-family:PixelSplitter; src: url(../fonts/PixelSplitter.ttf); }
         
         }
@@ -81,7 +78,7 @@ table.buttonTable tfoot {
 }
 
   body {
-      height: auto;
+        height: auto;
         width: 90%;
         font-size: 1.25rem;        
         margin: 0 auto;
