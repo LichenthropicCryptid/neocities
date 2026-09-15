@@ -97,7 +97,7 @@
         font-size: smaller;
         cursor: var(--cursor) 0 0, auto !important;
         width: auto;
-        height: 2000px;
+        height: fit-content;
         border: none;
         background-color: transparent;
     }
@@ -106,6 +106,7 @@
         width: fill;
         height: 100%;
         overflow-x: hidden;
+        border: none;
     }
 
     #leftSidebar {
