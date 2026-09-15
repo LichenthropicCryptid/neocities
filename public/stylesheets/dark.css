@@ -166,17 +166,17 @@
         color: green;  
     }
 
-    .start-gif {      
+    .play-gif {      
         color:white;
         background-color: black;
     }
     
-    .start-gif:hover {
+    .play-gif:hover {
         box-shadow: 0 0 1.5em 0 limegreen;
         color: green; 
     }
 
-     .toggle-gif {      
+    .toggle-gif {      
         color:white;
         background-color: black;
     }
