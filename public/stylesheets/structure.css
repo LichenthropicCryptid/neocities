@@ -97,7 +97,7 @@
         overflow:hidden;      
         font-size: smaller;
         cursor: var(--cursor) 0 0, auto !important;
-        width: 30rem;
+        width: auto;
         height: auto;
         border-radius: 1rem;
     }
