@@ -2,6 +2,8 @@ let ffInstance = null;
 
 function toggle() {
   const btn = document.getElementById("toggle-btn");
+  const btn = document.getElementById("left-toggle")
+  const btn = document.getElementById("right-toggle")
   const imgs = document.querySelectorAll('.freezeframe');
 
   if (ffInstance === null) {
