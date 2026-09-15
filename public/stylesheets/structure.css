@@ -305,7 +305,19 @@
         margin: .5rem;
     }
 
-    .start-gif {
+    .play-gif {
+        border-radius: 1rem;
+        padding: .5rem;
+        margin: .5rem;
+    }
+
+    .left-toggle {
+        border-radius: 1rem;
+        padding: .5rem;
+        margin: .5rem;
+    }
+
+    .right-toggle {
         border-radius: 1rem;
         padding: .5rem;
         margin: .5rem;
