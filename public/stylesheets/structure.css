@@ -93,12 +93,12 @@
     }
 
     aside {
-          
+        padding
         font-size: smaller;
         cursor: var(--cursor) 0 0, auto !important;
         width: auto;
         height: 5000px;
-        border: none;
+        border-radius: 10px;
         background-color: transparent;
     }
 
