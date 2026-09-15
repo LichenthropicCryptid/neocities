@@ -97,7 +97,6 @@ const headerE1 = `
                     <div id="theme-box">
                         <button class="play-gif">Play GIFs</button>
                         <button class="stop-gif">Stop GIFs</button>
-                        <button class="filter" onclick="crtfilter(), location.reload()">CRT</button>
                         <button class="colortheme" onclick="darkmode(), location.reload()">DARK</button>
                         <button class="colortheme" onclick="lightmode(), location.reload()">LIGHT</button>
                     

@@ -135,7 +135,7 @@ rssfeed_cache = "86db238dcd562b16e9a90a1475d242ee";
                 margin: 0 auto;
             }
         </style>
-<script>
+       <script>
         
             function lightmode() {
                 document.getElementById('colortheme').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/light.css');
@@ -144,10 +144,6 @@ rssfeed_cache = "86db238dcd562b16e9a90a1475d242ee";
             function darkmode() {
                 document.getElementById('colortheme').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/dark.css');
             localStorage.setItem('theme', 'darkmode');}
-  
-            function crtfilter() {
-                document.getElementById('filter').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/crt.css');
-            localStorage.setItem('theme', 'crtfilter');}
                 
             if(localStorage.getItem('theme') == 'lightmode'){
             lightmode();
@@ -155,11 +151,7 @@ rssfeed_cache = "86db238dcd562b16e9a90a1475d242ee";
             
             if(localStorage.getItem('theme') == 'darkmode'){
             darkmode();
-            }
-            
-            if(localStorage.getItem('theme') == 'crt-filter'){
-            crtfilter();
-            }    
+            } 
             
         </script>
        <style>

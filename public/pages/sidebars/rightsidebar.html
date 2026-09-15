@@ -225,7 +225,7 @@
     
     </style>  
     
-<script>
+       <script>
         
             function lightmode() {
                 document.getElementById('colortheme').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/light.css');
@@ -234,10 +234,6 @@
             function darkmode() {
                 document.getElementById('colortheme').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/dark.css');
             localStorage.setItem('theme', 'darkmode');}
-  
-            function crtfilter() {
-                document.getElementById('filter').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/crt.css');
-            localStorage.setItem('theme', 'crtfilter');}
                 
             if(localStorage.getItem('theme') == 'lightmode'){
             lightmode();
@@ -245,13 +241,9 @@
             
             if(localStorage.getItem('theme') == 'darkmode'){
             darkmode();
-            }
+            } 
             
-            if(localStorage.getItem('theme') == 'crt-filter'){
-            crtfilter();
-            }    
-            
-        </script>    
+        </script>   
   
   </body>
   
