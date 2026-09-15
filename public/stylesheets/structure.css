@@ -102,20 +102,22 @@
         border-radius: 1rem;
         background-color: transparent;
     }
+    #sidebar    {
+        width: auto;
+        height: 100%;
+
+
+    }
 
     #leftSidebar {
         display: flex;
         float: left;
-        height: auto;
-        width: auto;
         order: 1;
     }
     
     #rightSidebar {
         display: flex;
         float: right;
-        height: auto;
-        width: auto;
         order: 3;
     }
 
