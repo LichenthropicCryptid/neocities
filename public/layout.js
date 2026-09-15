@@ -16,8 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     initActiveLinks();
   }
-    
+  
+  
+
   // add your own javascript code here...
+
+
+  
 });
 
 /* ********************************* */
@@ -95,7 +100,8 @@ const headerE1 = `
                     </summary>
                 
                     <div id="theme-box">
-                        <button class="toggle-gif">GIFS</button>
+                        <button class="toggle-gif" onclick="freeze()">GIFS</button>
+                        <button class="crt-toggle" onclick="crt()">CRT</button>
                         <button class="colortheme" onclick="darkmode(), location.reload()">DARK</button>
                         <button class="colortheme" onclick="lightmode(), location.reload()">LIGHT</button>
                     </div>
