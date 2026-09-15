@@ -138,29 +138,19 @@
         color: #6BB500;
     }
     
-    #theme-box {
+    .theme-box {
         background-color: black;
         border: 2.5px solid black;
     }
     
-    .colortheme {      
+    .colortheme,.play-gif,.stop-gif,.toggle-gif{      
         color:white;
         background-color: black;
     }
     
-    .colortheme:hover {
+    .colortheme,.play-gif,.stop-gif,.toggle-gif:hover {
         box-shadow: 0 0 1.5em 0 limegreen;
-        color: green;
-    }
-    
-    .play-gif,.stop-gif,.toggle-gif:hover {
-      box-shadow: 0 0 1.5em 0 limegreen;
         color: green;  
-    }
-    
-    .play-gif,.stop-gif,.toggle-gif {
-        color:white;
-        background-color: black;
     }
 
     .box {
@@ -172,4 +162,3 @@
         color:#990000;
         background-color:black;
     }
-
