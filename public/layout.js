@@ -102,7 +102,7 @@ const headerE1 = `
                     </div class="box">
                     </details>
           </div>          
-	    <div id="header" style="height: 200px;">
+	    <div id="header" style="height: 150px;">
 		</div>
             <div id="headerArea">
             
@@ -111,7 +111,6 @@ const headerE1 = `
                             <li><a href="/pages/Homepage">HOME</a></li>
                             <li><a href="/pages/About">ABOUT</a></li>
                             <li><a href="/pages/gallery">GALLERY</a></li>
-                            <li><a href="/pages/feeds">FEEDS</a></li>
                             <li><a href="/pages/Smokeroom">SMOKE ROOM</a></li>
                             <li><a href="/pages/Links">CREDITS + LINKS</a></li>
                             <li><a href="/pages/critters">CRITTERS</a></li>
