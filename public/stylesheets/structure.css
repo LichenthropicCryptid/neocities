@@ -98,12 +98,13 @@
         cursor: var(--cursor) 0 0, auto !important;
         width: auto;
         height: 100%;
-        border-radius: 1rem;
+        border: none;
         background-color: transparent;
     }
+    
     #sidebar    {
         width: 10rem;
-        height: 100%;
+        height: fill;
     }
 
     #leftSidebar {
