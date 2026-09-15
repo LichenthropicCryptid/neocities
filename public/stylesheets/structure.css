@@ -59,7 +59,10 @@
 /*base layout styling*/
         iframe {
             border-radius: 1rem;
+            border: .5rem solid black;
+            margin: .15rem;
         }
+
     #flex {
         display: flex;
     }
@@ -101,6 +104,7 @@
         width: auto;
         height: 5000px;
         background-color: transparent;
+        border-radius: 1rem;
     }
 
     #sidebar    {
