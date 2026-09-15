@@ -97,7 +97,7 @@
         font-size: smaller;
         cursor: var(--cursor) 0 0, auto !important;
         width: auto;
-        height:110%;
+        height: 200rem;
         border: none;
         background-color: transparent;
     }
