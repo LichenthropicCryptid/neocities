@@ -1,6 +1,4 @@
-:root {
-
-                                               /* Scrollbar styling */
+                                   /* Scrollbar styling */
                         /* Scrollbar Track Color */
                         ::-webkit-scrollbar-track {
                             background: rgba(12, 44, 8, 0.616);
@@ -134,4 +132,3 @@
         background-color:#6A7A57;
    
     }   
-}

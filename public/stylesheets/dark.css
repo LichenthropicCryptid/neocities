@@ -1,9 +1,4 @@
-   :root {
-        --header-image: url("https://file.garden/anb5fb-RvmNCRWUD/my-art/lichenthropic.png");
-        --body-bg-image: url("https://file.garden/anb5fb-RvmNCRWUD/backgrounds/geocities49.jpg");
-        --index-bg: url("https://file.garden/anb5fb-RvmNCRWUD/header.JPG");
-        --cursor: url("/images/cursor.png");
-        --content: (67,37,110);
+
    
                         /* Scrollbar Track Color */
                         ::-webkit-scrollbar-track {
@@ -178,4 +173,3 @@
         background-color:black;
     }
 
-  }
