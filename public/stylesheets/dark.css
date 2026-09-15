@@ -151,19 +151,39 @@
         background-color: black;
     }
 
-    .toggle-btn {      
-        color:white;
-        background-color: black;
-    }
-    
     .colortheme:hover {
         box-shadow: 0 0 1.5em 0 limegreen;
         color: green; 
     }
+
+    .stop-gif {      
+        color:white;
+        background-color: black;
+    }
     
-    .toggle-btn:hover {
+    .stop-gif:hover {
         box-shadow: 0 0 1.5em 0 limegreen;
         color: green;  
+    }
+
+    .start-gif {      
+        color:white;
+        background-color: black;
+    }
+    
+    .start-gif:hover {
+        box-shadow: 0 0 1.5em 0 limegreen;
+        color: green; 
+    }
+
+     .toggle-gif {      
+        color:white;
+        background-color: black;
+    }
+    
+    .toggle-gif:hover {
+        box-shadow: 0 0 1.5em 0 limegreen;
+        color: green; 
     }
 
     .box {

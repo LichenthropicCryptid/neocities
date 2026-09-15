@@ -293,7 +293,19 @@
         margin: .5rem;
     }
 
-    .toggle-btn {
+    .toggle-gif {
+        border-radius: 1rem;
+        padding: .5rem;
+        margin: .5rem;
+    }
+
+    .stop-gif {
+        border-radius: 1rem;
+        padding: .5rem;
+        margin: .5rem;
+    }
+
+    .start-gif {
         border-radius: 1rem;
         padding: .5rem;
         margin: .5rem;
