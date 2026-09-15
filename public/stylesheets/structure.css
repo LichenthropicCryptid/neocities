@@ -61,7 +61,8 @@
 .accessability  {
     background: black;
     border-radius: 1rem;
-    width: 10rem;
+    width: 15rem;
+    padding: .5rem;
 }
 
         iframe {
