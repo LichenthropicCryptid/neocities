@@ -100,7 +100,7 @@ const headerE1 = `
                     </summary>
                 
                     <div id="theme-box">
-                        <button class="toggle-gif">GIFS</button>
+                        <button id="toggle-btn" onclick="toggle()">GIFS</button>
                         <button class="colortheme" onclick="darkmode(), location.reload()">DARK</button>
                         <button class="colortheme" onclick="lightmode(), location.reload()">LIGHT</button>
                     </div>

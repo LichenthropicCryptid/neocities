@@ -151,7 +151,7 @@
         background-color: black;
     }
 
-    .toggle-gif {      
+    .toggle-btn {      
         color:white;
         background-color: black;
     }
@@ -161,7 +161,7 @@
         color: green; 
     }
     
-    .toggle-gif:hover {
+    .toggle-btn:hover {
         box-shadow: 0 0 1.5em 0 limegreen;
         color: green;  
     }
