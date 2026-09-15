@@ -58,13 +58,6 @@
 
 /*base layout styling*/
 
-    .accessability  {
-        background: black;
-        border-radius: 1rem;
-        width: 12rem;
-        padding: .75rem;
-    }
-
     iframe {
         border-radius: 1rem;
         border: .5rem solid black;
@@ -285,6 +278,14 @@
 /*tables*/
 
 /*buttons*/
+
+    .accessability  {
+        background: black;
+        border-radius: 1rem;
+        width: 12rem;
+        padding: .75rem;
+    }
+
 
     .colortheme {
         border-radius: 1rem;
