@@ -79,7 +79,7 @@
         background-size:100%;
         overflow-y: hidden;
         position: relative;
-        top: -5rem;
+        bottom: 1rem;
     }
     
     #navbar {
