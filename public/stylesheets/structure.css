@@ -119,11 +119,7 @@
         order: 3;
     }
 
-    #container {
-        max-width: 60rem;
-        margin: 0 auto;
-        height: 100;
-    }
+
 
     #wrapper {
         display: flex;
