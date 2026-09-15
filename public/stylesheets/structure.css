@@ -90,7 +90,7 @@
     main {
         position: center;
         flex: 1;
-        margin: 1.5rem;
+        margin: 1.5rem 0rem;
         padding: 1.5rem;
         order: 2;  
         height:auto;
