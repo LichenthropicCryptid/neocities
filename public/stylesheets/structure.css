@@ -286,18 +286,6 @@
 
 /*buttons*/
 
-    .button-effects:hover {
-      box-shadow: 0 0 .5rem 0;
-}
-
-    .colortheme:hover{
-        box-shadow: 0 0 1.5em 0;
-    }
-    
-    .toggle-gif:hover {
-        box-shadow: 0 0 1.5em 0;
-    }
-    
     .colortheme {
         border-radius: 1rem;
         padding: .5rem;

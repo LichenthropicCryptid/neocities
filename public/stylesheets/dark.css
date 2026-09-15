@@ -143,12 +143,22 @@
         border: 2.5px solid black;
     }
     
-    .colortheme,.play-gif,.stop-gif,.toggle-gif{      
+    .colortheme {
+        color:white;
+        background-color: black;
+    }
+
+    .toggle-gif {      
         color:white;
         background-color: black;
     }
     
-    .colortheme,.play-gif,.stop-gif,.toggle-gif:hover {
+    .colortheme:hover {
+        box-shadow: 0 0 1.5em 0 limegreen;
+        color: green; 
+    }
+    
+    .toggle-gif:hover {
         box-shadow: 0 0 1.5em 0 limegreen;
         color: green;  
     }
