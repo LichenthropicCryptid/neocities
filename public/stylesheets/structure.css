@@ -101,9 +101,9 @@
         margin: 0 auto;
         font-size: smaller;
         cursor: var(--cursor) 0 0, auto !important;
-        width: auto;
+        width: 20rem;
         height: 5000px;
-        background-color: transparent;
+        background: transparent;
         border-radius: 1rem;
     }
 
