@@ -114,11 +114,5 @@ document.addEventListener("readystatechange", function () {
     for(const el of document.getElementsByClassName('toggle-gif')) {
       el.addEventListener('click', () => f.toggle());
     }
-     for(const el of document.getElementsByClassName('left-toggle')) {
-      el.addEventListener('click', () => f.toggle());
-    }
-     for(const el of document.getElementsByClassName('right-toggle')) {
-      el.addEventListener('click', () => f.toggle());
-    }
   }
 });
