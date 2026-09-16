@@ -6,7 +6,7 @@ class FreezeImages {
     this.canvasCls = "ff-canvas";
     this.hover = (options.hover === true || options.hover === "true") ? true : false;
     this.noCSS = (options.no_css === true || options.hover === "true") ? true : false;
-    this.smoothing = (options.smoothing === false) ? false : true;
+    this.smoothing = (options.smoothing === true) ? false : true;
 
     // Finds all images with selector class and within elements with the selected class
     //  and creates list
