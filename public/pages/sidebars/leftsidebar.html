@@ -37,7 +37,17 @@
 });
   
 </script>
-       
+  <SCRIPT TYPE="text/javascript">
+  function popup(mylink, windowname) { 
+    if (! window.focus)return true;
+    var href;
+    if (typeof(mylink) == 'string') href=mylink;
+    else href=mylink.href; 
+    window.open(href, windowname, 'width=250,height=600,scrollbars=yes'); 
+    return false; 
+  }
+</SCRIPT>
+      
   </head>
   <div id="preloader"></div>
   <body>
