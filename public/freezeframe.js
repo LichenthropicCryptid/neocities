@@ -100,7 +100,7 @@ class FreezeImages {
 document.addEventListener("readystatechange", function () {
   if (document.readyState === "complete") {
     // Initialize script
-    const f = new FreezeImages ()
+    const f = new FreezeImages ({responsive: false})
 
     // Set event listeners for all buttons
     for(const el of document.getElementsByClassName('play-gif')) {
