@@ -240,16 +240,7 @@
         font-weight:bold;
         line-height:1.3em;
         padding:.5em;
-        overflow-x: hidden;
     } 
-
-    #todo {
-        font-size:1em;
-        font-weight:bold;
-        line-height:1.3em;
-        padding:.5em;
-        overflow-x: hidden;
-    }
 
     .thumbnail{
         width: 12em;
