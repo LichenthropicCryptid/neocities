@@ -21,14 +21,32 @@
   <language>en-ca</language>
   
   <lastBuildDate>
-    Mon, 31 Aug 2026 04:26:00 -0700
+    Tue, 15 Sept 2026 17:06:00 -0700
   </lastBuildDate>
   
   <ttl>420</ttl>
   
   
   <!--Header above, feed below-->
-  
+    <item>
+
+        <title>
+            BOOMBOX
+        </title>
+
+            <description>
+                Mp3 player updated! check out the mixtape by clicking on the boombox at the top of the right sidebar!
+            </description>
+
+            <link>https://lichenthropic@neocities.org/pages/Homepage</link>
+
+            <guid>https://lichenthropic@neocities.org/pages/Homepage</guid>
+
+            <pubDate>Tue, 15 Sept 2026 17:06:00 -0700</pubDate>
+
+    </item>
+
+
     <item>
         
         <title>
