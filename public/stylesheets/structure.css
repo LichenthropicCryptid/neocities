@@ -79,10 +79,6 @@
         width: 100%;
     }
 
-    html {
-        overflow-x:hidden;
-    }
-
     body {
         height: auto;
         width: 90%;
@@ -90,6 +86,7 @@
         margin: 0 auto;
         background-image: var(--body-bg-image);
         font-family: 'PixelSplitter', 'Courier New', monospace;
+        overflow-x:hidden;
         }
     
     main {
