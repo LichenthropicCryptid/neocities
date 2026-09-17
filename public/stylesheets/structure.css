@@ -65,6 +65,9 @@
         border: .5rem solid black;
         margin: .15rem;
     }
+    iframe:hover    {
+        cursor: var(--cursor-pink) 0 0, auto !important;
+    }
 
     #flex {
         display: flex;
@@ -163,10 +166,13 @@
         width: 15rem;
         height: 3rem;
     }
+    .blinkie:hover  {
+        cursor: var(--cursor-pink) 0 0, auto !important;
+    }
     
     /*draggable*/
 
-    .draggable:hover    {
+    .draggable:hover   {
             cursor: var(--cursor-pink) 0 0, auto !important;
         }
         /*clouds*/
@@ -203,10 +209,10 @@
         width: 250px;
         height: 250px;
     }
-    .ad:hover{
+    .ad:hover   {
         cursor: var(--cursor-pink) 0 0, auto !important;
     }
-    .ad-box:hover{
+    .ad-box:hover   {
         cursor: var(--cursor-pink) 0 0, auto !important;
     }
     
@@ -214,6 +220,10 @@
         overflow: hidden;
         display: inline-block;
         border: 0.5rem solid;
+   }
+
+   #navi:hover  {
+    cursor: var(--cursor-pink) 0 0, auto !important;
    }
 
     .gallery {
@@ -231,9 +241,9 @@
         font-weight:bold;
         line-height:1.3em;
         padding:.5em;
-    } 
+    }
 
-    .thumbnail{
+    .thumbnail  {
         width: 12em;
         display:inline-block;
         z-index:999;
