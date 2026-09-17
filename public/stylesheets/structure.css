@@ -498,14 +498,14 @@
       
         #leftSidebar {
             height: 100;
-            width: 100%;
+            width: fill;
             margin: 0 auto;
             order: 2;
         }
       
         #rightSidebar {
             height: 100;
-            width: 100%;
+            width: fill;
             margin: 0 auto;
             order: 3;
         }
