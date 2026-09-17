@@ -141,12 +141,16 @@ const footerE1 = `<footer>
 
 // Insert your sidebar HTML inside these ``. You can use HTML as usual.
 // Remove all the content inside the `` if you don't have a sidebar.
-const sidebarEl1 = 
-        `
+const sidebarEl1 = `<aside id="rightSidebar">
+        <iframe src="/pages/sidebars/rightsidebar.html" scrolling="no">
+        </iframe>
+    </aside>
             `;
 
 // Insert your sidebar HTML inside these ``. You can use HTML as usual.
 // Remove all the content inside the `` if you don't have a sidebar.
-const sidebarEl2 = 
-        `
+const sidebarEl2 = ` <aside id="leftSidebar">
+        <iframe src="/pages/sidebars/leftsidebar.html" scrolling="no">
+        </iframe>
+    </aside>
 `;
