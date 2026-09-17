@@ -278,9 +278,9 @@
         position:fixed;
         background: #ff007345;
         border-radius: 5rem;
-        -webkit-box-shadow: 5px 5px 50px 5px #ff007356; 
-        box-shadow: 5px 5px 50px 5px #ff007356;
-        margin: 5rem;
+        -webkit-box-shadow: 5px 5px 50px 5px #ff0a795a; 
+        box-shadow: 5px 5px 50px 5px #ff0a795a;
+        margin: 7.5rem;
     }
 
     .accessability  {
