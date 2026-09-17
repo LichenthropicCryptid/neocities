@@ -209,6 +209,9 @@
     .ad:hover{
         cursor: var(--cursor-pink) 0 0, auto !important;
     }
+    .ad-box:hover{
+        cursor: var(--cursor-pink) 0 0, auto !important;
+    }
     
     #navi    {
         overflow: hidden;
@@ -247,6 +250,9 @@
 
         .thumbnail:hover {
             transform: scale(2);
+            cursor: var(--cursor-pink) 0 0, auto !important;
+        }
+        .freeze:hover{
             cursor: var(--cursor-pink) 0 0, auto !important;
         }
 
