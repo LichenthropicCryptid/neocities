@@ -81,7 +81,7 @@
 
     body {
         height: auto;
-        width: 80%;
+        width: 100;
         font-size: 1.25rem;        
         margin: 0 auto;
         background-image: var(--body-bg-image);
