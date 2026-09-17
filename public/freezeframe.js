@@ -100,9 +100,11 @@ class FreezeImages {
       let imgNewCls = img.className.includes("ff-inactive")
         ? "ff-active"
         : "ff-inactive";
+        window.localStorage.setItem("freeze", "on");
       let canvasNewCls = img.className.includes("ff-inactive")
         ? "ff-inactive"
         : "ff-active";
+        window.localStorage.setItem("freeze", "off");
 
       img.className = `${this.imgCls} ${imgNewCls}`;
       img.nextSibling.className = `${this.canvasCls} ${canvasNewCls}`;
@@ -113,8 +115,9 @@ class FreezeImages {
 // Waits for page to finish loading
 document.addEventListener("readystatechange", function () {
   if (document.readyState === "complete") {
+
     // Initialize script
-    const f = new FreezeImages({ responsive: false });
+    const f = localStorage?.getItem("freezeframe") ?? "on";
     
 
     // Set event listeners for all buttons
