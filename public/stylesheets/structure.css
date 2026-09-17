@@ -269,6 +269,8 @@
 
     .accessability  {
         position: fixed;
+        display: flex;
+        flex-direction: column;
         background: rgba(0, 0, 0, 0.922);
         border-radius: 1rem;
         width: 12rem;
@@ -277,18 +279,21 @@
 
 
     .colortheme {
+        width: 2rem;
         border-radius: 1rem;
         padding: .5rem;
         margin: .5rem;
     }
 
     .toggle-gif {
+        width: 2rem;
         border-radius: 1rem;
         padding: .5rem;
         margin: .5rem;
     }
 
     .filter {
+        width: 2rem;
         border-radius: 1rem;
         padding: .5rem;
         margin: .5rem;
