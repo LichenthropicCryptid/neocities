@@ -157,8 +157,9 @@
         position: fixed;
         width: 5rem;
         float: left;
-        height: 15rem;
+        height: 20rem;
         margin: 0 auto;
+        padding: 1rem;
         border-radius: 1rem;
         display: flex;
         flex-direction: column;
