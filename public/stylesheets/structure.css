@@ -437,6 +437,18 @@
 
 /*media queries*/
 
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+
+    /* Give your GIFs an "animated" class and hide them */
+    img.freeze {
+        visibility: hidden;
+    }
+}
+
    @media only screen and (max-width: 1000px) {
        
         #theme-box {
