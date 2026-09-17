@@ -154,6 +154,7 @@
     }
 
     #theme-box {
+        position: fixed;
         width: 5rem;
         float: left;
         height: 4rem;
