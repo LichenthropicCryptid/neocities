@@ -27,7 +27,7 @@
 }
 
   body {
-        background-color: #08031A;
+        background-color: #08031ad3;
         color: #DED5D3;
         background-image: var(--body-bg-image);
         }
@@ -46,7 +46,7 @@
     }
     
     #header {
-        background-color: #751843;
+        background-color: #010101;
         background-image: var(--header-image);
         background-repeat: no-repeat;
         background-size: cover;
@@ -76,7 +76,7 @@
    }
    
     aside {
-        background-color: #241445;       
+        background-color: #241445b5;       
     }
 
     #leftsidebar li a:hover {
@@ -176,7 +176,7 @@
     }
 
     .box {
-        background-color: #13092D;
+        background-color: #13092dcd;
         border: .15rem dashed #2E520B; 
     }
     
