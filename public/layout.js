@@ -103,12 +103,30 @@ const headerE1 = `
                     </div>
                     <br/>
                     <div id="theme-box">
-
-                        <button class="toggle-gif">GIF</button>
+                        <table class="access-table">
+                        <tbody>
+                          
+                          <tr>
+                            <td>
                         <button class="filter" onclick="crtoff(), location.reload()">CRT OFF</button>
+                            </td>
+                            <td>
                         <button class="filter" onclick="crton(), location.reload()">CRT ON</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
                         <button class="colortheme" onclick="darkmode(), location.reload()">DARK</button>
+                          </td>
+                          <td>
                         <button class="colortheme" onclick="lightmode(), location.reload()">LIGHT</button>
+                          </td>
+                        </tr>
+                        <tr>
+                              <td>
+                        <button class="toggle-gif">GIF</button>
+                              </td>
+                          </tr>
                     </div>
                     </div class="box">
                     </details>
