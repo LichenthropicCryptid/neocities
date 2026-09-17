@@ -91,7 +91,7 @@
     
     main {
         
-        position: static;
+        position: flex;
         flex: 1;
         margin: .5rem 1rem;
         padding: 1.5rem;
