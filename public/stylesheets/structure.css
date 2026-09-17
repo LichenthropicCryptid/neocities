@@ -277,7 +277,7 @@
         opacity: 75%;
     }
 
-        .access-fairy:hover{
+        .access-fairy:hover {
                 cursor: var(--cursor-pink) 0 0, auto !important;
                 opacity: 100%;
             }
