@@ -90,14 +90,14 @@
     }
     
     main {
-        scale: 80%;
+        
         position: relative;
         flex: 1;
         margin: .5rem 1rem;
         padding: 1.5rem;
         order: 2;  
         height:auto;
-        width: 40em;
+        width: 30em;
         border-radius: 1rem;
     }
 
