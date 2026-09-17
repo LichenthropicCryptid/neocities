@@ -94,11 +94,9 @@ const headerE1 = `
 		<div>
 		<details class="hidden">
                     <summary>
-                    <div class="accessability">
-                    -<br/>
-                    -<br/>
-                    -<br/>
-                    </div>
+                    <button class="accessability">
+                        ACCESSABILITY
+                    </button>
                     </summary>
                     <br/>
                     <div id="theme-box">
