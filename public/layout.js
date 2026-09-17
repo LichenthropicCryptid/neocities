@@ -89,6 +89,7 @@ const headerE1 = `
 	
 		<marquee class="updates" direction="left" scrollamount="5" behavior="infinate;">|  CLICK THE RED BUTTON  |  LAST UPDATED: SEPT 14 2026  |  TAKE A TOKE AND COZY UP  |  SITE UNDER CONSTRUCTION   |  CLICK THE RED BUTTON  |  ACAB  |  BLACK LIVES MATTER  |  FREE PALESTINE  |  QUEER RIGHTS NOW  |  CLICK THE RED BUTTON  |  BE GAY DO CRIME  |  COVID NEVER ENDED  |  TRANS RIGHTS ARE HUMAN RIGHTS   |  CLICK THE RED BUTTON  |  CANNABIS IS MEDICINE  |  FREE HEALTHCARE FOR ALL  |  PUNCH A NAZI  |  THE ONE PIECE IS REAL  |  CLICK THE RED BUTTON  | </marquee>
 		<div>
+    <div class="draggable">
 		<details class="hidden">
                     <summary>
                     <div class="access-fairy">
@@ -110,6 +111,7 @@ const headerE1 = `
                     </div>
                     </div class="box">
                     </details>
+                    </div>
           </div>          
 	    <div id="header" style="height: 150px;">
 		</div>
