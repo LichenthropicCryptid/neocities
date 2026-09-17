@@ -103,9 +103,8 @@ const headerE1 = `
                     </div>
                     <br/>
                     <div id="theme-box">
-                        <table class="access-table">
-                        <tbody>
-                          
+                        <table class="access">
+                        <tbody> 
                           <tr>
                             <td>
                         <button class="filter" onclick="crtoff(), location.reload()">CRT OFF</button>
