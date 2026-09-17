@@ -94,13 +94,15 @@ const headerE1 = `
 		<div>
 		<details class="hidden">
                     <summary>
-                    <div class="accessability">
+                    
                         <img src="https://file.garden/anb5fb-RvmNCRWUD/misc/tumblr_inline_o14jlnyNGa1tjuw11_500.gif" title="accessability fairy" alt="accessability menu" width="100px">
-                    </div>
+                    
                     </summary>
+                    <div class="accessability">
+                    ACCESSABILITY
+                    </div>
                     <br/>
                     <div id="theme-box">
-                <h5>ACCESSABILITY</h5>
 
                         <button class="toggle-gif">GIF</button>
                         <button class="filter" onclick="crtoff(), location.reload()">CRT OFF</button>

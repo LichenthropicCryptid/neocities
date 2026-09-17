@@ -276,9 +276,9 @@
 
     .accessability  {
         position: fixed;
-        background: rgba(0, 0, 0, 0.586);
-        border-radius: 5rem;
-        width: 8rem;
+        background: rgba(0, 0, 0, 0.748);
+        border-radius: 1rem;
+        width: 12rem;
         padding: .75rem;
     }
 
