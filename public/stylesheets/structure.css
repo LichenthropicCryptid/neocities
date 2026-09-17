@@ -278,6 +278,8 @@
         position:fixed;
         background: rgba(255, 0, 115, 0.338);
         border-radius: 5rem;
+        -webkit-box-shadow: 5px 5px 50px 5px #FF7A8C; 
+        box-shadow: 5px 5px 50px 5px #FF7A8C;
     }
 
     .accessability  {
