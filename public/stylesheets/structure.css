@@ -57,6 +57,9 @@
 /*fonts*/
 
 /*base layout styling*/
+        html{
+            width: 80%;
+        }
 
     iframe {
         border-radius: 1rem;
