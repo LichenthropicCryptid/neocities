@@ -545,6 +545,9 @@
             margin: 0 auto;
             order: 2;
         }
+        .leftSidebar a:hover{
+            cursor: var(--cursor-pink) 0 0, auto !important;
+        }
         #sidebar a:hover{
             cursor: var(--cursor-pink) 0 0, auto !important;
         }
@@ -554,6 +557,9 @@
             width: 100%;
             margin: 0 auto;
             order: 3;
+        }
+        .rightSidebar a:hover{
+            cursor: var(--cursor-pink) 0 0, auto !important;
         }
       
         #navbar ul {
