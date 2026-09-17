@@ -295,13 +295,13 @@
         margin: .5rem;
     }
 
-    .stop-gif {
+    #stop-gif {
         border-radius: 1rem;
         padding: .5rem;
         margin: .5rem;
     }
 
-    .play-gif {
+    #play-gif {
         border-radius: 1rem;
         padding: .5rem;
         margin: .5rem;
