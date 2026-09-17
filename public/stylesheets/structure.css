@@ -259,7 +259,7 @@
 
     .access-fairy   {
         position:fixed;
-        background: #ff489b5d;
+        background: #ff489a7e;
         border-radius: 5rem;
         -webkit-box-shadow: 5px 5px 50px 5px #ff0a78c0; 
         box-shadow: 5px 5px 50px 5px #ff0a78c0;
@@ -279,21 +279,21 @@
 
 
     .colortheme {
-        width: 2rem;
+        width: 5rem;
         border-radius: 1rem;
         padding: .5rem;
         margin: .5rem;
     }
 
     .toggle-gif {
-        width: 2rem;
+        width: 5rem;
         border-radius: 1rem;
         padding: .5rem;
         margin: .5rem;
     }
 
     .filter {
-        width: 2rem;
+        width: 5rem;
         border-radius: 1rem;
         padding: .5rem;
         margin: .5rem;
