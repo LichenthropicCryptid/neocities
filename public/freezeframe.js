@@ -116,12 +116,10 @@ document.addEventListener("readystatechange", function () {
     // Set event listeners for all buttons
     for (const el of document.getElementsByClassName("play-gif")) {
       el.addEventListener("click", () => f.start());
-      window.localStorage.setItem("freeze", "off");
     }
 
     for (const el of document.getElementsByClassName("stop-gif")) {
       el.addEventListener("click", () => f.stop());
-      window.localStorage.setItem("freeze", "on");
     }
 
     for (const el of document.getElementsByClassName("toggle-gif")) {
