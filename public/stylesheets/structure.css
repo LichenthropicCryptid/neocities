@@ -49,9 +49,6 @@
     * {
     cursor: var(--cursor) 0 0, auto !important;
         }
-    a:hover{
-        cursor: var(--cursor-pink) 0 0, auto !important;
-    }
 
 /*cursor*/
 
@@ -169,10 +166,12 @@
     
     /*draggable*/
 
+    .draggable:hover{
+            cursor: var(--cursor-pink) 0 0, auto !important;
+        }
         /*clouds*/
             #cloud1 {
                 transform: scale(3);
-                
                 }
             
             #cloud2 {
@@ -204,6 +203,9 @@
         display: inline-block;
         width: 250px;
         height: 250px;
+    }
+    .ad:hover{
+        cursor: var(--cursor-pink) 0 0, auto !important;
     }
     
     #navi    {
@@ -243,6 +245,7 @@
 
         .thumbnail:hover {
             transform: scale(2);
+            cursor: var(--cursor-pink) 0 0, auto !important;
         }
 
 /*assets*/
@@ -271,7 +274,13 @@
         -webkit-box-shadow: 0px 0px 50px 30px #ff0a78c0; 
         box-shadow: 0px 0px 50px 30px #ff0a78c0;
         z-index: 3;
+        opacity: 75%;
     }
+
+        .access-fairy:hover{
+                cursor: var(--cursor-pink) 0 0, auto !important;
+                opacity: 100%;
+            }
 
     .accessability  {
         position: fixed;
@@ -291,6 +300,10 @@
         margin: .5rem;
     }
 
+        .colortheme:hover{
+            cursor: var(--cursor-pink) 0 0, auto !important;
+        }
+
     .toggle-gif {
         width: 5rem;
         border-radius: 1rem;
@@ -298,11 +311,19 @@
         margin: .5rem;
     }
 
+    .toggle-gif:hover{
+        cursor: var(--cursor-pink) 0 0, auto !important;
+    }
+
     .filter {
         width: 5rem;
         border-radius: 1rem;
         padding: .5rem;
         margin: .5rem;
+    }
+
+    .filter:hover{
+        cursor: var(--cursor-pink) 0 0, auto !important;
     }
 
 /*buttons*/
@@ -317,7 +338,8 @@
         main a:hover {
             padding: .15rem .15rem;
             text-shadow: 0 0 .25rem 0;
-            font-weight: bold;   
+            font-weight: bold;
+            cursor: var(--cursor-pink) 0 0, auto !important;  
         }
 
     #navbar a {
@@ -331,6 +353,7 @@
             border-radius: .25em;
             box-shadow: 0 0 1em 0;
             font-weight: bold;
+            cursor: var(--cursor-pink) 0 0, auto !important;
         }
 
     #leftsidebar a {
@@ -343,6 +366,7 @@
             box-shadow: 0 0 .25em 0;
             font-weight: bold; 
             padding: 100;
+            cursor: var(--cursor-pink) 0 0, auto !important;
     }
 
     #rightsidebar a {
@@ -355,6 +379,7 @@
             box-shadow: 0 0 .25em 0;
             font-weight: bold; 
             padding: 100;
+            cursor: var(--cursor-pink) 0 0, auto !important;
         } 
 
     footer a {
@@ -367,6 +392,7 @@
             box-shadow: 0 0 .25em 0;
             font-weight: bold; 
             padding: .15rem .15rem;
+            cursor: var(--cursor-pink) 0 0, auto !important;
         }
 
 /*links*/
@@ -380,6 +406,9 @@
         display: flex;
         justify-content: center;
         overflow: hidden;
+    }
+    #navbar a:hover{
+        cursor: var(--cursor-pink) 0 0, auto !important;
     }
 
  /*lists*/
