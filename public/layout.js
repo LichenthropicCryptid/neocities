@@ -102,7 +102,6 @@ const headerE1 = `
                     <div id="theme-box">
                         <button class="play-gif">Play GIFs</button>
                         <button class="stop-gif">Stop GIFs</button>
-                        <button class="toggle-gif">Toggle GIFs</button>
                         <button class="colortheme" onclick="darkmode(), location.reload()">DARK</button>
                         <button class="colortheme" onclick="lightmode(), location.reload()">LIGHT</button>
                     </div>
@@ -142,12 +141,16 @@ const footerE1 = `<footer>
 
 // Insert your sidebar HTML inside these ``. You can use HTML as usual.
 // Remove all the content inside the `` if you don't have a sidebar.
-const sidebarEl1 = 
-        `
+const sidebarEl1 = `<aside id="leftSidebar">
+        <iframe src="/pages/sidebars/leftsidebar.html" scrolling="no">
+        </iframe>
+    </aside>
             `;
 
 // Insert your sidebar HTML inside these ``. You can use HTML as usual.
 // Remove all the content inside the `` if you don't have a sidebar.
-const sidebarEl2 = 
-        `
+const sidebarEl2 = `<aside id="rightSidebar">
+        <iframe src="/pages/sidebars/rightsidebar.html" scrolling="no">
+        </iframe>
+    </aside>
 `;
