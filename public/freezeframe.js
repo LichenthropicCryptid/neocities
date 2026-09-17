@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const startBtn = document.getElementById("play-gif");
   const stopBtn = document.getElementById("stop-gif");
 
-  const freeze = localStorage?.getItem("freezeframe") ?? "on";
+  const freeze = localStorage?.getItem("freeze") ?? "on";
 
   let e;
 
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   startBtn.addEventListener("click", function () {
     e.start();
-    window.localStorage.setItem("freezeframe", "off");
+    window.localStorage.setItem("freeze", "off");
     startBtn.setAttribute("hidden", "");
     stopBtn.removeAttribute("hidden");
   });
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     } else {
       e = new Freezeframe({ trigger: false, responsive: false });
     }
-    window.localStorage.setItem("freezeframe", "on");
+    window.localStorage.setItem("freeze", "on");
     stopBtn.setAttribute("hidden", "");
     startBtn.removeAttribute("hidden");
   });
