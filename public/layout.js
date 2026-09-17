@@ -103,36 +103,18 @@ const headerE1 = `
                     </div>
                     <br/>
                     <div id="theme-box">
-                        <table class="access">
-                        <tbody> 
-                          <tr>
-                            <td>
-                        <button class="filter" onclick="crtoff(), location.reload()">CRT OFF</button>
-                            </td>
-                            <td>
-                        <button class="filter" onclick="crton(), location.reload()">CRT ON</button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                        <button class="colortheme" onclick="darkmode(), location.reload()">DARK</button>
-                          </td>
-                          <td>
-                        <button class="colortheme" onclick="lightmode(), location.reload()">LIGHT</button>
-                          </td>
-                        </tr>
-                        <tr>
-                              <td>
+
                         <button class="toggle-gif">GIF</button>
-                              </td>
-                          </tr>
+                        <button class="filter" onclick="crtoff(), location.reload()">CRT OFF</button>
+                        <button class="filter" onclick="crton(), location.reload()">CRT ON</button>
+                        <button class="colortheme" onclick="darkmode(), location.reload()">DARK</button>
+                        <button class="colortheme" onclick="lightmode(), location.reload()">LIGHT</button>
                     </div>
                     </div class="box">
                     </details>
-                    </div>
-          </div>        
+          </div>          
 	    <div id="header" style="height: 150px;">
-      </div>
+		</div>
             <div id="headerArea">
             
                     <nav id="navbar" style="margin-bottom: 10px; margin-top: 10px;">
@@ -149,7 +131,7 @@ const headerE1 = `
             </div>
         </div>
           
-    
+    </div>
 
 </header>
 `;
