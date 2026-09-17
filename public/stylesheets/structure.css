@@ -249,13 +249,13 @@
             transform: scale(2);
             cursor: var(--cursor-pink) 0 0, auto !important;
         }
-    .freeze:hover{
+    .freeze:hover   {
             cursor: var(--cursor-pink) 0 0, auto !important;
         }
-    .hidden:hover{
+    .hidden:hover   {
             cursor: var(--cursor-pink) 0 0, auto !important;
         }
-    .click:hover{
+    .click:hover    {
             cursor: var(--cursor-pink) 0 0, auto !important;
         }
 
