@@ -12,14 +12,14 @@ class FreezeImages {
 
     // Finds all images with selector class and within elements with the selected class
     //  and creates list
-    const imgList = window.querySelectorAll(
+    const imgList = document.querySelectorAll(
       `img.${this.selector}, .${this.selector} img`,
     );
     this.imgList = imgList;
 
     // Creates <style> tag for new elements
     if (!this.noCSS) {
-      const style = window.createElement("style");
+      const style = document.createElement("style");
       style.textContent = `
         .ff-container {
           display: flex;
@@ -47,7 +47,7 @@ class FreezeImages {
           opacity: 0;
           z-index: -99;
         }`;
-      window.head.appendChild(style);
+      document.head.appendChild(style);
     }
 
     // Loops through all images
@@ -56,7 +56,7 @@ class FreezeImages {
       img.className = `${this.imgCls} ff-inactive`;
 
       // Creates <canvas> of GIF and copies data of first frame of animation
-      let canvas = window.createElement("canvas");
+      let canvas = document.createElement("canvas");
       canvas.width = img.width;
       canvas.height = img.height;
       canvas.className = `${this.canvasCls} ff-active`;
@@ -108,26 +108,25 @@ class FreezeImages {
 }
 
 // Waits for page to finish loading
-window.addEventListener("readystatechange", function () {
-  if (window.readyState === "complete") {
+document.addEventListener("readystatechange", function () {
+  if (document.readyState === "complete") {
     // Initialize script
     const f = new FreezeImages({ responsive: false });
 
     // Set event listeners for all buttons
-    for (const el of window.getElementsByClassName("play-gif")) {
+    for (const el of document.getElementsByClassName("play-gif")) {
       el.addEventListener("click", () => f.start());
       window.localStorage.setItem("freeze", "off");
     }
 
-    for (const el of window.getElementsByClassName("stop-gif")) {
+    for (const el of document.getElementsByClassName("stop-gif")) {
       el.addEventListener("click", () => f.stop());
       window.localStorage.setItem("freeze", "on");
     }
 
-    for (const el of window.getElementsByClassName("toggle-gif")) {
+    for (const el of document.getElementsByClassName("toggle-gif")) {
       el.addEventListener("click", () => f.toggle());
     }
   }
 });
-
 
