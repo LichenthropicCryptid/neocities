@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 isDragging = false;
                 el.style.cursor = 'grab';
               });
-
+            
   // add your own javascript code here...
 
 
@@ -176,4 +176,4 @@ const sidebarEl1 =
 // Remove all the content inside the `` if you don't have a sidebar.
 const sidebarEl2 = 
         `
-`;
+`;})
