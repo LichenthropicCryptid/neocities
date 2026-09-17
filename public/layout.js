@@ -83,30 +83,6 @@ const nesting = getNestingString();
 
 // Insert your header HTML inside these ``. You can use HTML as usual.
 const headerE1 = `
-<script>
-            document.querySelectorAll('.draggable').forEach(el => {
-              let isDragging = false;
-              let offsetX, offsetY;
-  
-              el.addEventListener('mousedown', (e) => {
-                isDragging = true;
-                offsetX = e.clientX - el.offsetLeft;
-                offsetY = e.clientY - el.offsetTop;
-                el.style.cursor = 'grabbing';
-              });
-  
-              document.addEventListener('mousemove', (e) => {
-                if (!isDragging) return;
-                el.style.left = (e.clientX - offsetX) + 'px';
-                el.style.top = (e.clientY - offsetY) + 'px';
-              });
-  
-              document.addEventListener('mouseup', () => {
-                isDragging = false;
-                el.style.cursor = 'grab';
-              });
-            }
-              </script>
 <header>
 	<div class="container" id="header">
 		<a id="top"></a>
@@ -115,7 +91,7 @@ const headerE1 = `
 		<div>
 		<details class="hidden">
                     <summary>
-                    <div id="access-fairy" class="draggable">
+                    <div class="access-fairy">
                         <img src="https://file.garden/anb5fb-RvmNCRWUD/misc/tumblr_inline_o14jlnyNGa1tjuw11_500.gif" title="accessability fairy" alt="accessability menu" width="100px">
                     </div>
                     <br/>
