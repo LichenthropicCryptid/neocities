@@ -176,7 +176,7 @@
     }
 
     .box {
-        background-color: #13092D;
+        background-color: #13092D opacity 50%;
         border: .15rem dashed #2E520B; 
     }
     
