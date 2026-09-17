@@ -110,8 +110,8 @@ const headerE1 = `
                         <button class="colortheme" onclick="lightmode(), location.reload()">LIGHT</button>
                     </div>
                     </div class="box">
-                    </details>
-                    </div>
+      </details>
+    </div>
           </div>          
 	    <div id="header" style="height: 150px;">
 		</div>
