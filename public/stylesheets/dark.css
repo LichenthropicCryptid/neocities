@@ -155,22 +155,22 @@
         color: green; 
     }
 
-    .stop-gif {      
+    #stop-gif {      
         color:white;
         background-color: black;
     }
     
-    .stop-gif:hover {
+    #stop-gif:hover {
         box-shadow: 0 0 1.5em 0 limegreen;
         color: green;  
     }
 
-    .play-gif {      
+    #play-gif {      
         color:white;
         background-color: black;
     }
     
-    .play-gif:hover {
+    #play-gif:hover {
         box-shadow: 0 0 1.5em 0 limegreen;
         color: green; 
     }
