@@ -95,9 +95,9 @@ const headerE1 = `
 		<details class="hidden">
                     <summary>
                     <div class="accessability">
-                    ---
-                    ---
-                    ---
+                    -<br/>
+                    -<br/>
+                    -<br/>
                     </div>
                     </summary>
                     <br/>
