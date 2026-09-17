@@ -100,11 +100,11 @@ class FreezeImages {
       let imgNewCls = img.className.includes("ff-inactive")
         ? "ff-active"
         : "ff-inactive";
-        window.localStorage.setItem("freeze", "on");
+        window.localStorage.setItem("freezeframe", "on");
       let canvasNewCls = img.className.includes("ff-inactive")
         ? "ff-inactive"
         : "ff-active";
-        window.localStorage.setItem("freeze", "off");
+        window.localStorage.setItem("freezeframe", "off");
 
       img.className = `${this.imgCls} ${imgNewCls}`;
       img.nextSibling.className = `${this.canvasCls} ${canvasNewCls}`;
