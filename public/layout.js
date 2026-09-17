@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const wrapperElement = document.querySelector(".my-wrapper"); // you might have to change this selector to something like .my-wrapper
     if (wrapperElement) {
       wrapperElement.insertAdjacentHTML("afterbegin", sidebarEl1);
-      wrapperElement.insertAdjacentHTML("beforeend", sidebarEr1);
+      wrapperElement.insertAdjacentHTML("beforeend", sidebarEl2);
     }
 
     initActiveLinks();
@@ -141,16 +141,1550 @@ const footerE1 = `<footer>
 
 // Insert your sidebar HTML inside these ``. You can use HTML as usual.
 // Remove all the content inside the `` if you don't have a sidebar.
-const sidebarEl1 = `<aside id="rightSidebar">
-        <iframe src="/pages/sidebars/rightsidebar.html" scrolling="no">
-        </iframe>
-    </aside>
+const sidebarEl1 = `<aside id="leftsidebar" style="margin-right: 0.25rem;">
+
+        <button class="toggle-gif">GIFS</button>
+
+         <h2 style="text-align:center;" id="status">   Status:<br/>
+     <a href="https://www.imood.com/users/lichenthropic" target="_blank">
+     <img src="https://moods.imood.com/display/uname-lichenthropic/imood.gif" alt="The current mood of lichenthropic at www.imood.com" border="0" width="88px;"> 
+     </a></h2>
+<div class="box"> 
+<a href="../feeds" target="_parent">
+<p style="text-align:center;"><img src="https://file.garden/anb5fb-RvmNCRWUD/buttons/rss.png" alt="RSS Feed logo"></p>
+</a>
+<!-- start sw-rss-feed code --> 
+<script type="text/javascript"> 
+rssfeed_url = new Array(); 
+rssfeed_url[0]="https://status.cafe/users/lichenthropic.atom"; rssfeed_url[1]="https://lichenthropic.neocities.org/rss.xml"; rssfeed_url[2]="https://lichenthropic-cryptid.tumblr.com/tagged/feed/rss"; rssfeed_url[3]="https://bsky.app/profile/did:plc:pcqej6eh2hqyw3djebatqw4c/rss";  
+rssfeed_frame_width="100%"; 
+rssfeed_frame_height="350"; 
+rssfeed_scroll="on"; 
+rssfeed_scroll_step="5"; 
+rssfeed_scroll_bar="off"; 
+rssfeed_target="_blank"; 
+rssfeed_font_size="14"; 
+rssfeed_font_face="Courier New"; 
+rssfeed_border="off"; 
+rssfeed_css_url=""; 
+rssfeed_title="on"; 
+rssfeed_title_name="FEED"; 
+rssfeed_title_bgcolor="#000"; 
+rssfeed_title_color="#fff"; 
+rssfeed_title_bgimage=""; 
+rssfeed_footer="off"; 
+rssfeed_footer_name="rss feed"; 
+rssfeed_footer_bgcolor="#fff"; 
+rssfeed_footer_color="#333"; 
+rssfeed_footer_bgimage=""; 
+rssfeed_item_title_length="15"; 
+rssfeed_item_title_color="#fff"; 
+rssfeed_item_bgcolor="#000"; 
+rssfeed_item_bgimage="https://file.garden/anb5fb-RvmNCRWUD/backgrounds/geocities44.jpg"; 
+rssfeed_item_border_bottom="on"; 
+rssfeed_item_source_icon="off"; 
+rssfeed_item_date="on"; 
+rssfeed_item_description="on"; 
+rssfeed_item_description_length="300"; 
+rssfeed_item_description_color="#fff"; 
+rssfeed_item_description_link_color="#ff0000"; 
+rssfeed_item_description_tag="off"; 
+rssfeed_no_items="20"; 
+rssfeed_cache = "86db238dcd562b16e9a90a1475d242ee"; 
+</script> 
+<script type="text/javascript" src="//feed.surfing-waves.com/js/rss-feed.js"></script> 
+<!-- The link below helps keep this service FREE, and helps other people find the SW widget. Please be cool and keep it! Thanks. --> 
+<div style="color:#000;font-size:10px; text-align:right; width:230px;">powered by <a href="https://surfing-waves.com" rel="noopener" target="_blank" style="color:#000;">Surfing Waves</a></div> 
+<!-- end sw-rss-feed code -->
+</div>
+<br/>
+
+<a href="https://lichenthropic.neocities.org/popout-page/chatbox.html" target="_blank">
+<button class="chatbox" style="text-align:center">
+<img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/buttons/chat-now-lichenthropic.gif" alt="chat now button" width="50%">
+</button>
+</a>
+
+<div class="box">
+    <h3 style="text-align:center;">Smoking:</h3>
+    
+    <h4 style="text-align:center;"><a href="https://www.allbud.com/marijuana-strains/sativa-dominant-hybrid/blood-orange" target="_blank" title="allbud link"><strong>Blood Orange</strong></a></h4>
+    
+    <h3 style="text-align:center;">Listening:</h3> 
+    
+    <h4 style="text-align:center;"><a href="https://www.youtube.com/thebootlegboy2" target="_blank" title="youtube link"><strong>The Bootleg Boy 2</strong></a></h4>
+    
+    <h3 style="text-align:center;">Watching:</h3> 
+    
+    <h4 style="text-align:center;"><strong>Bones</strong></h4>
+    
+    <h3 style="text-align:center;"> Reading:</h3> 
+    
+    <h4 style="text-align:center;"><a href="https://app.thestorygraph.com/books/d828c1b2-785b-4f56-bda7-6e820b3f0777" target="_blank" title="storygraph link"><strong>Fable for the End of the World - Ava Reid</strong></a></h4>
+    
+    </div>
+    
+    <h2 style="text-align:center">TOP SECRET</h2>
+    
+    <div class="box">
+    
+        <button class="do-not-click">
+        <a href="https://lichenthropic.neocities.org/pages/OnePot.html#One-Pot" target="_blank">
+        <img class="no-click" src="https://file.garden/anb5fb-RvmNCRWUD/buttons/no.gif" alt="do-not-click" border="0" width="200rem;">
+        </a>
+        </button>
+    
+    </div>
+    
+    <h2 style="text-align:center"> What do you think<BR/> of my site?</h2>
+    
+    <div class="box" style="text-align:center;">
+    
+    <a href="/pages/guestbook.html" target="_parent">
+    
+    <img class="freeze" src="https://cyber.dabamos.de/88x31/guestbook-button.gif" title="Link to GUESTBOOK" alt="GUESTBOOK" style="width:125px;" ></a>
+    
+    <a href="https://neocities.org/site/lichenthropic" target="_blank">
+        <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/buttons/neocitiesrainbow.gif" title="Link to Neocities profile" alt="Neocities button" style="width:125px;">
+    </a>
+    </div>
+    <h2 style="text-align:center;"> LIKES </h2>
+    <div class="box" style="text-align:center;">
+    <ws-widget type="like" iid="6130"></ws-widget>
+    </div>
+    
+        <h2 style="text-align:center;">♡</h2>
+    
+    <div class="box">
+    
+            <img src="https://file.garden/anb5fb-RvmNCRWUD/buttons/this%20user%20is%20disabled.png" style="width:123px;" title="this user is disabled" alt="this user is disabled button">
+            
+            <a href="https://donatemask.ca/request/" target="_parent;">
+            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/buttons/button-maskup-pink.gif" style="width:123px;" title="Link for FREE MASKS in Canada!!!" alt="mask up stay safe">
+            </a>
+        
+            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/buttons/pothead.gif" style="width:123px;" title="Pothead" alt="A button with a cannabis leaf and the word pot head">
+        
+            <img src="https://file.garden/anb5fb-RvmNCRWUD/buttons/dark-mode.gif" style="width:123px;" title="made for dark mode" alt="made for dark mode">
+        
+            <a href="https://arab.org/click-to-help/palestine/" target="_parent;">
+            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/stamps/fromtherivertothesea.gif" style="width:123px;height:45px;" title="Clicks for Palestine" alt="palestine flag clicks for palestine button with the text from the river to the sea palestine will be free">    
+            </a>
+            
+            
+        
+    </div>
+    <div class="box">
+                <details class="hidden">
+                <summary>
+                        
+                            <h2 style="text-align:center">BANNERS</h2>
+                        
+                </summary>            
+                        <!--BLANK BANNER
+                            <img src="  " title="  " alt="  " style="width:15rem">
+                        -->
+                    <div class="blinkie-marquee">
+                    
+                        <div class="marquee" data-pause="true">
+                    
+                            <div class="marquee-items">
+                            
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/autism%20flames.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/acab-sirens.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/abductable.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/autistic%20swag.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/bite%20things.jpg">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/ancient%20internet%20creature.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/autistic%20hearts.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/autistic.jpeg">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/ad%20blocker.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkie-still-loading.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/acab.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/be%20gone%20do%20crime.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/autism%20autism.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/adhd.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/autism!.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/artist.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/nightcoder.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/marijuana.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/fuckgender.png">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/punkinside.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/burn%20it.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/playlist.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/disclaimer.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/inuyasha.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/homo.gif">
+                            
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/lotr.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/fuckfatphobia.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/onering.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/freepalestine.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/ancom.png">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/digitalfreedom.png">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/handcoded.png">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/homosexual-behaviour.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/my-chem-romance.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/fake-gamer.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/skullnbones.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/palestineflagblinkie.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/transrightsarehumanrights.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/badwebsitedesign.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/punchanazi.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/begaydocrime.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/autismblinkie.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/fuckterfs.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/teethblinkie.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/imwatchingyou.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/science.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/autisticswag.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/stabafascist.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/nevertrustarepublican.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/eyesblinkie.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/teethblinkie2.gif">
+                            
+                        </div>
+                        
+                        </div>
+                    
+                        <div class="marquee" data-direction="right" data-pause="true">
+                    
+                            <div class="marquee-items">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/noblinkie.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/genderlesscreature.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/anarchist.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/revolution.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/fucklandlords.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/nogodsnomasters1.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/bewareblinkie.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/thenperish.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/ihatehtml.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/godmycelium.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/denydefenddeposeblinkie.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/itwillaffecteveryone.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/bareyourteeth.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/autisticswag1.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/werewolffag.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/encouragehomosexualities.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/neocitiesuser.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/lemons.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blm3.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/greenclovers.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/corvidenthusiast.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/piracyisfunandfree.gif">
+                            
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/codingiscool.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/abolishthepolicestate.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/ootowl.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/thetruthisoutthere.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/fuckelon.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/cringebutfree2.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/hotashell.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/begonefed.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/yummysubstances.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/magichappens.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/donotpet.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/candleblinkie.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/wigglybones.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/adultswim.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/dvdslot.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blm2.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/nothinggoodafter2am.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/plantenthusiast.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/glad2bgay.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/dontpanic.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/dishwashersafe.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/awoooblinkie.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/polyam1.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/whimsy.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/imaginebeingcis.gif">
+                        
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/waluigitime.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/purplesparkleblinkie1.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/ditto.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/waterblinkie.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/smokingwithsatan.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/fuckaiart.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/ihatefakepngs.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/redacted.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/sameasiteverwas.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/fuckilovegarlic.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/unknowable.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/lycanthropy.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/imnonverbal.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/borntodieworldisafuck.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/possums.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/actfaggy.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/iwishgaypeoplewerereal.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/wikipedia.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/theblackparade.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/breaksomerules.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/nightperson.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/bewarethemoon.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/woofwoof.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/compelledtodisobey.gif">
+                            
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/allowyourselfcomfort.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/isthereafullmoon.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/ipiratemovies.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/teeth.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/fallingsparklediv.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/sorry4thepartyrockin.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/paint-me-like-blinkie-classical.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/i-love-the-moon-blinkie.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/feed-ur-digital-pets-blinkie-green.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/cd-lover-blinkie.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/bury-me-in-html-blinkie-red.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/plantpot.BKliSOP6.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/disabledpride.D17lhE2f.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/representation-matters.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/e34.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/e71.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/g19.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/v77.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/y31.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/made-of-stardust.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/back%20hurts.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/this%20user%20is%20confused.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/transsexual.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/killableism.gif">
+                            
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/y2.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/chronicpain.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/boydyke.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/testosterone%20now.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/mcr%20disks.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/skasnotdead.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/detonator.gifv">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/digital%20artist.gifv">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/iheartmymobilityaid.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/getfaggier.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/transguy.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/lancered.gifv">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/trad%20artist.gifv">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/user%20has%20adhd.pnj">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/phys%20disability.png">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/user%20is%20autistic.pnj">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/anti%20ai.pnj">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/barbed.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/tamagotchi.png">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/i%20love%20dumb%20men.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/https-www-deviantart-com-radiotrophic-art-AUTISM-4-AUTISM-blinkie-F2-U-953510384.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/d47.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/ba%20thrift.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkiesCafe-6B.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkiesCafe-xG.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/tumblr_a5b6d35bc8b1c89e64033355ccba4b79_c0671326_250.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/tumblr_static_a1qjdg84j8oogk44socc08ssw.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/sib.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/glowinthedark.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/vaccinated.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/microwaveable.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/under_const.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkybeadsperverted.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/moanacnet-dogbone.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/darkest-destruction_clickheretoenter.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkie%2051.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkie%20d24.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkie%20a15.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkie%2062.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkie%20f27.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkie%20d95.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkie%20wizard%20swears.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/f60.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkie%20d100.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkie%20dope%20smoking%20moron.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkie%20indica%202.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/g107.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/g44.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkie%20f34.gif">
+                            
+                        </div>
+                        
+                        </div>
+                        
+                        <div class="marquee" data-pause="true">
+                        
+                            <div class="marquee-items">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkie%20everyone%20antiai.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkie%20pondering%20orb.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkie%20weed%20smoking%20gf%202.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/g127.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/g33.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/x23.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/z29.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/s3.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/l11.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/l4.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/n10.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/u8.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/w8.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/v9.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/y30.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/h4.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/k14.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkiesCafe-fire.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkiesCafe-shroom.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkiesCafe-twitch.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/we-didnt-start-the-fire.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/breakfast.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/gamevube.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/game_over.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/sonic.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/ec3cf03b.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/go-digital.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/boy.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/bluescreen.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/know_html.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/i-love-my-camera.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/computa.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/source.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/pirate.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/click.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/gaycomputer.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/alone.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/i-gaze-at-stars.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/anti.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/never-solved-rubix-cube.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/B8C8FF30-B29B-42F4-912D-AFE6770062B3.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/tumblr_1b425fa64be6646a3625ed19ca7feb65_61be73fc_1280.jpg">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/FC31F99A-C3F1-436D-8684-3EF84EEA3F00.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/dark-forest.png">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/DD0D8CF6-2F5C-4C3A-89D0-236CE821FB71.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/paper-clip-banner.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/IMG_6528.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/rainbow-flare.gif">
+                            
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/sonic%20blink.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/mcspace.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/mcclouds.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/sproutsdivider.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/leafflower.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/open%2024h.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/i-hate-mornings.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/uh-oh-stinky.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/self-expression-not-a-crime.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/truth-url.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/gaze-at-stars.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/another-internet-loser.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/this-user-is-trains.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/banner.jpg">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/mp3love.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/hellsitemember.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/codewontwork.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/rightclick.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/doingmybest.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/meds.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/drink-water.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/toomanytabs.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/mimimimi.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/imNotSupposedToBeCodingRn.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/dablinkie.gif">
+                            
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/piracy.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/divider_2.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/cringsisdead.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/take-a-nap.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/protected-by-witchcraft.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/peace.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/horns-n-fangs.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/iblockads.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/transrightsbaby.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/need-some-sleep.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/embrace-the-moon.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/pika-banner.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/fn.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/freepalestine2.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/fi.png">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/piracyparty.png">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/b3.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/b19.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkies-Cafe-rp.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkies-Cafe-q-N.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkies-Cafe-m-L.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/connect.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/werewolf.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/kirbyippee.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/worm.gif">
+                            
+                        </div>
+                        
+                        </div>
+                        
+                        <div class="marquee" data-direction="right" data-pause="true">
+                        
+                            <div class="marquee-items">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/insomniacblinkie.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/bd95f3eb-b28c-4ca9-8f18-0c138f73b35c.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/tumblr_m29ujddbjE1qid2nw.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/ace-fire.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/chronic-migraines.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/ow-my-bones.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/miracle-maker.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/stressed.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/take-me-away.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/take-your-meds.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/bro%20ur%20sparkling.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/kirby-ow.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/this-user-is-time-blind.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/autism-tbh.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/kindagaytbh.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/werewolf-purple.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/dewdrop-drinker.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/command.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/crash%20landed.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/continueandsave.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/thrifting.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/vampiremoney.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blink%20(2).gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blnk%20(8).gif">
+                       
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blnk%20(10).gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blnk%20(16).gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blnk%20(44).gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/there-is-no-spoon.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blnk%20(46).gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blnk%20(11).gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/drink-some-water.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/cottoncandyblink%20(10).gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/censorship-kills-creativity.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/cottoncandyblink%20(3).gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkiefyle%20(27).gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkiefyle%20(11).gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkiefyle%20(58).gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/pailmail%20(7).gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/pailmail%20(3).gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/yummybread%20(17).gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/jinkiesblinkies%20(30).gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/growingblinkie.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/friend_to_bugs.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/woodlandblinkie.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/index6.gif">
+                            
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/lightly-toasted.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/lpui6r.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/wxfppd.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/tumblr_99ed52efde9954c0927f679a1124319f_cc4b60cd_250.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/db33ba7c.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/d100.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/e5.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/e82.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/wd40.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/e62.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blnk%20(12).gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/otherworldly-creature.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkies6.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/dumbassatwork.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/x13.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/pondering.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/piracyis%20fun%20and%20free.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/dffyvdc-148d6949-b052-4158-84b2-c168e20ba774.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/bongs.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/plaguedbyvisions_blinkie.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/checkparasocial_blinkie.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/BLINKIEQUEERJOY.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/transblinkie.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkiecannotbekilled.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkielovecomments.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkieproud.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkierespect.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkiesmile.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/nap.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/trangenbder.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/transrights.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/fullmoontonight_blinkie.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/boo_purple_blinkie.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/I_m_a_bad_dog.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/illegal.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/dogboy-rights.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/fuckice.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/nokings.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blacklivesmatter.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/notepadmade.png">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/abortionrights.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/acabnod.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/reality.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/missflash.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/freak.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/malware.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/snail.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/cane.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/imsleepy.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/bats.gif">
+                            
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/soupenjoy.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/queergender.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/transmasc.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/cisoweme.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/transphobes.gif">
+                            
+                        </div>
+                            
+                        </div>
+                            
+                        <div class="marquee" data-pause="true">
+                        
+                            <div class="marquee-items">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/galaxy.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/worksonmy.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/pain.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/titfree.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/scream.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/cozy.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/pirate.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/busybrain.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/neckhurt.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/pasta.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/pika-pokemon.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/community.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/braincells.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/welcome.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/sleepytime.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/pikachu.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/nauseous.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/KoolAidBlinkieBar4.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/uP8nSvW.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/tumblr_ovh60hHcNA1wugl5wo2_250.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/tumblr_p27pzqm2mk1tymkppo2_250%20(1).gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/steal-this-blinkie.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/mBA2f1o.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/vi16.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/tumblr_p57xkio1vQ1s1jk0no1_250.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/froggys.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/rightclickWWA.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkpingas.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkmischief.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/I-LOVE-MEN.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/TransmascSwag.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/less-than-20-cash.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/BYHA5ZXPNBG57WPHFQD5ZH62L4AQ567V.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/eye-drops.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/weed-leaf-banner.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/J2JRQT4SKTYDJOJM33QCVWKIWR6OARIK.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/PCCCCGN4WBLHMMWUEGHVEP4HXI5NZNJI.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/DQT256VV2ZU636FLCTOSTI2J2ZJXVHVK.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/KCKGMMMGYONRTAHNVRFZHCRPPDNVMWSN.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/one-piece-banner.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/make_it_stop.png">
+                       
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/dont-believe-your-thoughts.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/chao-garden.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/wear-your-mask.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/silly-star.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/404.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/click%20for%20love.gifv">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/local-loser-boy.gifv">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/send-teeth.gifv">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/smoke-with-satan.gifv">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/menacing-youth.gifv">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/fire-divider.gifv">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/am-i-a-person.gifv">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/anon-says.gifv">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/cds.gifv">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/chumbawumba.gifv">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/comp-brrr.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/take-ur-meds-king.gifv">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/no-ai-any-capacity.pnj">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/ai-free-fic.pnj">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/handle-with-care.gifv">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/tumblr-boy.gifv">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/tattooed-and-pierced.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/heart-masculinity.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/uncontained-anomoly.gifv">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/heart-werewolf-fags.gifv">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/transgender-werewolf.gifv">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/hold-on.gifv">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/flesh%20and%20blood.gifv">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/unethical-nonbinary.gifv">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/gamefag.gifv">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/fulltime-boytoy.gifv">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/youve-been-gamecubed.gifv">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/cloudy-head.gifv">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/cathair2.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/idkhowtocode.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/autism4autism.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/codewontwork.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/forgottosave.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/zeldabannder.pnj">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/yellowgreenqueerjoy.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/greenbrownweirdbitches.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blackrainboworb.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/greenbrownfrogs.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/greenbluewrong.jpg">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/browngreenmoth.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/bluegreenwindows.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blackwhitebiteme.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/redblackbluebite.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/antiracist2.gif">
+                            
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/cops.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/bodypos.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/poly.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/genderweird.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/aries-moon.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/divinegay.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/tumblr_55ff376afb203a29a88d76454d4553c4_92e761f6_400.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/tumblr_34b9564beea1c26fb7ce4374a9efce91_6da8e9e3_250.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/biohazard.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/pride_trans_notxt.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/tumblr_64e99ba892c4aa8bc30fc0564bf65e45_7b25c136_250.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/tumblr_3a1ecb99c7ddd6b5ef5fcf6b99a4107a_ef831366_250.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/tumblr_120704461f1ec735bb17c65f1b279386_5d6fe05a_250.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/tumblr_e07e1255b86a0e1f07a9bc9ebfa0fe36_8a2959a4_250.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/eyest.webp">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkie-cryptid.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/blinkie-goop.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/b-anarchist.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/b-adultswim.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/b-atmylimit.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/b-caffeinefreak.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/b-bonehurtjuice.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/b-coveredinblood.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/b-chronicallyill.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/b-gendersilly.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/b-grossnasty.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/b-nedflanders.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/b-pajamas.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/b-reality.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/b-skull.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/b-whytired.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/b-toxicwaste.gif">
+
+                            <img class="freeze" src="https://file.garden/anb5fb-RvmNCRWUD/banners/b-transrightsbby.gif">
+                            
+                        </div>
+                        
+                        </div>
+                        
+                    </div>
+                </details>
+                </div>
+    <h2 style="text-align:center;"> \OwO/ </h2>
+    
+    <div class="ad-box" style="text-align:center">
+    
+        <iframe class="ad" src="https://nvlk.dimden.dev/" name="neolink"></iframe>
+        
+        <iframe class="ad" src="https://nvlk.dimden.dev/" name="neolink"></iframe>
+        
+        <iframe class="ad" src="https://nvlk.dimden.dev/" name="neolink"></iframe>
+        
+        <iframe class="ad" src="https://nvlk.dimden.dev/" name="neolink"></iframe>
+        
+        <iframe class="ad" src="https://nvlk.dimden.dev/" name="neolink"></iframe>
+        
+        <iframe class="ad" src="https://nvlk.dimden.dev/" name="neolink"></iframe>
+        
+        <iframe class="ad" src="https://nvlk.dimden.dev/" name="neolink"></iframe>
+        
+        <iframe class="ad" src="https://nvlk.dimden.dev/" name="neolink"></iframe>
+        
+    </div>
+
+     <style>
+
+@keyframes scroll-r2l {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.scroll-r2l {
+    animation: scroll-r2l 420s linear infinite;
+}
+
+@keyframes scroll-l2r {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.scroll-l2r {
+    animation: scroll-l2r 420s linear infinite;
+    }
+        
+.marquee    {
+display: flex;
+flex-wrap: nowrap;
+box-sizing: unset;
+height: 3rem;
+overflow: hidden;
+width: 15rem;
+border: .25rem solid black;
+}
+
+.marquee-items   {
+display: flex;
+flex-shrink: 0;
+height: 100%;
+min-width: 100%;
+position: relative;
+}
+
+.marquee-items > * {
+margin: 0;
+height: 2rem;
+}
+
+
+.paused {
+    
+    -webkit-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+    -o-animation-play-state:paused;
+    animation-play-state:paused;
+    
+    }
+</style>
+
+<script>
+function handleMarquee() {
+// Get all marquees on page
+const marquees = document.querySelectorAll(".marquee");
+
+// Loop through each marquee
+marquees.forEach((marquee) => {
+// Get the main container and clone it
+// And then add the clone to the marquee
+const container = marquee.querySelector(".marquee-items");
+let clone = container.cloneNode(true);
+marquee.appendChild(clone);
+// Finally, add the scroll class at the same time so there is no gaps in the scrolling effect
+// We also determine if the items should be scrolling right-to-left instead by default, and adjust the marquees flex direction and which animation the containers use if so
+if (marquee.dataset.direction == "right") {
+marquee.style.flexDirection = "row-reverse";
+container.classList.add("scroll-l2r");
+clone.classList.add("scroll-l2r");
+} else {
+container.classList.add("scroll-r2l");
+clone.classList.add("scroll-r2l");
+}
+
+// !! NEW STUFF FOR PAUSING; COPY BELOW
+
+// First we check for the new data attribute to see if pausing this marquee is allowed:
+if (marquee.dataset.pause == "true") {
+
+// If pausing is allowed, we simply add some mouse events for when the mouse
+// enters and leaves the marquee that add and remove our new 'paused' class to
+// the .marquee-items containers
+marquee.onmouseover = e => {
+container.classList.add("paused");
+clone.classList.add("paused");
+}
+marquee.onmouseout = e => {
+container.classList.remove("paused");
+clone.classList.remove("paused");
+}
+}
+
+// !! END NEW STUFF FOR PAUSING
+});
+}
+handleMarquee();
+</script>   
+<style>
+
+body{
+    width: 100%;
+    height: 5000px;
+    border-radius: 5rem;
+}
+
+* {
+    
+cursor: var(--cursor) 0 0, auto !important;
+
+}
+
+#no-click   {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: .25rem;
+    border-color: black;
+    box-shadow: 0 0 1rem 0 black;
+}
+
+ .do-not-click {
+        margin: 0 auto;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+        background: transparent;
+        border: none;
+    }
+    
+    .no-click:hover {
+        
+        box-shadow: 0 0 5rem 0 red;
+        
+    }
+
+.chatbox  {
+margin: 1rem 4.5rem;
+flex: inline;
+align-content: center;
+color: transparent;
+background-color: transparent;
+border: transparent;
+width: 20rem;
+position: relative;
+}
+
+.chatbox:hover  {
+box-shadow: 0 0 5rem 0 red;
+background: darkred;
+width: 9rem;
+}
+
+</style>
+
+<script>
+
+    function lightmode() {
+        document.getElementById('colortheme').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/light.css');
+    localStorage.setItem('theme', 'lightmode');}
+
+    function darkmode() {
+        document.getElementById('colortheme').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/dark.css');
+    localStorage.setItem('theme', 'darkmode');}
+        
+    if(localStorage.getItem('theme') == 'lightmode'){
+    lightmode();
+    }
+    
+    if(localStorage.getItem('theme') == 'darkmode'){
+    darkmode();
+    } 
+    
+</script>
+</aside> 
             `;
 
 // Insert your sidebar HTML inside these ``. You can use HTML as usual.
 // Remove all the content inside the `` if you don't have a sidebar.
-const sidebarEr1 = ` <aside id="leftSidebar">
-        <iframe src="/pages/sidebars/leftsidebar.html" scrolling="no">
-        </iframe>
-    </aside>
+const sidebarEl2 = `<aside id="rightsidebar">
+             
+        <button class="toggle-gif">GIFS</button>
+                
+            <h2 style="text-align:center;">Tunes</h2>
+                
+                <div class="box" id="boombox-container">
+                    <a HREF="https://lichenthropic.neocities.org/popout-page/mp3" onClick="return popup(this, 'boombox')">
+                    <button class="mp3player-button">
+                        BOOMBOX
+                    </button>
+                    </a>
+
+                        <!--REPLACE WITH BOOMBOX ART-->
+                            <img id="mp3-boombox" src="https://file.garden/anb5fb-RvmNCRWUD/my-art/IMG_2894.png">
+                        <!--REPLACE WITH BOOMBOX ART-->
+           
+                </div>
+                
+                <h2 style="text-align:center;">It's 420 somewhere!</h2> 
+             
+            <div class="box" id="date-time">
+            
+                <p style="text-align:center;">
+                
+                   <iframe src="https://free.timeanddate.com/clock/iakw1nd7/n1091/tlca/fn8/fs16/fc090/tc000/pct/ftb/bas5/bat7/bac390/pa10/tt0/tw1/tm1/td2/th2/ta1/tb4" frameborder="0" width="192" height="65" allowtransparency="true"></iframe>
+
+
+                </p>
+                
+            </div>
+            
+                <h2 style="text-align:center;">Take a toke, you deserve it</h2>
+            <div class="box">
+                    <ws-widget type="weather" iid="4230" width="90%" height="90%"></ws-widget>
+            
+            </div>
+            
+                <h2 style="text-align:center;">The MOON is watching over you </h2>
+                
+            <div class="box" style="text-align:center;">
+            
+            <ws-widget type="moon" id="moon" iid="4229" embed="iframe" width="90%"></ws-widget>   
+            
+            </div>
+            <h2 style="text-align:center;">VISITORS</h2>
+            <div class="box" style="text-align:center">
+            <!--BEGIN HIT-COUNTER.NET CODE-->
+            <a href="http://www.hit-counter.net"><img src="http://www.hit-counter.net/counter.php?action=count&style=crt&padding=10&id=lichenthropic.neocities" alt="Hit counter" border="0"></a>
+            <!--END HIT-COUNTER.NET CODE-->
+
+            </div>
+            
+            <h2 style="text-align:center">WEB-RINGS</h2>
+            
+            <div class="box">
+            
+                <p style="text-align:center">
+                
+                        <map name="noaimini7b">
+                        
+                            <area href="https://baccyflap.com/noai/?rnd" shape="rect" coords="30,6,144,54" target="_blank" alt="no ai webring random" title="no ai webring random">
+                            
+                            <area href="https://baccyflap.com/noai/?prv&s=ccl" target="_top" shape="rect" coords="6,12,24,54" alt="previous" title="previous">
+                            
+                            <area href="https://baccyflap.com/noai/?nxt&s=ccl" target="_top" shape="rect" coords="150,12,168,54" alt="next" title="next">
+                        </map>
+                        
+                    <img style="width:176px;image-rendering:pixelated" usemap="#noaimini7b" src="https://baccyflap.com/noai/miniwidget7.gif" alt="a green-on-black grid with illuminated parts that spell out NO AI / WEBRING and two animated green arrows pointing left and right, bobbing up and down">
+                    
+                </p> 
+                
+            </div> 
+            
+            <h2 style="text-align:center;">
+            
+            Welcome to the <br/>WORLD WIDE WEB
+            
+            </h2>
+               
+            <div class="box">
+            
+                <img class="freeze" id="globe" src="https://file.garden/anb5fb-RvmNCRWUD/misc/aniglobe.gif">
+                        
+             </div>
+             
+             
+                                    
+            <h2 style="text-align:center;"> \OwO/ </h2>
+            
+            <div class="ad-box" style="text-align:center">
+            
+                <iframe class="ad" src="https://nvlk.dimden.dev/" name="neolink"></iframe>
+                
+                <iframe class="ad" src="https://nvlk.dimden.dev/" name="neolink"></iframe>
+                
+                <iframe class="ad" src="https://nvlk.dimden.dev/" name="neolink"></iframe>
+                
+                <iframe class="ad" src="https://nvlk.dimden.dev/" name="neolink"></iframe>
+                
+                <iframe class="ad" src="https://nvlk.dimden.dev/" name="neolink"></iframe>
+                
+                <iframe class="ad" src="https://nvlk.dimden.dev/" name="neolink"></iframe>
+                
+                <iframe class="ad" src="https://nvlk.dimden.dev/" name="neolink"></iframe>
+                
+                <iframe class="ad" src="https://nvlk.dimden.dev/" name="neolink"></iframe>
+                
+            </div>
+            
+          
+        </aside>
 `;
