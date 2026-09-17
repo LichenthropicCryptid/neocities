@@ -166,7 +166,7 @@
     
     /*draggable*/
 
-    .draggable:hover{
+    .draggable:hover    {
             cursor: var(--cursor-pink) 0 0, auto !important;
         }
         /*clouds*/
@@ -188,9 +188,6 @@
         /*clouds*/
     
     /*draggable*/
-    li a:hover{
-        cursor: var(--cursor-pink) 0 0, auto !important;
-    }
     #mp3-player  { 
         margin: 0 auto;
         height: 100%; 
@@ -248,17 +245,17 @@
         transition-timing-function: ease;
     }
 
-        .thumbnail:hover {
+    .thumbnail:hover {
             transform: scale(2);
             cursor: var(--cursor-pink) 0 0, auto !important;
         }
-        .freeze:hover{
+    .freeze:hover{
             cursor: var(--cursor-pink) 0 0, auto !important;
         }
-        .hidden:hover{
+    .hidden:hover{
             cursor: var(--cursor-pink) 0 0, auto !important;
         }
-        .click:hover{
+    .click:hover{
             cursor: var(--cursor-pink) 0 0, auto !important;
         }
 
