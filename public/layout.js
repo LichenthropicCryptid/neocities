@@ -129,10 +129,10 @@ const headerE1 = `
                     </div>
                     </div class="box">
                     </details>
-          </div>
+                    </div>
           </div>        
 	    <div id="header" style="height: 150px;">
-		
+      </div>
             <div id="headerArea">
             
                     <nav id="navbar" style="margin-bottom: 10px; margin-top: 10px;">
@@ -149,7 +149,7 @@ const headerE1 = `
             </div>
         </div>
           
-    </div>
+    
 
 </header>
 `;
