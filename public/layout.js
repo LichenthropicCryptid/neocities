@@ -95,11 +95,15 @@ const headerE1 = `
 		<details class="hidden">
                     <summary>
                     <div class="accessability">
-                    ACCESSABILITY
+                    ---
+                    ---
+                    ---
                     </div>
                     </summary>
                     <br/>
                     <div id="theme-box">
+                <h5>ACCESSABILITY</h5>
+
                         <button class="toggle-gif">GIF</button>
                         <button class="filter" onclick="crtoff(), location.reload()">CRT OFF</button>
                         <button class="filter" onclick="crton(), location.reload()">CRT ON</button>
