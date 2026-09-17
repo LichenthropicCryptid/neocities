@@ -98,7 +98,7 @@ const headerE1 = `
                     ACCESSABILITY
                     </div>
                     </summary>
-                
+                    <br/>
                     <div id="theme-box">
                         <button class="toggle-gif">GIF</button>
                         <button class="filter" onclick="crtoff(), location.reload()">CRT OFF</button>
