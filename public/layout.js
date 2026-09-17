@@ -92,8 +92,8 @@ const headerE1 = `
     <div class="draggable">
 		<details class="hidden">
                     <summary>
-                    <div class="access-fairy">
-                        <img class="click" src="https://file.garden/anb5fb-RvmNCRWUD/misc/tumblr_inline_o14jlnyNGa1tjuw11_500.gif" title="accessability fairy" alt="accessability menu" width="100px">
+                    <div>
+                        <img class="access-fairy">src="https://file.garden/anb5fb-RvmNCRWUD/misc/tumblr_inline_o14jlnyNGa1tjuw11_500.gif" title="accessability fairy" alt="accessability menu" width="100px">
                     </div>
                     <br/>
                     </summary>
