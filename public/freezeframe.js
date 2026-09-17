@@ -111,13 +111,16 @@ class FreezeImages {
   }
 }
 
+
 // Waits for page to finish loading
-document.addEventListener("DOMContentLoaded", function (event) {
-  const start = document.getElementById("play-gif");
-  const stop = document.getElementById("stop-gif");
+document.addEventListener("readystatechange", function (event) {
+  if (document.readyState === "complete") {
+    const start = document.getElementById("play-gif");
+    const stop = document.getElementById("stop-gif");
+    const el = localStorage?.getItem("freeze") ?? "on";
     // Initialize script
     const f = new FreezeImages({ responsive: false });
-    const el = localStorage?.getItem("freeze") ?? "on";
+    
 
     // Set event listeners for all buttons
     for (const el of document.getElementsByClassName("play-gif")) {
@@ -131,6 +134,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     for (const el of document.getElementsByClassName("toggle-gif")) {
       el.addEventListener("click", () => f.toggle());
     }
-  });
+  }
+});
 
 
