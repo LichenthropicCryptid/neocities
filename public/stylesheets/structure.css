@@ -274,7 +274,8 @@
         -webkit-box-shadow: 0px 0px 50px 30px #ff0a78c0; 
         box-shadow: 0px 0px 50px 30px #ff0a78c0;
         z-index: 3;
-        opacity: 75%;
+        opacity: 50%;
+        cursor: var(--cursor-pink) 0 0, auto !important;
     }
 
         .access-fairy:hover {
