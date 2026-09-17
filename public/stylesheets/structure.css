@@ -259,11 +259,12 @@
 
     .access-fairy   {
         position:fixed;
+        left: 10rem;
+        top: 5rem;
         border-radius: 5rem;
         background-color:#ff0a789f;
         -webkit-box-shadow: 0px 0px 50px 30px #ff0a78c0; 
         box-shadow: 0px 0px 50px 30px #ff0a78c0;
-        margin: 8rem 6rem;
         z-index: 3;
     }
 
