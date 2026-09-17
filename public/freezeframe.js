@@ -1,4 +1,3 @@
-
 class FreezeImages {
   constructor(options = {}) {
     // Set default params
@@ -81,7 +80,6 @@ class FreezeImages {
     for (const img of this.imgList) {
       img.className = `${this.imgCls} ff-active`;
       img.nextSibling.className = `${this.canvasCls} ff-inactive`;
-      window.localStorage.setItem("freezeframe", "off");
     }
   }
 
@@ -90,11 +88,8 @@ class FreezeImages {
     for (const img of this.imgList) {
       img.className = `${this.imgCls} ff-inactive`;
       img.nextSibling.className = `${this.canvasCls} ff-active`;
-      window.localStorage.setItem("freezeframe", "on");
     }
-    
   }
-
 
   toggle() {
     // Toggles animation based on current state
@@ -102,11 +97,9 @@ class FreezeImages {
       let imgNewCls = img.className.includes("ff-inactive")
         ? "ff-active"
         : "ff-inactive";
-        window.localStorage.setItem("freezeframe", "on");
       let canvasNewCls = img.className.includes("ff-inactive")
         ? "ff-inactive"
         : "ff-active";
-        window.localStorage.setItem("freezeframe", "off");
 
       img.className = `${this.imgCls} ${imgNewCls}`;
       img.nextSibling.className = `${this.canvasCls} ${canvasNewCls}`;
@@ -117,10 +110,8 @@ class FreezeImages {
 // Waits for page to finish loading
 document.addEventListener("readystatechange", function () {
   if (document.readyState === "complete") {
-
     // Initialize script
-    const f = localStorage?.getItem("freezeframe") ?? "on";
-    
+    const f = new FreezeImages({ responsive: false });
 
     // Set event listeners for all buttons
     for (const el of document.getElementsByClassName("play-gif")) {
@@ -136,5 +127,4 @@ document.addEventListener("readystatechange", function () {
     }
   }
 });
-
 
