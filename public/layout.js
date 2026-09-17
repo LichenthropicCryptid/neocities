@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-            document.querySelectorAll('#draggable').forEach(el => {
+            document.querySelectorAll('.draggable').forEach(el => {
               let isDragging = false;
               let offsetX, offsetY;
   
