@@ -115,8 +115,6 @@ class FreezeImages {
 // Waits for page to finish loading
 document.addEventListener("readystatechange", function (event) {
   if (document.readyState === "complete") {
-    const start = document.getElementById("play-gif");
-    const stop = document.getElementById("stop-gif");
     const el = localStorage?.getItem("freeze") ?? "on";
     // Initialize script
     const f = new FreezeImages({ responsive: false });
