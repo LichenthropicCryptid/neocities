@@ -83,7 +83,8 @@
         height: auto;
         width: 100;
         font-size: 1.25rem;        
-        margin: 0 auto;
+        margin: 10rem;
+        
         background-image: var(--body-bg-image);
         font-family: 'PixelSplitter', 'Courier New', monospace;
         overflow-x: hidden;
