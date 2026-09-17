@@ -81,6 +81,7 @@ class FreezeImages {
       img.className = `${this.imgCls} ff-active`;
       img.nextSibling.className = `${this.canvasCls} ff-inactive`;
     }
+    window.localStorage.setItem("freeze", "off");
   }
 
   stop() {
@@ -89,7 +90,9 @@ class FreezeImages {
       img.className = `${this.imgCls} ff-inactive`;
       img.nextSibling.className = `${this.canvasCls} ff-active`;
     }
+    window.localStorage.setItem("freeze", "on");
   }
+
 
   toggle() {
     // Toggles animation based on current state
@@ -127,4 +130,5 @@ document.addEventListener("readystatechange", function () {
     }
   }
 });
+
 
