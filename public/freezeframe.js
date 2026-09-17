@@ -82,7 +82,6 @@ class FreezeImages {
       img.className = `${this.imgCls} ff-active`;
       img.nextSibling.className = `${this.canvasCls} ff-inactive`;
     }
-    window.localStorage.setItem("freeze", "off");
   }
 
   stop() {
@@ -91,7 +90,7 @@ class FreezeImages {
       img.className = `${this.imgCls} ff-inactive`;
       img.nextSibling.className = `${this.canvasCls} ff-active`;
     }
-    window.localStorage.setItem("freeze", "on");
+    
   }
 
 
@@ -123,10 +122,12 @@ document.addEventListener("readystatechange", function (event) {
     // Set event listeners for all buttons
     for (const el of document.getElementsByClassName("play-gif")) {
       el.addEventListener("click", () => f.start());
+      window.localStorage.setItem("freeze", "off");
     }
 
     for (const el of document.getElementsByClassName("stop-gif")) {
       el.addEventListener("click", () => f.stop());
+      window.localStorage.setItem("freeze", "on");
     }
 
     for (const el of document.getElementsByClassName("toggle-gif")) {
