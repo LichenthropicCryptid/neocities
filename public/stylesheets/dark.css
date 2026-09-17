@@ -33,7 +33,7 @@
         }
 
     main {
-        background-color: #43256E;
+        background-color: #43256eda;
     }
     
     main a {
@@ -46,7 +46,7 @@
     }
     
     #header {
-        background-color: #010101;
+        background-color: #0101012f;
         background-image: var(--header-image);
         background-repeat: no-repeat;
         background-size: cover;
@@ -76,7 +76,7 @@
    }
    
     aside {
-        background-color: #241445b5;       
+        background-color: #241445d8;       
     }
 
     #leftsidebar li a:hover {
