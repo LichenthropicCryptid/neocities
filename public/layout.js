@@ -94,9 +94,9 @@ const headerE1 = `
 		<div>
 		<details class="hidden">
                     <summary>
-                    <button class="accessability">
-                        ACCESSABILITY
-                    </button>
+                    <div class="accessability">
+                        <img src="https://file.garden/anb5fb-RvmNCRWUD/misc/tumblr_inline_o14jlnyNGa1tjuw11_500.gif" title="accessability fairy" alt="accessability menu">
+                    </div>
                     </summary>
                     <br/>
                     <div id="theme-box">
