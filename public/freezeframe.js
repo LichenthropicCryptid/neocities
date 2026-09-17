@@ -81,6 +81,7 @@ class FreezeImages {
     for (const img of this.imgList) {
       img.className = `${this.imgCls} ff-active`;
       img.nextSibling.className = `${this.canvasCls} ff-inactive`;
+      window.localStorage.setItem("freezeframe", "off");
     }
   }
 
@@ -89,6 +90,7 @@ class FreezeImages {
     for (const img of this.imgList) {
       img.className = `${this.imgCls} ff-inactive`;
       img.nextSibling.className = `${this.canvasCls} ff-active`;
+      window.localStorage.setItem("freezeframe", "on");
     }
     
   }
