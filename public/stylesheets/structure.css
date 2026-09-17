@@ -153,23 +153,6 @@
         border-radius: 1rem;
     }
 
-    #theme-box {
-        position: fixed;
-        width: 5rem;
-        float: left;
-        height: 20rem;
-        margin: 1rem;
-        border-radius: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: left;
-        border:1rem solid;
-        
-        opacity: 90%;   
-    }
-
-
 /*base layout styling*/
 
 /*assets*/
@@ -289,7 +272,7 @@
         background: rgba(0, 0, 0, 0.922);
         border-radius: 1rem;
         width: 12rem;
-        padding: .75rem;
+        padding: 1rem;
     }
 
 
