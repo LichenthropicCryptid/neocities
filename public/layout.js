@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const wrapperElement = document.querySelector(".my-wrapper"); // you might have to change this selector to something like .my-wrapper
     if (wrapperElement) {
       wrapperElement.insertAdjacentHTML("afterbegin", sidebarEl1);
-      wrapperElement.insertAdjacentHTML("beforeend", sidebarEl2);
+      wrapperElement.insertAdjacentHTML("beforeend", sidebarEr1);
     }
 
     initActiveLinks();
@@ -141,14 +141,14 @@ const footerE1 = `<footer>
 // Insert your sidebar HTML inside these ``. You can use HTML as usual.
 // Remove all the content inside the `` if you don't have a sidebar.
 const sidebarEl1 = `<aside id="leftSidebar">
-        <iframe class="sidebar" src="/pages/sidebars/leftsidebar.html" scrolling="no">
+        <iframe class="sidebar" src="${nesting}/pages/sidebars/leftsidebar.html" scrolling="no">
         </iframe></aside>
             `;
 
 // Insert your sidebar HTML inside these ``. You can use HTML as usual.
 // Remove all the content inside the `` if you don't have a sidebar.
-const sidebarEl2 = `    <aside id="rightSidebar">
-        <iframe class="sidebar" src="/pages/sidebars/rightsidebar.html" scrolling="no">
+const sidebarEr1 = `    <aside id="rightSidebar">
+        <iframe class="sidebar" src="${nesting}/pages/sidebars/rightsidebar.html" scrolling="no">
         </iframe>
     </aside>
 `;
