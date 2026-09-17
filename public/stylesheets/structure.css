@@ -102,7 +102,6 @@
     }
 
     aside {
-        scale:80%;
         margin: 0 auto;
         font-size: smaller;
         cursor: var(--cursor) 0 0, auto !important;
