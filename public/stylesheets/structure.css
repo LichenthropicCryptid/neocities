@@ -274,9 +274,15 @@
 
 /*buttons*/
 
+    .access-fairy   {
+        position:fixed;
+        background: rgba(0, 0, 0, 0.338);
+        border-radius: 5rem;
+    }
+
     .accessability  {
         position: fixed;
-        background: rgba(0, 0, 0, 0.748);
+        background: rgba(0, 0, 0, 0.922);
         border-radius: 1rem;
         width: 12rem;
         padding: .75rem;
