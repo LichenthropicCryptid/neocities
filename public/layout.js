@@ -95,7 +95,7 @@ const headerE1 = `
 		<details class="hidden">
                     <summary>
                     <div class="accessability">
-                        <img src="https://file.garden/anb5fb-RvmNCRWUD/misc/tumblr_inline_o14jlnyNGa1tjuw11_500.gif" title="accessability fairy" alt="accessability menu">
+                        <img src="https://file.garden/anb5fb-RvmNCRWUD/misc/tumblr_inline_o14jlnyNGa1tjuw11_500.gif" title="accessability fairy" alt="accessability menu" scale="3">
                     </div>
                     </summary>
                     <br/>
