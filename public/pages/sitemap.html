@@ -16,7 +16,7 @@
 
     <link id="colortheme" rel="stylesheet" href="../stylesheets/dark.css" type="text/css" media="all">
 
-    <link id="crt-filter" rel="stylesheet" href="../stylesheets/crt.css" type="text/css" media="all">
+    <link id="filter" rel="stylesheet" href="../stylesheets/crt.css" type="text/css" media="all">
     
        <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
        
@@ -94,6 +94,26 @@
                 margin: 0 auto;
             }
         </style>
+        <script>
+            function crton() {
+                document.getElementById('filter').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/crt.css');
+                localStorage.setItem('filter', 'crt-on');
+            }
+        
+            function crtoff() {
+                document.getElementById('filter').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/crt-off.css');
+                localStorage.setItem('filter', 'crt-off');
+            }
+        
+            if (localStorage.getItem('filter') == 'crt-on') {
+                crton();
+            }
+        
+            if (localStorage.getItem('filter') == 'crt-off') {
+                crtoff();
+            }
+        
+        </script>
                     <script>
         
             function lightmode() {
