@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const wrapperElement = document.querySelector(".my-wrapper"); // you might have to change this selector to something like .my-wrapper
     if (wrapperElement) {
       wrapperElement.insertAdjacentHTML("afterbegin", sidebarEl1);
-      wrapperElement.insertAdjacentHTML("beforeend", sidebarEr1);
+      wrapperElement.insertAdjacentHTML("beforeend", sidebarEl2);
     }
 
     initActiveLinks();
@@ -100,7 +100,9 @@ const headerE1 = `
                     </summary>
                 
                     <div id="theme-box">
-                        <button class="toggle-gif">GIFS</button>
+                        <button class="toggle-gif">GIF</button>
+                        <button class="filter" onclick="crtoff(), location.reload()">CRT OFF</button>
+                        <button class="filter" onclick="crton(), location.reload()">CRT ON</button>
                         <button class="colortheme" onclick="darkmode(), location.reload()">DARK</button>
                         <button class="colortheme" onclick="lightmode(), location.reload()">LIGHT</button>
                     </div>
@@ -140,15 +142,12 @@ const footerE1 = `<footer>
 
 // Insert your sidebar HTML inside these ``. You can use HTML as usual.
 // Remove all the content inside the `` if you don't have a sidebar.
-const sidebarEl1 = `<aside id="leftSidebar">
-        <iframe class="sidebar" src="${nesting}/pages/sidebars/leftsidebar.html" scrolling="no">
-        </iframe></aside>
+const sidebarEl1 = 
+        `
             `;
 
 // Insert your sidebar HTML inside these ``. You can use HTML as usual.
 // Remove all the content inside the `` if you don't have a sidebar.
-const sidebarEr1 = `    <aside id="rightSidebar">
-        <iframe class="sidebar" src="${nesting}/pages/sidebars/rightsidebar.html" scrolling="no">
-        </iframe>
-    </aside>
+const sidebarEl2 = 
+        `
 `;

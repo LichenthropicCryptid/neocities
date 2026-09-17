@@ -295,13 +295,7 @@
         margin: .5rem;
     }
 
-    .stop-gif {
-        border-radius: 1rem;
-        padding: .5rem;
-        margin: .5rem;
-    }
-
-    .play-gif {
+    .filter {
         border-radius: 1rem;
         padding: .5rem;
         margin: .5rem;
@@ -499,7 +493,7 @@
         #sidebar    {
             width: 100%;
         }
-        
+
         .leftSidebar {
             height: 100;
             width: 100%;

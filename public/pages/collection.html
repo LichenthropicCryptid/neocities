@@ -3683,8 +3683,18 @@
                 </details>
             </div>
         </main>
-    <aside id="leftsidebar"></aside>
-    <aside id="rightsidebar"></aside>
+    
+    <aside id="rightSidebar">
+        <iframe class="sidebar" src="/pages/sidebars/rightsidebar.html" scrolling="no">
+        </iframe>
+    </aside>
+
+    <aside id="leftSidebar">
+        <iframe class="sidebar" src="/pages/sidebars/leftsidebar.html" scrolling="no">
+        </iframe>
+    </aside>
+    </div>
+    <footer id="footer" style="margin-top: 10px;"></footer>
     <style>
         important {
             background-color: orange;
@@ -3716,6 +3726,26 @@
         }
 
     </script>
+    <script>
+    function crton() {
+        document.getElementById('filter').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/crt.css');
+        localStorage.setItem('filter', 'crt-on');
+    }
+
+    function crtoff() {
+        document.getElementById('filter').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/crt-off.css');
+        localStorage.setItem('filter', 'crt-off');
+    }
+
+    if (localStorage.getItem('filter') == 'crt-on') {
+        crton();
+    }
+
+    if (localStorage.getItem('filter') == 'crt-off') {
+        crtoff();
+    }
+
+</script>
     <style>
         /* Preloader */
         #preloader {
