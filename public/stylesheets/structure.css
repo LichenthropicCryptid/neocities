@@ -486,7 +486,7 @@
         }
       
         aside {
-            width: 100%;
+            width: fit-content;
             height: 5000px;
         }
       
@@ -498,14 +498,14 @@
       
         #leftSidebar {
             height: 100;
-            width: fill;
+            width: 100%;
             margin: 0 auto;
             order: 2;
         }
       
         #rightSidebar {
             height: 100;
-            width: fill;
+            width: 100%;
             margin: 0 auto;
             order: 3;
         }
