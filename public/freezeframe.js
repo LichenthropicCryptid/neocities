@@ -1,17 +1,3 @@
-document.addEventListener("DOMContentLoaded", function (event) {
-  const start = document.getElementById("play-gif");
-  const stop = document.getElementById("stop-gif");
-
-  const freeze = localStorage?.getItem("freeze") ?? "on";
-
-  let e;
-
-  if (freeze === "off") {
-  } else {
-      e = new FreezeImages({ trigger: false, responsive: false });
-  }
-});
-
 
 class FreezeImages {
   constructor(options = {}) {
@@ -124,6 +110,13 @@ class FreezeImages {
     }
   }
 }
+
+document.addEventListener("DOMContentLoaded", function (event) {
+  const start = document.getElementById("play-gif");
+  const stop = document.getElementById("stop-gif");
+
+  const freeze = localStorage?.getItem("freeze") ?? "on";
+});
 
 // Waits for page to finish loading
 document.addEventListener("readystatechange", function () {
