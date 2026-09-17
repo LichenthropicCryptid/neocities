@@ -164,8 +164,8 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: left;
-        border: 2.5px solid;
-        margin-bottom: 1em;
+        border:1rem solid;
+        
         opacity: 90%;   
     }
 
