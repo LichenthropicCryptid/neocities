@@ -545,6 +545,9 @@
             margin: 0 auto;
             order: 2;
         }
+        #sidebar a:hover{
+            cursor: var(--cursor-pink) 0 0, auto !important;
+        }
       
         .rightSidebar {
             height: 100;
