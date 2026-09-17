@@ -82,16 +82,13 @@
     body {
         height: auto;
         width: 100;
-        font-size: 1.25rem;        
-        margin: 10rem;
-        
+        font-size: 1.25rem;
         background-image: var(--body-bg-image);
         font-family: 'PixelSplitter', 'Courier New', monospace;
         overflow-x: hidden;
     }
     
     main {
-        
         position: flex;
         flex: 1;
         margin: .5rem 1rem;
@@ -106,7 +103,7 @@
         margin: 0 auto;
         font-size: smaller;
         cursor: var(--cursor) 0 0, auto !important;
-        width: 20rem;
+        
         height: 5000px;
         background: transparent;
         border-radius: 1rem;
