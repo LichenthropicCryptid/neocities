@@ -188,7 +188,9 @@
         /*clouds*/
     
     /*draggable*/
-    
+    a:hover{
+        cursor: var(--cursor-pink) 0 0, auto !important;
+    }
     #mp3-player  { 
         margin: 0 auto;
         height: 100%; 
