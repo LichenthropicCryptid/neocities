@@ -90,7 +90,7 @@
     }
     
     main {
-        position: center;
+        position: relative;
         flex: 1;
         margin: .5rem 1rem;
         padding: 1.5rem;
