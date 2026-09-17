@@ -261,8 +261,8 @@
         position:fixed;
         background: #ff489a7e;
         border-radius: 5rem;
-        -webkit-box-shadow: 5px 5px 50px 5px #ff0a78c0; 
-        box-shadow: 50px 50px 50px 50px #ff0a78c0;
+        -webkit-box-shadow: 5px 5px 50px 5px #ff0a78e1; 
+        box-shadow: 50px 50px 50px 50px #ff0a78e1;
         margin: 7.25rem;
         z-index: 3;
     }
