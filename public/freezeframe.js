@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (event) {
-  const start() = document.getElementById("play-gif");
-  const stop() = document.getElementById("stop-gif");
+  const start = document.getElementById("play-gif");
+  const stop = document.getElementById("stop-gif");
 
   const freeze = localStorage?.getItem("freeze") ?? "on";
 
