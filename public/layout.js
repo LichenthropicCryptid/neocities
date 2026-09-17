@@ -97,6 +97,7 @@ const headerE1 = `
                     <div class="access-fairy">
                         <img src="https://file.garden/anb5fb-RvmNCRWUD/misc/tumblr_inline_o14jlnyNGa1tjuw11_500.gif" title="accessability fairy" alt="accessability menu" width="100px">
                     </div>
+                    <br/>
                     </summary>
                     <div class="accessability">
                     ACCESSABILITY
