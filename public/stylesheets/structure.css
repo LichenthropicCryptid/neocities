@@ -100,7 +100,6 @@
     }
 
     aside {
-        margin: 2rem;
         font-size: smaller;
         cursor: var(--cursor) 0 0, auto !important;
         height: 5000px;
