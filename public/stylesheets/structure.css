@@ -157,7 +157,7 @@
         position: fixed;
         width: 5rem;
         float: left;
-        height: 4rem;
+        height: 15rem;
         margin: 0 auto;
         border-radius: 1rem;
         display: flex;
@@ -275,6 +275,7 @@
 /*buttons*/
 
     .accessability  {
+        position: fixed;
         background: black;
         border-radius: 1rem;
         width: 12rem;
