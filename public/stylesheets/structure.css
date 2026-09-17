@@ -258,6 +258,9 @@
         .hidden:hover{
             cursor: var(--cursor-pink) 0 0, auto !important;
         }
+        iframe:hover{
+            cursor: var(--cursor-pink) 0 0, auto !important;
+        }
 
 /*assets*/
 
