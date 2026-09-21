@@ -495,11 +495,8 @@
  /*details*/
  
 /*text styling*/
-
-   
-    
     strong {
-        color: invert;
+        color:firebrick;
         font-weight: bold;
         transform: scale(1.25);
     }
