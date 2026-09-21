@@ -553,6 +553,9 @@
 }
 
    @media only screen and (max-width: 1000px) {
+        main {
+            height: 100%;
+        }
         aside {
          width: 100%;   
         }
