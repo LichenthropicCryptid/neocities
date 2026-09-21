@@ -560,14 +560,13 @@
         #leftSidebar {
             display: flex;
             order: 1;
-            width: 100vw;
+            position: center;
         }
         
         #rightSidebar {
             display: flex;
             order: 3;
-           width: 200vw;
-           
+            position:center;
         }
    }
 /*media queries*/
