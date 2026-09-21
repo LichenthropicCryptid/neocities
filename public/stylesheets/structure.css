@@ -71,11 +71,6 @@
 
 /*base layout styling*/
 
-    iframe {
-        border-radius: 1rem;
-        border: .5rem solid black;   
-    }
-
     #flex {
         display: flex;
     }
