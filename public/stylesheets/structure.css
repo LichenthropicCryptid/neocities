@@ -116,6 +116,7 @@
 
     #sidebar    {
         height: 175rem;
+        width: 300px;
         overflow-x: hidden;
     }
 
