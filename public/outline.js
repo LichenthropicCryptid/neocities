@@ -383,24 +383,6 @@ rssfeed_cache = "86db238dcd562b16e9a90a1475d242ee";
         
     </div>
 
-<script>
 
-    function lightmode() {
-        document.getElementById('colortheme').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/light.css');
-    localStorage.setItem('theme', 'lightmode');}
-
-    function darkmode() {
-        document.getElementById('colortheme').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/dark.css');
-    localStorage.setItem('theme', 'darkmode');}
-        
-    if(localStorage.getItem('theme') == 'lightmode'){
-    lightmode();
-    }
-    
-    if(localStorage.getItem('theme') == 'darkmode'){
-    darkmode();
-    } 
-    
-</script>
 </aside> 
 `;
