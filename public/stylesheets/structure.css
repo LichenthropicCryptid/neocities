@@ -354,14 +354,14 @@
         width: 5rem;
         border-radius: 1rem;
         padding: .5rem;
-        margin: .5rem;
+        margin: 0 auto;
     }
 
     .filter {
         width: 5rem;
         border-radius: 1rem;
         padding: .5rem;
-        margin: .5rem;
+        margin: 0 auto;
     }
 
     #no-click   {
