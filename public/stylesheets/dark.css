@@ -47,10 +47,7 @@
     }
     
     #header {
-        background-color: #0101012f;
-        background-image: var(--header-image);
-        background-repeat: no-repeat;
-
+        background: #0101012f var(--header-image) no-repeat;
     }
     
     #navbar {
