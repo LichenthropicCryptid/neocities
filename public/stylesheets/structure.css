@@ -557,19 +557,19 @@
             height: 100%;
         }
         aside {
-         width: 100%;   
+         width: fill;   
         }
     
         #leftSidebar {
             display: flex;
             order: 1;
-            position: center;
+            margin: 0 auto;
         }
         
         #rightSidebar {
             display: flex;
             order: 3;
-            position:center;
+            margin: 0 auto;
         }
    }
 /*media queries*/
