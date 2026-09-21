@@ -22,9 +22,7 @@
     }
         
   .button-effects:hover   {
-     
       box-shadow: 0 0 .5rem 0 red;
-      cursor: var(--cursor-pink) 0 0, auto !important;
 }
 
   body {
