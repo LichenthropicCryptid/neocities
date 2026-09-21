@@ -72,10 +72,6 @@
         border: 0.5rem solid black;
    }
    
-    aside {
-        background-color: #241445d8;       
-    }
-
     #leftsidebar li a:hover {
         color: limegreen;
         background-color: #050D00;
