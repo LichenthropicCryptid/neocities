@@ -102,14 +102,14 @@
         margin: .5rem 1rem;
         padding: 1.5rem;
         order: 2;  
-        height:1000px;
-        width: 500px;
+        height:2000px;
+        width: 600px;
         border-radius: 1rem;
     }
 
     aside {
         font-size: smaller;
-        height: 1000px;
+        height: 2000px;
         background: transparent;
         border-radius: 1rem;
     }
