@@ -1,0 +1,19 @@
+{
+  "name": "chronic-cryptid",
+  "version": "1.0.0",
+  "description": "my site",
+  "homepage": "https://github.com/LichenthropicCryptid/neocities#readme",
+  "bugs": {
+    "url": "https://github.com/LichenthropicCryptid/neocities/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LichenthropicCryptid/neocities.git"
+  },
+  "author": "Lichen",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
