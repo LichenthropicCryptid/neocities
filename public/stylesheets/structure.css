@@ -441,9 +441,11 @@
 
     details > summary {
         list-style: none;
+        cursor: var(--cursor-pink) 0 0, auto !important;
     }
     details > summary::-webkit-details-marker {
         display: none;
+        cursor: var(--cursor-pink) 0 0, auto !important;
     }
 
  /*details*/
