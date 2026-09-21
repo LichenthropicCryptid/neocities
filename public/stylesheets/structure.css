@@ -554,7 +554,20 @@
 
    @media only screen and (max-width: 1000px) {
         aside {
-         width: 100vw;   
+         width: 100%;   
+        }
+    
+        #leftSidebar {
+            display: flex;
+            order: 1;
+            width: 100vw;
+        }
+        
+        #rightSidebar {
+            display: flex;
+            order: 3;
+           width: 200vw;
+           
         }
    }
 /*media queries*/
