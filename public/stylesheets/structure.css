@@ -97,6 +97,7 @@
     }
     
     main {
+        color:antiquewhite;
         position: flex;
         flex: 1;
         margin: .5rem 1rem;
@@ -323,6 +324,7 @@
             }
 
     .accessability  {
+        color: whitesmoke;
         position: fixed;
         left: 10rem;
         top:6rem;
