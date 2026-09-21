@@ -103,7 +103,7 @@
         padding: 1.5rem;
         order: 2;  
         height:3000px;
-        width: 600px;
+        width: 550px;
         border-radius: 1rem;
     }
 
@@ -163,11 +163,6 @@
 /*base layout styling*/
 
 /*assets*/
-
-    .blinkie {
-        width: 15rem;
-        height: 3rem;
-    }
 
     /*draggable*/
   
@@ -558,7 +553,7 @@
 }
 
    @media only screen and (max-width: 1000px) {
-    
+
    }
 /*media queries*/
 
