@@ -77,11 +77,10 @@
         </div>
         
          <style>
+
           #layout {
             display:flex;
             flex-direction: column;
-            position: absolute, center;
-            text-align: center;
             margin: 0 auto;  
           }
           
@@ -99,75 +98,35 @@
         }
         
          .glow-button a {
-            
-            color: red;
-            
-            font-family: "Courier New", monospace;
-            
-            font-weight: bold;
-            
+            color: red;          
+            font-family: "Courier New", monospace;          
+            font-weight: bold;          
             text-decoration: none; 
-            
         }
            
-        .glow-button {
-            
-            font-family: "Courier New", Monospace;
-            
-            width: 3.5em;
-            
-            font-weight: bold;
-            
-            text-decoration: none;
-            
-            font-size: 5em;
-            
-            line-height: 1em;
-            
-            font-size: 10rem;
-            
-            background-color: black;
-            
-            border-radius: .5em;
-            
-            padding: .25em;
-            
-            opacity: .75;
-            
-            box-shadow: 0 0 0.75rem 0 red;
-            
-            transition: box-shadow 0.25s ease, transform 0.5s ease, font-size .5s ease, padding .5s ease, border-radius .5s ease;
-            
-            overflow: hidden;
-            
-            z-index: 2;
-            
-            display: flex;
-            
-            justify-content: space-between;
-            
-            margin-top: .5em;
-            
-            margin: auto;
-            
+        .glow-button {         
+            font-family: "Courier New", Monospace;           
+            width: 3.5em;           
+            font-weight: bold;           
+            text-decoration: none;            
+            font-size: 5em;           
+            line-height: 1em;            
+            font-size: 10rem;           
+            background-color: black;           
+            border-radius: .5em;           
+            padding: .25em;           
+            opacity: .75;           
+            box-shadow: 0 0 0.75rem 0 red;           
+            transition: box-shadow 0.25s ease, transform 0.5s ease, font-size .5s ease, padding .5s ease, border-radius .5s ease;          
+            overflow: hidden;            
+            z-index: 2;           
+            display: flex;            
+            justify-content: space-between;           
+            margin-top: .5em;           
+            margin: auto;          
         }
         
-        @media only screen and (max-width: 600px) {
-            
-        .glow-button {
-            
-            width: 3.5em;
-            
-            padding: .25em .25em;
-            
-            font-size: 7rem;
-            
-            margin: auto;
-            
-            display:inline;
-            
-        }
-    }
+
     
         .glow-button:hover {
             
@@ -280,7 +239,22 @@
                     }
                     
                 }            
-    
+                @media only screen and (max-width: 600px) {
+            
+            .glow-button {
+                
+                width: 3.5em;
+                
+                padding: .25em .25em;
+                
+                font-size: 7rem;
+                
+                margin: auto;
+                
+                display:inline;
+                
+            }
+        }   
     
            @keyframes flicker {
   0% {
