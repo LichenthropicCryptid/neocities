@@ -76,7 +76,7 @@
 
           #layout {
             display:flex;
-            justify-content: space between;
+            justify-content: space-between;
             align-items: center;
             flex-direction: column;
           }
@@ -91,13 +91,19 @@
             margin: 5px;
             padding: 20px;
             text-align: center;
+            width: 20rem;
         }
-        
-         .glow-button a {
-            color: red;          
-            font-family: "Courier New", monospace;          
-            font-weight: bold;          
-            text-decoration: none; 
+
+        .layout > .cw {
+            background: black; 
+            border-radius: .75em;
+            padding: .1em .25em;
+            font-size: 2em;
+            line-height: 0.15em;
+            color: red;
+            margin: 5px;
+            padding: 20px;
+            text-align: center;   
         }
            
         .layout > .glow-button {         
@@ -119,6 +125,14 @@
             padding: 20px; 
             text-align: center;
         }
+
+        
+         .glow-button a {
+            color: red;          
+            font-family: "Courier New", monospace;          
+            font-weight: bold;          
+            text-decoration: none; 
+        }
  
         .glow-button:hover {          
             transform: scale (1.25);     
@@ -129,18 +143,6 @@
             transition: box-shadow 0.5s, transform 0.5s, opacity 0.5s;    
             text-decoration: none;   
             z-index: 3;
-        }
-        
-        .layout > .cw {
-            background: black; 
-            border-radius: .75em;
-            padding: .1em .25em;
-            font-size: 2em;
-            line-height: 0.15em;
-            color: red;
-            margin: 5px;
-            padding: 20px;
-            text-align: center;   
         }
 
         body {
