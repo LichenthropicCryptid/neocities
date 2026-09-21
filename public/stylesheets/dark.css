@@ -49,6 +49,7 @@
         background-image: var(--header-image);
         background-repeat: no-repeat;
         background-position: center;
+        height: 20rem;
     }
     
     #navbar {
