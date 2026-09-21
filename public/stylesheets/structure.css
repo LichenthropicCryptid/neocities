@@ -315,7 +315,7 @@
 
     #access-fairy   {
         position:fixed;
-        left: 4rem;
+        left: 3rem;
         top: 3rem;
         border-radius: 5rem;
         background-color:#ff0a789f;
@@ -331,7 +331,7 @@
 
     .accessability  {
         position: fixed;
-        left: 3rem;
+        left: 6rem;
         display: flex;
         flex-direction: column;
         background: rgba(0, 0, 0, 0.922);
