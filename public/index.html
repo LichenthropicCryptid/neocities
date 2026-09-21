@@ -16,7 +16,6 @@
             <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">  
             
             <script type="module">
-
   import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
 
   new fairyDustCursor({
@@ -26,11 +25,12 @@
   
 </script>
 
+            
         </head>
         
-         <body class="crt">
+         <body>
+            <div class="crt" id="crt" style="display: block;">
            <div id="preloader"></div> 
-
             <div id="layout" style="text-align:center">
         
             <header>
@@ -44,8 +44,10 @@
                 </div>
                 
             </header>
+              
                 
                     <button class="glow-button" onclick="createRipple(event)">
+                    
                 
                         <a href="/pages/Homepage.html" style="text-align:center;">
                         
@@ -53,7 +55,9 @@
                         
                         </a>
                     
-                    </button>               
+                    </button>
+                    
+                
                 
             <div id="cw" width="10rem;">
             
@@ -78,12 +82,11 @@
          
          #layout {
             
-            display: inline-block, flex;
+            display: flex;
             
             flex-direction: column;
             
             font-family: "courier new", "consolas", monospace;
-        
         }
         
         #adult {
@@ -224,7 +227,7 @@
         }
         body {
             
-            background-image: url("../images/bg-images/index-bg.JPG");
+            background: url('https://lichenthropic.neocities.org/images/art/index-bg.JPG');
             
             background-position: center;
             
@@ -232,13 +235,13 @@
             
             background-repeat: repeat;
             
-            align-items: center;
+            align-items: inline, center;
         
             display: flex;
         
             -webkit-background-size: cover;
         
-            display: inline-block;
+            display: inline, center;
         
             overflow: hidden;
         }
