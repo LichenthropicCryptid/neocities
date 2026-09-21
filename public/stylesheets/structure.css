@@ -346,8 +346,8 @@
         width: 5rem;
         border-radius: 1rem;
         padding: .5rem;
-        margin: .5rem;
-        position: center;
+        margin: 0 auto;
+        
     }
 
     .toggle-gif {
