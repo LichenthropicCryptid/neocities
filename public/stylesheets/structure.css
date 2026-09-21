@@ -53,15 +53,10 @@
     a:hover{
         cursor: var(--cursor-pink) 0 0, auto !important;
     }
-    summary:hover {
+    details > summary:hover   {
         cursor: var(--cursor-pink) 0 0, auto !important;
     }
-    .sidebar a:hover{
-        cursor: var(--cursor-pink) 0 0, auto !important;
-    }
-    .sidebar summary:hover   {
-        cursor: var(--cursor-pink) 0 0, auto !important;
-    }
+
 
 /*cursor*/
 
