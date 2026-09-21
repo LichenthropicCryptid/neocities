@@ -73,8 +73,7 @@
 
     iframe {
         border-radius: 1rem;
-        border: .5rem solid black;
-        
+        border: .5rem solid black;   
     }
 
     #flex {
@@ -85,6 +84,7 @@
         height: 100%;
         width: 90%;
         margin: 0 auto;
+        border-radius: 5rem;
     }
 
     body {
