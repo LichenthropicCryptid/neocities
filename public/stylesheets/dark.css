@@ -45,7 +45,7 @@
     }
     
     #header {
-        background: #0101012f var(--header-image) no-repeat;
+        background-image: #0101012f var(--header-image);
     }
     
     #navbar {
