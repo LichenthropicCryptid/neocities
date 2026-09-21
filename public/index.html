@@ -197,7 +197,7 @@
             
             overflow: hidden;
             
-            transition: box-shadow 0.5s, transform 0.5s; opacity 0.5s;
+            transition: box-shadow 0.5s, transform 0.5s, opacity 0.5s;
             
             text-decoration: none;
             
@@ -235,17 +235,16 @@
             
             background-repeat: repeat;
             
-            align-items: inline;center;
+            align-items: inline, center;
         
             display: flex;
         
-            -webkit-
-    
-            background-size: cover;
+            -webkit-background-size: cover;
         
-            display: inline; center;
+            display: inline, center;
         
             overflow: hidden;
+        }
         
         @media only screen and (max-width: 390px) {
             
@@ -267,7 +266,7 @@
         
             }
 
-            @media only screen and (max-width:100%)
+            @media only screen and (max-width:100%) {
             
         
             html {
@@ -279,8 +278,9 @@
         overflow-x: hidden;
         
         }
+      }
             
-                @media(min-width/max-width {width}px){
+                @media(min-width-max-width) {
                     
                         .class{
                             
@@ -295,7 +295,7 @@
                     }
                     
                 }            
-    }
+    
     
            @keyframes flicker {
   0% {
@@ -507,7 +507,7 @@
     from { opacity: 1; }
     to { opacity: 0; }
 }
- 
+}
   
         * {
         cursor: url("https://lichenthropic.neocities.org/images/cursor.png") 0 0, auto !important;
@@ -559,5 +559,5 @@
         setTimeout(hideLoader, 8000);
             </script>
             </body>
-    
+          
 </html>
