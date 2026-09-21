@@ -110,7 +110,7 @@
 
     aside {
         font-size: smaller;
-        height: 5000px;
+        height: fit-content;
         background: transparent;
         border-radius: 1rem;
     }
