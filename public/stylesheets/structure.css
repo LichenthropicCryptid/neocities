@@ -563,6 +563,7 @@
         #leftSidebar {
             display: flex;
             order: 1;
+            float: center;
             margin: 0 auto;
         }
         
