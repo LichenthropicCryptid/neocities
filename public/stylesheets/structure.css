@@ -50,7 +50,7 @@
     cursor: var(--cursor) 0 0, auto !important;
         }
 
-    *:hover{
+    * a:hover{
         cursor: var(--cursor-pink) 0 0, auto !important;
     }
 
@@ -622,7 +622,7 @@
             margin: 0 auto;
             order: 3;
         }
-        
+
         #navbar ul {
             flex-wrap: wrap;
         }
