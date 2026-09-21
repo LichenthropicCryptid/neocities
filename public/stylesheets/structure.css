@@ -427,7 +427,7 @@
     
         #navbar a:hover {
             transform: scale(1.25);
-            border-radius: .25em;
+            border-radius: 1rem;
             box-shadow: 0 0 1em 0;
             font-weight: bold;
         }
