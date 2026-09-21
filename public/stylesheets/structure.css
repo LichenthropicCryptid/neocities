@@ -110,7 +110,7 @@
 
     aside {
         font-size: smaller;
-        height:auto;
+        height:inherit;
         background: transparent;
         border-radius: 1rem;
     }
