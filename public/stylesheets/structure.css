@@ -56,6 +56,9 @@
     details:hover {
         cursor: var(--cursor-pink) 0 0, auto !important;
     }
+    sidebar:hover{
+        cursor: var(--cursor-pink) 0 0, auto !important;
+    }
 
 /*cursor*/
 
