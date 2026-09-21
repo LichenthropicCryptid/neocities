@@ -563,14 +563,11 @@
         #leftSidebar {
             display: flex;
             order: 1;
-            float: center;
-            margin: 0 auto;
         }
         
         #rightSidebar {
             display: flex;
             order: 3;
-            margin: 0 auto;
         }
    }
 /*media queries*/
