@@ -45,7 +45,11 @@
     }
     
     #header {
+        background-color: transparent;
         background-image: var(--header-image);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: fit-content;  
     }
     
     #navbar {
