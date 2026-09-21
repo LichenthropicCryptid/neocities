@@ -211,21 +211,11 @@
         width: 250px;
         height: 250px;
     }
-    .ad:hover   {
-        cursor: var(--cursor-pink) 0 0, auto !important;
-    }
-    .ad-box:hover   {
-        cursor: var(--cursor-pink) 0 0, auto !important;
-    }
     
     #navi    {
         overflow: hidden;
         display: inline-block;
         border: 0.5rem solid;
-   }
-
-   #navi:hover  {
-    cursor: var(--cursor-pink) 0 0, auto !important;
    }
 
     .gallery {
