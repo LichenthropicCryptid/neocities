@@ -523,7 +523,7 @@
     
     h1 {
         font-weight: bold;
-        font-size: 250%;       
+        font-size: 225%;       
     }
     
     strong {
@@ -540,9 +540,7 @@
         font-size: 2.5rem;
         margin: 0 auto;
     }
-    
-
-    
+      
 /*text styling*/
 
 /*media queries*/
@@ -582,6 +580,7 @@
             display: inline-block;
             width: 100%; 
         }
+
         #site-updates {
             margin: 0 auto;
             display: inline-block;
@@ -601,7 +600,7 @@
       
         aside {
             width: 100%;
-            height: 5000px;
+            height: 100%;
         }
       
         main {
