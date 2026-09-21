@@ -103,14 +103,7 @@
         padding: 1.5rem;
         order: 2;  
         height:auto;
-        width: 30em;
-        border-radius: 1rem;
-    }
-
-    aside {
-        font-size: smaller;
-        height: 175rem;
-        background: transparent;
+        width: 600px;
         border-radius: 1rem;
     }
 
@@ -122,12 +115,14 @@
         display: flex;
         float: left;
         order: 1;
+        width: 250px;
     }
     
     #rightSidebar {
         display: flex;
         float: right;
         order: 3;
+        width: 250px;
     }
 
     #container {
