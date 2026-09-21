@@ -127,48 +127,46 @@
              
             </style>
             <style>
-            /* Preloader */
-        #preloader {
-        background: black
-            url("https://file.garden/anb5fb-RvmNCRWUD/misc/weed-orb.gif")
-            no-repeat center;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        display: flex;
-        position: fixed;
-        height: 100vh;
-        left: 0;
-        top: 0;
-        z-index: 9999;
-        }
+                /* Preloader */
+                #preloader {
+                    background: black url("../images/assets/aniglobe.gif") no-repeat center;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    display: flex;
+                    position: fixed;
+                    height: 100vh;
+                    left: 0;
+                    top: 0;
+                    z-index: 9999;
+                }
             </style>
             <script>
-            var loader = document.getElementById("preloader");
+                var loader = document.getElementById("preloader");
 
-        function hideLoader() {
-        if (!loader) return;
-        fadeOut();
-        }
+                function hideLoader() {
+                    if (!loader) return;
+                    fadeOut();
+                }
 
-        function fadeOut() {
-          var op = 1;
-          var fade = setInterval(function () {
-            op -= 0.1;
-            if (op <= 0) {
-              clearInterval(fade);
-              loader.style.display = "none";
-            } else {
-              loader.style.opacity = op;
-            }
-          }, 40);
-        }
+                function fadeOut() {
+                    var op = 1;
+                    var fade = setInterval(function () {
+                        op -= 0.1;
+                        if (op <= 0) {
+                            clearInterval(fade);
+                            loader.style.display = "none";
+                        } else {
+                            loader.style.opacity = op;
+                        }
+                    }, 40);
+                }
 
-        // Hide once everything has loaded
-        window.addEventListener("load", hideLoader);
+                // Hide once everything has loaded
+                window.addEventListener("load", hideLoader);
 
-        // Force-hide after 8 seconds even if it can't load
-        setTimeout(hideLoader, 8000);
+                // Force-hide after 8 seconds even if it can't load
+                setTimeout(hideLoader, 8000);
             </script>
             
             <script>
