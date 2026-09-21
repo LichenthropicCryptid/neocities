@@ -43,9 +43,7 @@
     }
 
 /*scrollbar*/
-/*header*/
 
-/*header*/
 
 /*cursor*/
 
@@ -53,13 +51,13 @@
     cursor: var(--cursor) 0 0, auto !important;
         }
 
-    a:hover{
+    a :hover{
         cursor: var(--cursor-pink) 0 0, auto !important;
     }
-    details > summary:hover   {
+    details > summary :hover   {
         cursor: var(--cursor-pink) 0 0, auto !important;
     }
-    .click:hover    {
+    .click :hover    {
         cursor: var(--cursor-pink) 0 0, auto !important;
     }
 
@@ -85,7 +83,7 @@
     
     #navbar {
         height: 100%;
-        width: 100%;
+        width: 80%;
     }
 
     body {
