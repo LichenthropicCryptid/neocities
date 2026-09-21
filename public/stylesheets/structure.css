@@ -553,7 +553,9 @@
 }
 
    @media only screen and (max-width: 1000px) {
-
+        aside {
+         width: 100vw;   
+        }
    }
 /*media queries*/
 
