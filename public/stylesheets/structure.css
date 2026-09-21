@@ -50,6 +50,10 @@
     cursor: var(--cursor) 0 0, auto !important;
         }
 
+    *:hover{
+        cursor: var(--cursor-pink) 0 0, auto !important;
+    }
+
 /*cursor*/
 
 /*fonts*/
@@ -64,9 +68,6 @@
         border-radius: 1rem;
         border: .5rem solid black;
         margin: .15rem;
-    }
-    iframe:hover    {
-        cursor: var(--cursor-pink) 0 0, auto !important;
     }
 
     #flex {
@@ -106,7 +107,6 @@
 
     aside {
         font-size: smaller;
-        cursor: var(--cursor) 0 0, auto !important;
         height: 5000px;
         background: transparent;
         border-radius: 1rem;
@@ -166,17 +166,9 @@
         width: 15rem;
         height: 3rem;
     }
-    .blinkie:hover  {
-        cursor: var(--cursor-pink) 0 0, auto !important;
-    }
-    
+
     /*draggable*/
-    #draggable:hover   {
-        cursor: var(--cursor-pink) 0 0, auto !important;
-    }
-    .draggable:hover   {
-            cursor: var(--cursor-pink) 0 0, auto !important;
-        }
+  
         /*clouds*/
             #cloud1 {
                 transform: scale(3);
@@ -202,14 +194,6 @@
         width: 100%;
         padding: 0;
         overflow: hidden;
-    }
-
-    .ad {
-        margin: 0 auto;
-        padding: 0.5rem 0.5rem;
-        display: inline-block;
-        width: 250px;
-        height: 250px;
     }
     
     #navi    {
@@ -249,16 +233,6 @@
 
     .thumbnail:hover {
             transform: scale(2);
-            cursor: var(--cursor-pink) 0 0, auto !important;
-        }
-    .freeze:hover   {
-            cursor: var(--cursor-pink) 0 0, auto !important;
-        }
-    .hidden:hover   {
-            cursor: var(--cursor-pink) 0 0, auto !important;
-        }
-    .click:hover    {
-            cursor: var(--cursor-pink) 0 0, auto !important;
         }
 
         #chatbox  {
@@ -273,7 +247,6 @@
             #chatbox a:hover  {
             box-shadow: 0 0 5rem 0 red;
             background: darkred;
-            cursor: var(--cursor-pink) 0 0, auto !important;
             }
             
             .chatbox-bg {
@@ -318,11 +291,6 @@
                 position: center;
                 width: 15rem;
             }
-            #mp3-boombox:hover  {
-                cursor: var(--cursor-pink) 0 0, auto !important;
-            }
-            
-              
 
 /*assets*/
 
@@ -351,8 +319,6 @@
         box-shadow: 0px 0px 50px 30px #ff0a78c0;
         z-index: 3;
         opacity: 60%;
-        
-        cursor: var(--cursor-pink) 0 0, auto !important;
     }
 
         #access-fairy:hover {
@@ -377,19 +343,11 @@
         margin: .5rem;
     }
 
-        .colortheme:hover{
-            cursor: var(--cursor-pink) 0 0, auto !important;
-        }
-
     .toggle-gif {
         width: 5rem;
         border-radius: 1rem;
         padding: .5rem;
         margin: .5rem;
-    }
-
-    .toggle-gif:hover{
-        cursor: var(--cursor-pink) 0 0, auto !important;
     }
 
     .filter {
@@ -399,18 +357,13 @@
         margin: .5rem;
     }
 
-    .filter:hover{
-        cursor: var(--cursor-pink) 0 0, auto !important;
-    }
-
     #no-click   {
         width: 100%;
         height: 100%;
         background-color: black;
         border-radius: .25rem;
         border-color: black;
-        box-shadow: 0 0 1rem 0 black;
-        
+        box-shadow: 0 0 1rem 0 black;     
     }
     
      .do-not-click {
@@ -424,14 +377,10 @@
         }
         
         .no-click:hover {
-            cursor: var(--cursor-pink) 0 0, auto !important;
             box-shadow: 0 0 5rem 0 red;
             
         }
-        .do-not-click:hover {
-            cursor: var(--cursor-pink) 0 0, auto !important;
-        }
-    
+
         .mp3player-button  {
             font-family: 'pixelSplitter', 'Courier New', Monospace;
             z-index: 3;
@@ -453,8 +402,8 @@
         
         .mp3player-button:hover {
             opacity: 100%;
-            cursor: var(--cursor-pink) 0 0, auto !important;
         }
+
 /*buttons*/
 
 /*links*/
@@ -468,7 +417,6 @@
             padding: .15rem .15rem;
             text-shadow: 0 0 .25rem 0;
             font-weight: bold;
-            cursor: var(--cursor-pink) 0 0, auto !important;  
         }
 
     #navbar a {
@@ -482,7 +430,6 @@
             border-radius: .25em;
             box-shadow: 0 0 1em 0;
             font-weight: bold;
-            cursor: var(--cursor-pink) 0 0, auto !important;
         }
 
     #leftsidebar a {
@@ -495,7 +442,6 @@
             box-shadow: 0 0 .25em 0;
             font-weight: bold; 
             padding: 100;
-            cursor: var(--cursor-pink) 0 0, auto !important;
     }
 
     #rightsidebar a {
@@ -508,7 +454,6 @@
             box-shadow: 0 0 .25em 0;
             font-weight: bold; 
             padding: 100;
-            cursor: var(--cursor-pink) 0 0, auto !important;
         } 
 
     footer a {
@@ -521,7 +466,6 @@
             box-shadow: 0 0 .25em 0;
             font-weight: bold; 
             padding: .15rem .15rem;
-            cursor: var(--cursor-pink) 0 0, auto !important;
         }
 
 /*links*/
@@ -536,9 +480,6 @@
         justify-content: center;
         overflow: hidden;
     }
-    #navbar a:hover{
-        cursor: var(--cursor-pink) 0 0, auto !important;
-    }
 
  /*lists*/
 
@@ -546,11 +487,9 @@
 
     details > summary {
         list-style: none;
-        cursor: var(--cursor-pink) 0 0, auto !important;
     }
     details > summary::-webkit-details-marker {
         display: none;
-        cursor: var(--cursor-pink) 0 0, auto !important;
     }
 
  /*details*/
@@ -676,23 +615,14 @@
             margin: 0 auto;
             order: 2;
         }
-        .leftSidebar a:hover{
-            cursor: var(--cursor-pink) 0 0, auto !important;
-        }
-        #sidebar a:hover{
-            cursor: var(--cursor-pink) 0 0, auto !important;
-        }
-      
+
         .rightSidebar {
             height: 100;
             width: 100%;
             margin: 0 auto;
             order: 3;
         }
-        .rightSidebar a:hover{
-            cursor: var(--cursor-pink) 0 0, auto !important;
-        }
-      
+        
         #navbar ul {
             flex-wrap: wrap;
         }
