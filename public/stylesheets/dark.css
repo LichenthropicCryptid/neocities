@@ -48,7 +48,7 @@
         background-color: #0101012f;
         background-image: var(--header-image);
         background-repeat: no-repeat;
-        background-size:contain;
+        background-size:80%;
     }
     
     #navbar {
