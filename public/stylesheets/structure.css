@@ -606,7 +606,7 @@
         main {
             order: 1;
             width: 100vw;
-            height:3000px;
+            height:100%;
         }
 
         #sidebar    {
