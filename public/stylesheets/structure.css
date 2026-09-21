@@ -50,10 +50,10 @@
     cursor: var(--cursor) 0 0, auto !important;
         }
 
-    * a:hover{
+    a:hover{
         cursor: var(--cursor-pink) 0 0, auto !important;
     }
-    * details:hover {
+    details:hover {
         cursor: var(--cursor-pink) 0 0, auto !important;
     }
 
