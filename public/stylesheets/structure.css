@@ -84,7 +84,7 @@
         background-position: top center;
         background-attachment: fixed;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
     }
     
     #navbar {
