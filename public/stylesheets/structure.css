@@ -102,8 +102,15 @@
         margin: .5rem 1rem;
         padding: 1.5rem;
         order: 2;  
-        height:auto;
-        width: 600px;
+        height:200rem;
+        width: 500px;
+        border-radius: 1rem;
+    }
+
+    aside {
+        font-size: smaller;
+        height: 175rem;
+        background: transparent;
         border-radius: 1rem;
     }
 
