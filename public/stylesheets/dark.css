@@ -46,6 +46,7 @@
     
     #header {
         background-image: #0101012f var(--header-image);
+        width: 100%;
     }
     
     #navbar {
