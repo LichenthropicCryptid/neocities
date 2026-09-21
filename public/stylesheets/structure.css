@@ -79,12 +79,6 @@
     #flex {
         display: flex;
     }
-
-    #header {
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
     
     #navbar {
         height: 100%;

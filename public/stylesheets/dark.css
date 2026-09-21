@@ -45,8 +45,9 @@
     }
     
     #header {
-        background-image: #0101012f var(--header-image);
-        width: 100%;
+        background-color: #0101012f;
+        background-image: var(--header-image);
+        background-repeat: no-repeat;
     }
     
     #navbar {
