@@ -21,13 +21,11 @@
         color: white;
     }
         
-  .button-effects:hover   {
-      box-shadow: 0 0 .5rem 0 red;
-}
+    .button-effects:hover   {
+        box-shadow: 0 0 .5rem 0 red;
+    }
 
-  body {
-        background-color: #08031ad3;
-        color: #DED5D3;
+    body {
         background-image: var(--body-bg-image);
         }
 
