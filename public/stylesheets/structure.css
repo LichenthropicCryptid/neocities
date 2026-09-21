@@ -331,11 +331,12 @@
 
     .accessability  {
         position: fixed;
+        left: 3rem;
         display: flex;
         flex-direction: column;
         background: rgba(0, 0, 0, 0.922);
         border-radius: 1rem;
-        width: 20rem;
+        width: 10rem;
         padding: 1rem;
     }
 
