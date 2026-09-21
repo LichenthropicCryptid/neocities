@@ -75,7 +75,8 @@
 
     #header {
         background-position: top center;
-        background-repeat: none;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
     }
     
     #navbar {
