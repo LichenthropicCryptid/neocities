@@ -16,6 +16,7 @@
             <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">  
             
             <script type="module">
+
   import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
 
   new fairyDustCursor({
@@ -25,12 +26,11 @@
   
 </script>
 
-            
         </head>
         
-         <body>
-            <div class="crt" id="crt" style="display: block;">
+         <body class="crt">
            <div id="preloader"></div> 
+           
             <div id="layout" style="text-align:center">
         
             <header>
@@ -44,7 +44,6 @@
                 </div>
                 
             </header>
-              
                 
                     <button class="glow-button" onclick="createRipple(event)">
                     
@@ -55,9 +54,7 @@
                         
                         </a>
                     
-                    </button>
-                    
-                
+                    </button>               
                 
             <div id="cw" width="10rem;">
             
@@ -88,7 +85,7 @@
             
             font-family: "courier new", "consolas", monospace;
 
-            position: fixed;
+            
             
         }
         
