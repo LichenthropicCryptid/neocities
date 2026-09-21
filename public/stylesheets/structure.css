@@ -135,7 +135,7 @@
     }
 
     #container {
-        max-width: 10rem;
+        max-width: 100%;
         margin: 0 auto;
         height: 100%;
     }
