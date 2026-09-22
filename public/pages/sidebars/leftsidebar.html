@@ -172,15 +172,15 @@ rssfeed_cache = "86db238dcd562b16e9a90a1475d242ee";
                     <img src="images/buttons/this%20user%20is%20disabled.png" style="width:123px;" title="this user is disabled" alt="this user is disabled button">
                     
                     <a class="click" href="https://donatemask.ca/request/" target="_parent;">
-                    <img src="images/buttons/button-maskup-pink.gif" style="width:123px;" title="Link for FREE MASKS in Canada!!!" alt="mask up stay safe">
+                    <img src="...images/buttons/button-maskup-pink.gif" style="width:123px;" title="Link for FREE MASKS in Canada!!!" alt="mask up stay safe">
                     </a>
                 
-                    <img src="images/buttons/pothead.gif" style="width:123px;" title="Pothead" alt="A button with a cannabis leaf and the word pot head">
+                    <img src="...images/buttons/pothead.gif" style="width:123px;" title="Pothead" alt="A button with a cannabis leaf and the word pot head">
                 
-                    <img src="images/buttons/dark-mode.gif" style="width:123px;" title="made for dark mode" alt="made for dark mode">
+                    <img src="...images/buttons/dark-mode.gif" style="width:123px;" title="made for dark mode" alt="made for dark mode">
                 
                     <a class="click" href="https://arab.org/click-to-help/palestine/" target="_parent;">
-                    <img src="images/stamps/fromtherivertothesea.gif" style="width:123px;height:45px;" title="Clicks for Palestine" alt="palestine flag clicks for palestine button with the text from the river to the sea palestine will be free">    
+                    <img src="...images/stamps/fromtherivertothesea.gif" style="width:123px;height:45px;" title="Clicks for Palestine" alt="palestine flag clicks for palestine button with the text from the river to the sea palestine will be free">    
                     </a>
                     
                     
@@ -212,6 +212,48 @@ rssfeed_cache = "86db238dcd562b16e9a90a1475d242ee";
             darkmode();
             } 
             
+        </script>
+        <style>
+            /* Preloader */
+            #preloader {
+                background: black url("../images/assets/aniglobe.gif") no-repeat center;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                display: flex;
+                position: fixed;
+                height: 100vh;
+                left: 0;
+                top: 0;
+                z-index: 9999;
+            }
+        </style>
+        <script>
+            var loader = document.getElementById("preloader");
+
+            function hideLoader() {
+                if (!loader) return;
+                fadeOut();
+            }
+
+            function fadeOut() {
+                var op = 1;
+                var fade = setInterval(function () {
+                    op -= 0.1;
+                    if (op <= 0) {
+                        clearInterval(fade);
+                        loader.style.display = "none";
+                    } else {
+                        loader.style.opacity = op;
+                    }
+                }, 40);
+            }
+
+            // Hide once everything has loaded
+            window.addEventListener("load", hideLoader);
+
+            // Force-hide after 8 seconds even if it can't load
+            setTimeout(hideLoader, 8000);
         </script>
    </aside>     
   </body>
