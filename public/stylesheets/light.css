@@ -45,6 +45,8 @@
         background-color: #6A7A57;
         background-image: var(--header-image-light);
         background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     
     #navbar {
