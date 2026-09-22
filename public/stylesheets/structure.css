@@ -381,7 +381,7 @@
         
         .no-click:hover {
             box-shadow: 0 0 5rem 0 red;
-            
+            transform: scale(1.5) .5s;
         }
 
         .mp3player-button  {
