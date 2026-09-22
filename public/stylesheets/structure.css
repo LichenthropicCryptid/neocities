@@ -359,7 +359,7 @@
     }
 
     .no-click   {
-        width: 100%;
+        width: 200px;
         height: 100%;
         background-color: black;
         border-radius: .25rem;
