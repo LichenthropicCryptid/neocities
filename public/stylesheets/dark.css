@@ -30,6 +30,7 @@
         }
 
     main {
+        color: var(--text-dark);
         background-color: #43256eda;
     }
     

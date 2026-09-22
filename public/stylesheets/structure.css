@@ -6,8 +6,9 @@
     --index-bg: url("../images/bg-images/index-bg.JPG");
     --cursor: url("../images/cursor/cursor.png");
     --cursor-pink: url("../images/cursor/cursor-pink.png");
-    --content: (67,37,110);
-    --content-light: (#334500); 
+    --text-dark: (#a25a7e);
+    --text-light: (#334500); 
+    --accessable-text: (#f6ded9);
 }
 
 /*scrollbar*/  
@@ -96,7 +97,6 @@
     }
     
     main {
-        color:antiquewhite;
         position: flex;
         flex: 1;
         margin: .5rem 1rem;
