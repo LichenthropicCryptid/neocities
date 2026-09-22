@@ -115,6 +115,7 @@
     }
 
     #sidebar    {
+        height: inherit;
         overflow-x: hidden;
     }
 
@@ -122,14 +123,14 @@
         display: flex;
         float: left;
         order: 1;
-        
+        height: inherit;
     }
     
     #rightSidebar {
         display: flex;
         float: right;
         order: 3;
-       
+        height: inherit;
     }
 
     #container {
