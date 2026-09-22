@@ -48,13 +48,21 @@
             
                 <main style="text-align:center;">
                 
-                <div class="draggable" style="position: absolute; left: 2.5%; top: 30rem;"><img id="cloud1" src="../images/assets/clouds/misc9.png" style="pointer-events:none;" title="DRAGGABLE"></div>
-                
-                <div class="draggable" style="position: absolute; left: 75%; top: 30rem;"><img id="cloud2" src="../images/assets/clouds/misc8.png" style="pointer-events:none;" title="DRAGGABLE"></div>
-                
-                <div class="draggable" style="position: absolute; left: 20%; top: 75rem;"><img id="cloud3" src="../images/assets/clouds/misc13.png" style="pointer-events:none;" title="DRAGGABLE"></div>
-                
-                <div class="draggable" style="position: absolute; left: 80%; top: 65rem;"><img id="cloud4" src="../images/assets/clouds/misc11.png" style="pointer-events:none;" title="DRAGGABLE"></div>
+                    <div class="draggable" style="position: absolute; left: 2.5%; top: 30rem;"><img id="cloud1"
+                            src="https://lichenthropic.neocities.org/images/assets/clouds/misc9.png" style="pointer-events:none;"
+                            title="DRAGGABLE"></div>
+                    
+                    <div class="draggable" style="position: absolute; left: 75%; top: 30rem;"><img id="cloud2"
+                            src="https://lichenthropic.neocities.org/images/assets/clouds/misc8.png" style="pointer-events:none;"
+                            title="DRAGGABLE"></div>
+                    
+                    <div class="draggable" style="position: absolute; left: 15%; top: 95rem;"><img id="cloud3"
+                            src="https://lichenthropic.neocities.org/images/assets/clouds/misc13.png" style="pointer-events:none;"
+                            title="DRAGGABLE"></div>
+                    
+                    <div class="draggable" style="position: absolute; left: 80%; top: 65rem;"><img id="cloud4"
+                            src="https://lichenthropic.neocities.org/images/assets/clouds/misc11.png" style="pointer-events:none;"
+                            title="DRAGGABLE"></div>
                 
                 <div class="box" id="OnePot">
                 
@@ -77,29 +85,31 @@
                 top: 175%;
                 opacity: 75%;
             }
+     
+                html {
+                    width: 100%;
+                    overflow-x: hidden;
+                }
             
-        
-            html    {
-                width: 100%;
-                overflow-x: hidden;
-            }
+                #cloud1 {
+                    transform: scale(3);
+                    z-index: 10;
+                }
             
-            #cloud1 {
-                transform: scale(3);
-                
-            }
+                #cloud2 {
+                    transform: scale(2.5);
+                    z-index: 10;
+                }
             
-            #cloud2 {
-                transform: scale(2.5);
-            }
+                #cloud3 {
+                    transform: scale(5.5);
+                    z-index: 10;
+                }
             
-            #cloud3 {
-               transform: scale(5.5);
-            }
-            
-            #cloud4 {
-                transform: scale(5);
-            }
+                #cloud4 {
+                    transform: scale(5);
+                    z-index: 10;
+                }
             
             #One-Pot {
                 box-shadow: 0 0 10rem 0 black;
@@ -168,30 +178,32 @@
                 // Force-hide after 8 seconds even if it can't load
                 setTimeout(hideLoader, 8000);
             </script>
-            
+    
             <script>
-            document.querySelectorAll('.draggable').forEach(el => {
-              let isDragging = false;
-              let offsetX, offsetY;
-  
-              el.addEventListener('mousedown', (e) => {
-                isDragging = true;
-                offsetX = e.clientX - el.offsetLeft;
-                offsetY = e.clientY - el.offsetTop;
-                el.style.cursor = 'grabbing';
-              });
-  
-              document.addEventListener('mousemove', (e) => {
-                if (!isDragging) return;
-                el.style.left = (e.clientX - offsetX) + 'px';
-                el.style.top = (e.clientY - offsetY) + 'px';
-              });
-  
-              document.addEventListener('mouseup', () => {
-                isDragging = false;
-                el.style.cursor = 'grab';
-              });
-            });
+
+                document.querySelectorAll('.draggable').forEach(el => {
+                    let isDragging = false;
+                    let offsetX, offsetY;
+
+                    el.addEventListener('mousedown', (e) => {
+                        isDragging = true;
+                        offsetX = e.clientX - el.offsetLeft;
+                        offsetY = e.clientY - el.offsetTop;
+                        el.style.cursor = 'grabbing';
+                    });
+
+                    document.addEventListener('mousemove', (e) => {
+                        if (!isDragging) return;
+                        el.style.left = (e.clientX - offsetX) + 'px';
+                        el.style.top = (e.clientY - offsetY) + 'px';
+                    });
+
+                    document.addEventListener('mouseup', () => {
+                        isDragging = false;
+                        el.style.cursor = 'grab';
+                    });
+                });
+
             </script>
             <script>
                 function crton() {
