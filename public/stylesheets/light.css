@@ -41,9 +41,9 @@
         box-shadow: 0 0 .25rem 0 limegreen; 
     }
     
-iframe{
+    .sidebar    {
     border-color: #283600;
-}
+    }
 
     #header {
         background-color: #6A7A57;
