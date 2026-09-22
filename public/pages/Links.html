@@ -60,18 +60,30 @@
                     <div class="box">
                         
                         <div class="table-box">
-                        
-                            <a class="buttons" href="https://ko-fi.com/lichenthropic" target="_blank"><img src="https://lichenthropic.neocities.org/images/banners/ko-fi.gif" alt="buy me a ko fi button" style="width:200px"></a>
-                        
-                            <button class="pop-out">
+                            <button class="kofi">
+                            <img src="https://lichenthropic.neocities.org/images/banners/ko-fi.gif" alt="buy me a ko fi button" style="width:200px">
+                                </button>
+
+                                <script type="text/javascript">
+
+                                    $(function () {
+                                        $(".kofi").on("click", function (e) {
+                                            window.open("https://ko-fi.com/lichenthropic", "_blank",
+                                                "left=0,top=0,height=700px,padding=10");
+                                        });
+                                    });
+
+                                </script>
+
+                            <button class="throne">
                                 <img src="https://lichenthropic.neocities.org/images/banners/throne.gif" alt="throne wishlist button" style="width:200px">
                             </button>
                 
                                 <script type="text/javascript">
                                 
                                     $(function() {
-                                    $(".pop-out").on("click", function(e) {
-                                    window.open("https://lichenthropic.neocities.org/pages/popout-page/throne", "_blank",
+                                    $(".throne").on("click", function(e) {
+                                    window.open("https://throne.com/lichenthropic", "_blank",
                                     "left=0,top=0,height=700px,padding=10");
                                         });
                                     });  
