@@ -372,9 +372,11 @@
             display: flex;
             align-content: center;
             justify-content: center;
-            width: 100%;
+            width: 90%;
+            height: 90%;
             background: transparent;
             border: none;
+        
         }
         
         .no-click:hover {
