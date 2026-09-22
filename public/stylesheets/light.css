@@ -44,7 +44,7 @@
     #header {
         background-color: #6A7A57;
         background-image: var(--header-image-light);
-        background-size: contain;
+        background-size:cover;
         background-repeat: no-repeat;
         background-position: center;
     }
