@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+  
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+            <title>CHATBOX</title>
+    
+        <link rel="alternate" type="application/rss+xml" title="RSS feed for my site" href="https://lichenthropic.neocities.org/rss.xml"/>
+    
+            
+    <link id="structure" rel="stylesheet" href="../stylesheets/structure.css" type="text/css" media="all">
+
+    <link id="colortheme" rel="stylesheet" href="../stylesheets/dark.css" type="text/css" media="all">
+
+    <link id="filter" rel="stylesheet" href="../stylesheets/crt.css" type="text/css" media="all">
+    
+        
+            <script src="https://u.widget.st/ar.js"></script>
+            
+            <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    
+            <script type="module">
+
+                import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+
+                new fairyDustCursor({
+      
+                colors: ["#8EBD00", "#A4FF2E", "#DCFF0F"],
+  
+                fairySymbol: "★",
+  
+                });
+  
+            </script>
+            
+    </head>
+ 
+    <body class="crt">
+  
+        <div id="preloader"></div>
+    
+            <main>
+    
+                <div class="box" id="chat">
+    
+                    <ws-widget type="chat" iid="6135" width="500px"></ws-widget>
+    
+                </div>
+    
+            </main>
+            
+                <a id="close-window" href="javascript:window.close()">Close window.</a>
+                
+        <footer id="footer" style="margin-top: 10px;"></footer>
+    
+    </body>
+    <script>
+        function crton() {
+            document.getElementById('filter').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/crt.css');
+            localStorage.setItem('filter', 'crt-on');
+        }
+    
+        function crtoff() {
+            document.getElementById('filter').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/crt-off.css');
+            localStorage.setItem('filter', 'crt-off');
+        }
+    
+        if (localStorage.getItem('filter') == 'crt-on') {
+            crton();
+        }
+    
+        if (localStorage.getItem('filter') == 'crt-off') {
+            crtoff();
+        }
+    
+    </script>
+       <script>
+        
+            function lightmode() {
+                document.getElementById('colortheme').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/light.css');
+            localStorage.setItem('theme', 'lightmode');}
+  
+            function darkmode() {
+                document.getElementById('colortheme').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/dark.css');
+            localStorage.setItem('theme', 'darkmode');}
+                
+            if(localStorage.getItem('theme') == 'lightmode'){
+            lightmode();
+            }
+            
+            if(localStorage.getItem('theme') == 'darkmode'){
+            darkmode();
+            } 
+            
+        </script>
+        
+<style>
+    #chat   {
+        width: 550px;
+    }
+    main    {
+        overflow: hidden;
+        height: 100%;
+        width: 600px;
+    }
+    
+    #close-window   {
+        color: #314D27;
+        background-color: black;
+        border-radius: .25rem;
+        padding: .25rem;
+        font-size: .75rem;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    </style>
+</html>
