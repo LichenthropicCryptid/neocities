@@ -16,5 +16,4 @@ async function loadComponent(id, file) {
     
     document.dispatchEvent(new Event("componentsLoaded")
     }
-    )
     
