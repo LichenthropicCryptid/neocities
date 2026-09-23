@@ -58,12 +58,12 @@
                         $(function () {
                             $(".boombox").on("click", function (e) {
                                 window.open("https://lichenthropic.neocities.org/popout-page/mp3", "_blank",
-                                    "left=-500,top=0,width=200px,height=550px,padding=0");
+                                    "left=-550,top=0,width=200px,height=550px,padding=0");
                             });
                         });
 
                                </script>
-                            <img class="click" id="mp3-boombox" src="https://lichenthropic.neocities.org/images/assets/boombox.png">
+                            <img id="mp3-boombox" src="https://lichenthropic.neocities.org/images/assets/boombox.png">
                         
                 </div>
             </a>
@@ -166,6 +166,9 @@
             color:green;
             opacity: 100%;
             box-shadow: 0px 0px 25px 18px rgba(49,221,0,1);
+        }
+        #mp3-boombox:hover {
+            cursor: var(--cursor-pink);
         }
         </style>
        <script>
