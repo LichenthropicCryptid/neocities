@@ -121,12 +121,14 @@
         display: flex;
         float: left;
         order: 1;
+        width: 100px;
     }
     
     #r-Sidebar {
         display: flex;
         float: right;
         order: 3;
+        width: 100px;
     }
 
     #container {
