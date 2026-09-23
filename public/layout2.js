@@ -358,7 +358,192 @@ setTimeout(hideLoader, 8000);
 // Insert your sidebar HTML inside these ``. You can use HTML as usual.
 // Remove all the content inside the `` if you don't have a sidebar.
 const sidebarEl2 = `
-	<aside>
-		Sidebar2
-	</aside>
+<aside id="rightsidebar">
+             
+<button class="toggle-gif">GIFS</button>
+        
+    <h2 style="text-align:center;">Tunes</h2>
+
+        <div class="box" id="boombox-container">
+            <button class="boombox">
+                BOOMBOX
+            </button>
+            <script type="text/javascript">
+
+                $(function () {
+                    $(".boombox").on("click", function (e) {
+                        window.open("https://lichenthropic.neocities.org/popout-page/mp3", "_blank",
+                            "left=-550,top=0,width=200px,height=550px,padding=0");
+                    });
+                });
+
+                       </script>
+                    <img id="mp3-boombox" src="https://lichenthropic.neocities.org/images/assets/boombox.png">
+                
+        </div>
+    </a>
+        
+        <h2 style="text-align:center;">Its 420 somewhere!</h2> 
+     
+    <div class="box" id="date-time">
+    
+        <p class="click" style="text-align:center;">
+        
+            <iframe class="date-time" src="https://free.timeanddate.com/clock/iakw1nd7/n1091/tlca/fn8/fs18/fc090/tc000/pct/ftb/bas5/bat7/bac390/pa10/tt0/tw1/tm1/td2/th2/ta1/tb4" frameborder="0" width="250" height="90" allowtransparency="true"></iframe>
+
+        </p>
+        
+    </div>
+    
+        <h2 style="text-align:center;">Take a toke, you deserve it</h2>
+    <div class="box">
+            <ws-widget class="click" type="weather" iid="4230" width="90%" height="90%"></ws-widget>
+    
+    </div>
+    
+        <h2 style="text-align:center;">The MOON is watching over you </h2>
+        
+    <div class="box" style="text-align:center;">
+    
+    <ws-widget class="click" type="moon" id="moon" iid="4229" embed="iframe" width="90%"></ws-widget>   
+    
+    </div>
+    <h2 style="text-align:center;">VISITORS</h2>
+    <div class="box" style="text-align:center">
+    <!--BEGIN HIT-COUNTER.NET CODE-->
+    <a class="click" href="http://www.hit-counter.net"><img src="http://www.hit-counter.net/counter.php?action=count&style=crt&padding=10&id=lichenthropic.neocities" alt="Hit counter"></a>
+    <!--END HIT-COUNTER.NET CODE-->
+
+    </div>
+    
+    <h2 style="text-align:center">WEB-RINGS</h2>
+    
+    <div class="box">
+    
+        <p style="text-align:center">
+        
+                <map name="noaimini7b">
+                
+                    <area href="https://baccyflap.com/noai/?rnd" shape="rect" coords="30,6,144,54" target="_blank" alt="no ai webring random" title="no ai webring random">
+                    
+                    <area href="https://baccyflap.com/noai/?prv&s=ccl" target="_top" shape="rect" coords="6,12,24,54" alt="previous" title="previous">
+                    
+                    <area href="https://baccyflap.com/noai/?nxt&s=ccl" target="_top" shape="rect" coords="150,12,168,54" alt="next" title="next">
+                </map>
+                
+            <img class="click" style="width:176px;image-rendering:pixelated" usemap="#noaimini7b" src="https://baccyflap.com/noai/miniwidget7.gif" alt="a green-on-black grid with illuminated parts that spell out NO AI / WEBRING and two animated green arrows pointing left and right, bobbing up and down">
+            
+        </p> 
+        
+    </div> 
+    
+    <h2 style="text-align:center;">
+    
+    Welcome to the <br/>WORLD WIDE WEB
+    
+    </h2>
+       
+    <div class="box">
+    
+        <img class="freeze" id="globe" src="https://lichenthropic.neocities.org/images/assets/aniglobe.gif">
+                
+     </div>
+  
+
+<style>
+    body {
+    width: 100%;
+    height: inherit;
+}
+.boombox {
+    font-family: 'pixelSplitter', 'Courier New', Monospace;
+    z-index: 3;
+    position: absolute;
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+    top:13.8rem;
+    left: 4rem;
+    width: 11rem;
+    height:3rem;
+    font-weight: bold;
+    font-size: 2rem;
+    color: black;
+    background: black;
+    border-radius: .5rem;
+    opacity: 15%;
+    transition:
+        opacity .15s,
+        box-shadow .25s;
+}
+
+.boombox:hover {
+    color:green;
+    opacity: 100%;
+    box-shadow: 0px 0px 25px 18px rgba(49,221,0,1);
+}
+
+</style>
+<script>
+
+    function lightmode() {
+        document.getElementById('colortheme').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/light.css');
+    localStorage.setItem('theme', 'lightmode');}
+
+    function darkmode() {
+        document.getElementById('colortheme').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/dark.css');
+    localStorage.setItem('theme', 'darkmode');}
+        
+    if(localStorage.getItem('theme') == 'lightmode'){
+    lightmode();
+    }
+    
+    if(localStorage.getItem('theme') == 'darkmode'){
+    darkmode();
+    } 
+    
+</script>   
+<style>
+/* Preloader */
+#preloader {
+background: black url("../images/assets/aniglobe.gif") no-repeat center;
+align-items: center;
+justify-content: center;
+width: 100%;
+display: flex;
+position: fixed;
+height: 100vh;
+left: 0;
+top: 0;
+z-index: 9999;
+}
+</style>
+<script>
+var loader = document.getElementById("preloader");
+
+function hideLoader() {
+if (!loader) return;
+fadeOut();
+}
+
+function fadeOut() {
+var op = 1;
+var fade = setInterval(function () {
+    op -= 0.1;
+    if (op <= 0) {
+        clearInterval(fade);
+        loader.style.display = "none";
+    } else {
+        loader.style.opacity = op;
+    }
+}, 40);
+}
+
+// Hide once everything has loaded
+window.addEventListener("load", hideLoader);
+
+// Force-hide after 8 seconds even if it can't load
+setTimeout(hideLoader, 8000);
+</script>
+</aside>
 `;
