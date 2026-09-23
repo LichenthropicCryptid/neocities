@@ -16,6 +16,21 @@ document.addEventListener("DOMContentLoaded", function () {
     initActiveLinks();
   }
 
+  <script src="https://u.widget.st/ar.js"></script>;
+
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>;
+
+  <script src="https://lichenthropic.neocities.org/freezeframe.js"></script>;
+
+  function popup(mylink, windowname) { 
+    if (! window.focus)return true;
+    var href;
+    if (typeof(mylink) == 'string') href=mylink;
+    else href=mylink.href; 
+    window.open(href, windowname, 'width=700,height=900,scrollbars=no'); 
+    return false; 
+  }
+
   // add your own javascript code here...
 });
 
@@ -145,7 +160,7 @@ const footerEl = `
 // Insert your sidebar HTML inside these ``. You can use HTML as usual.
 // Remove all the content inside the `` if you don't have a sidebar.
 const sidebarEl1 = `
-<aside id="leftsidebar" style="margin-right: 0.25rem;">
+<aside id="leftsidebar">
 
 <button class="toggle-gif">GIFS</button>
 
@@ -281,77 +296,6 @@ rssfeed_cache = "86db238dcd562b16e9a90a1475d242ee";
 </div>
 </div>
 
-<style>
-body {
-width: 100%;
-}
-#no-click-box   {
-height: 6rem;
-}
-
-</style>
-
-<script>
-
-function lightmode() {
-document.getElementById('colortheme').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/light.css');
-localStorage.setItem('theme', 'lightmode');}
-
-function darkmode() {
-document.getElementById('colortheme').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/dark.css');
-localStorage.setItem('theme', 'darkmode');}
-
-if(localStorage.getItem('theme') == 'lightmode'){
-lightmode();
-}
-
-if(localStorage.getItem('theme') == 'darkmode'){
-darkmode();
-} 
-
-</script>
-<style>
-/* Preloader */
-#preloader {
-background: black url("../images/assets/aniglobe.gif") no-repeat center;
-align-items: center;
-justify-content: center;
-width: 100%;
-display: flex;
-position: fixed;
-height: 100vh;
-left: 0;
-top: 0;
-z-index: 9999;
-}
-</style>
-<script>
-var loader = document.getElementById("preloader");
-
-function hideLoader() {
-if (!loader) return;
-fadeOut();
-}
-
-function fadeOut() {
-var op = 1;
-var fade = setInterval(function () {
-    op -= 0.1;
-    if (op <= 0) {
-        clearInterval(fade);
-        loader.style.display = "none";
-    } else {
-        loader.style.opacity = op;
-    }
-}, 40);
-}
-
-// Hide once everything has loaded
-window.addEventListener("load", hideLoader);
-
-// Force-hide after 8 seconds even if it can't load
-setTimeout(hideLoader, 8000);
-</script>
 </aside>
 `;
 
@@ -448,102 +392,6 @@ const sidebarEl2 = `
         <img class="freeze" id="globe" src="https://lichenthropic.neocities.org/images/assets/aniglobe.gif">
                 
      </div>
-  
 
-<style>
-    body {
-    width: 100%;
-    height: inherit;
-}
-.boombox {
-    font-family: 'pixelSplitter', 'Courier New', Monospace;
-    z-index: 3;
-    position: absolute;
-    margin: 0 auto;
-    display: flex;
-    align-content: center;
-    top:13.8rem;
-    left: 4rem;
-    width: 11rem;
-    height:3rem;
-    font-weight: bold;
-    font-size: 2rem;
-    color: black;
-    background: black;
-    border-radius: .5rem;
-    opacity: 15%;
-    transition:
-        opacity .15s,
-        box-shadow .25s;
-}
-
-.boombox:hover {
-    color:green;
-    opacity: 100%;
-    box-shadow: 0px 0px 25px 18px rgba(49,221,0,1);
-}
-
-</style>
-<script>
-
-    function lightmode() {
-        document.getElementById('colortheme').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/light.css');
-    localStorage.setItem('theme', 'lightmode');}
-
-    function darkmode() {
-        document.getElementById('colortheme').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/dark.css');
-    localStorage.setItem('theme', 'darkmode');}
-        
-    if(localStorage.getItem('theme') == 'lightmode'){
-    lightmode();
-    }
-    
-    if(localStorage.getItem('theme') == 'darkmode'){
-    darkmode();
-    } 
-    
-</script>   
-<style>
-/* Preloader */
-#preloader {
-background: black url("../images/assets/aniglobe.gif") no-repeat center;
-align-items: center;
-justify-content: center;
-width: 100%;
-display: flex;
-position: fixed;
-height: 100vh;
-left: 0;
-top: 0;
-z-index: 9999;
-}
-</style>
-<script>
-var loader = document.getElementById("preloader");
-
-function hideLoader() {
-if (!loader) return;
-fadeOut();
-}
-
-function fadeOut() {
-var op = 1;
-var fade = setInterval(function () {
-    op -= 0.1;
-    if (op <= 0) {
-        clearInterval(fade);
-        loader.style.display = "none";
-    } else {
-        loader.style.opacity = op;
-    }
-}, 40);
-}
-
-// Hide once everything has loaded
-window.addEventListener("load", hideLoader);
-
-// Force-hide after 8 seconds even if it can't load
-setTimeout(hideLoader, 8000);
-</script>
 </aside>
 `;

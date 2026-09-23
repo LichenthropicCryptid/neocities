@@ -524,3 +524,34 @@
    }
 /*media queries*/
 
+#no-click-box   {
+    height: 6rem;
+    }
+
+    .boombox {
+        font-family: 'pixelSplitter', 'Courier New', Monospace;
+        z-index: 3;
+        position: absolute;
+        margin: 0 auto;
+        display: flex;
+        align-content: center;
+        top:13.8rem;
+        left: 4rem;
+        width: 11rem;
+        height:3rem;
+        font-weight: bold;
+        font-size: 2rem;
+        color: black;
+        background: black;
+        border-radius: .5rem;
+        opacity: 15%;
+        transition:
+            opacity .15s,
+            box-shadow .25s;
+    }
+    
+    .boombox:hover {
+        color:green;
+        opacity: 100%;
+        box-shadow: 0px 0px 25px 18px rgba(49,221,0,1);
+    }
