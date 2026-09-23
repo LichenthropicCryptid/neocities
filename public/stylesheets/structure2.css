@@ -113,7 +113,22 @@
         border-radius: 1rem;
     }
 
-   
+    #sidebar    {
+        overflow-x: hidden;
+    }
+
+    #leftSidebar {
+        display: flex;
+        float: left;
+        order: 1;
+    }
+    
+    #rightSidebar {
+        display: flex;
+        float: right;
+        order: 3;
+    }
+
     #container {
         max-width: 60rem;
         margin: 0 auto;
