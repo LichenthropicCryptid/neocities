@@ -117,13 +117,13 @@
         overflow-x: hidden;
     }
 
-    #leftSidebar {
+    #l-Sidebar {
         display: flex;
         float: left;
         order: 1;
     }
     
-    #rightSidebar {
+    #r-Sidebar {
         display: flex;
         float: right;
         order: 3;
