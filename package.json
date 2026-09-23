@@ -20,3 +20,10 @@
     "html-minifier-terser": "^7.2.0"
   }
 }
+{
+  ...
+  "scripts": {
+    "build": "npx @11ty/eleventy & webpack",
+    "watch": "npx @11ty/eleventy --serve & webpack --watch",
+  }
+}
