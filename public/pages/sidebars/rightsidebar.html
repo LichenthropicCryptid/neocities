@@ -50,14 +50,14 @@
             <h2 style="text-align:center;">Tunes</h2>
 
                 <div class="box" id="boombox-container">
-                    <button id="boombox">
+                    <button class="boombox">
                         BOOMBOX
                     </button>
                     <script type="text/javascript">
 
                         $(function () {
                             $(".boombox").on("click", function (e) {
-                                window.open("https://lichenthropic.neocities.org/pages/popout-page/mp3", "_blank",
+                                window.open("https://lichenthropic.neocities.org/pages/popout-page/mp3.html", "_blank",
                                     "left=0,top=0,height=700px,padding=10");
                             });
                         });
@@ -140,7 +140,7 @@
             width: 100%;
             height: inherit;
         }
-        #boombox {
+        .boombox {
             font-family: 'pixelSplitter', 'Courier New', Monospace;
             z-index: 3;
             position: absolute;
@@ -162,7 +162,7 @@
                 box-shadow .25s;
         }
         
-        #boombox:hover {
+        .boombox:hover {
             color:green;
             opacity: 100%;
             box-shadow: 0px 0px 25px 18px rgba(49,221,0,1);
