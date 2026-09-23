@@ -35,16 +35,7 @@
 });
   
 </script>
-<script type="text/javascript">
 
-    $(function () {
-        $(".boombox").on("click", function (e) {
-            window.open("https://lichenthropic.neocities.org/popout-page/mp3", "_blank",
-                "left=0,top=0,height=700px,padding=10");
-        });
-    });
-
-</script>
 
 <script src="https://lichenthropic.neocities.org/freezeframe.js"></script>
 
@@ -62,6 +53,16 @@
                     <button id="boombox">
                         BOOMBOX
                     </button>
+                    <script type="text/javascript">
+
+                        $(function () {
+                            $(".boombox").on("click", function (e) {
+                                window.open("https://lichenthropic.neocities.org/pages/popout-page/mp3", "_blank",
+                                    "left=0,top=0,height=700px,padding=10");
+                            });
+                        });
+
+                               </script>
                             <img class="click" id="mp3-boombox" src="https://lichenthropic.neocities.org/images/assets/boombox.png">
                         
                 </div>
