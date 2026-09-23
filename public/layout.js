@@ -124,11 +124,11 @@ const headerE1 = `
             
                     <nav id="navbar" style="margin-bottom: 10px; margin-top: 10px;">
                         <ul>
-                            <li><a href="/pages/Homepage">HOME</a></li>
-                            <li><a href="/pages/About">ABOUT</a></li>
+                            <li><a href="/pages/homepage">HOME</a></li>
+                            <li><a href="/pages/about">ABOUT</a></li>
                             <li><a href="/pages/gallery">GALLERY</a></li>
-                            <li><a href="/pages/Smokeroom">SMOKE ROOM</a></li>
-                            <li><a href="/pages/Links">CREDITS + LINKS</a></li>
+                            <li><a href="/pages/smokeroom">SMOKE ROOM</a></li>
+                            <li><a href="/pages/links">CREDITS + LINKS</a></li>
                             <li><a href="/pages/critters">CRITTERS</a></li>
                             <li><a href="/pages/collection">COLLECTIONS</a></li>
                         </ul>
