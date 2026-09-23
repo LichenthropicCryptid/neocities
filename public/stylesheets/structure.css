@@ -380,32 +380,7 @@
             box-shadow: 0 0 5rem 0 red;
         }
 
-        .boombox {
-            font-family: 'pixelSplitter', 'Courier New', Monospace;
-            z-index: 3;
-            position: absolute;
-            margin: 1.25rem;
-            display: flex;
-            align-content: center;
-            top:15rem;
-            left: 3rem;
-            width: 11rem;
-            height:3rem;
-            font-weight: bold;
-            font-size: 2rem;
-            color: green;
-            background: black;
-            border-radius: .5rem;
-            opacity: 5%;
-            transition:
-                opacity 1s,
-                box-shadow 1s;
-        }
-        
-        .boombox:hover {
-            opacity: 100%;
-            box-shadow: 0px 0px 25px 18px rgba(49,221,0,1);
-        }
+       
 
 /*buttons*/
 
