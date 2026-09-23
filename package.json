@@ -14,16 +14,11 @@
   "type": "commonjs",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx @11ty/eleventy & webpack",
+    "watch": "npx @11ty/eleventy --serve & webpack --watch"
   },
   "dependencies": {
     "html-minifier-terser": "^7.2.0"
-  }
-}
-{
-  ...
-  "scripts": {
-    "build": "npx @11ty/eleventy & webpack",
-    "watch": "npx @11ty/eleventy --serve & webpack --watch",
   }
 }
