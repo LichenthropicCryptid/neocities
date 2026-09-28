@@ -4,29 +4,23 @@ html {
 
 body {
     width:80%;
-    position: absolute, center;
+    padding: 1rem;
 }
 
 header {
     height: 5rem;
     background-color:#2f4a0e;
+    padding: 1rem;
 }
 
 main {
     width: 80%;
     background-color: #21310e;
-}
-
-aside {
-    background-color: transparent;
-}
-
-.sidebar {
-    background-color: rgb(20, 3, 3);
-    width: 20rem;
+    padding: 1rem;
 }
 
 footer  {
     background-color:#2f4a0e;
     height: 1.5rem;
+    padding: 1rem;
 }
