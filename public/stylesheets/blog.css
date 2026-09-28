@@ -25,4 +25,5 @@ html {
 .return-button:hover {
     -webkit-box-shadow: 0px 0px 41px 19px #15A500; 
     box-shadow: 0px 0px 41px 19px #15A500;
+    opacity: 100%;
 }
