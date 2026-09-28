@@ -23,6 +23,17 @@ header {
     text-align: center;
 }
 
+nav{
+
+}
+
+.page-title {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+}
+
 main {
     
     width: 80%;
@@ -30,18 +41,21 @@ main {
     padding: 1rem;
 }
 
-.blog-title {
-    width: 80%;
-    margin: 0 auto;
-    padding: 1rem;
-    text-align: center;
-}
+
 
 .blog-entry {
     width: 80%;
     margin: 0 auto;
     padding: 1rem;
     text-align: center;
+}
+
+aside {
+
+}
+
+.sidebar {
+
 }
 
 footer  {
