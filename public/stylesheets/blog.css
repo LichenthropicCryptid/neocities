@@ -3,7 +3,7 @@ html {
 }
 
 header {
-    height: 20rem;
+    height: 5rem;
     background-color:#2f4a0e;
 }
 
@@ -30,5 +30,5 @@ aside {
 
 footer  {
     background-color:#2f4a0e;
-    height: 2.5rem;
+    height: 1.5rem;
 }
