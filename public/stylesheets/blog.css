@@ -18,8 +18,8 @@ html {
     height: 20px;
     display:flex;
     position:absolute;
-    bottom: 15px;
-    left: 22px;
+    bottom: 18px;
+    left: 21px;
     color:transparent;
     z-index: 10;
 }
