@@ -14,11 +14,11 @@ html {
     margin: 0 auto;
 }
 .return-button  {
-    width: 58px;
+    width: 56px;
     height: 20px;
     display:flex;
     position:absolute;
-    bottom: 18px;
+    bottom: 20px;
     left: 21px;
     color:transparent;
     z-index: 10;
