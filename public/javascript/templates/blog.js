@@ -100,7 +100,7 @@ const footerE1 = `
 // Remove all the content inside the `` if you don't have a sidebar.
 const sidebarEl1 = `
 <aside class="sidebar" id="left-sidebar">
-
+LEFT SIDEBAR TEST
 </aside>
             `;
 
@@ -108,6 +108,6 @@ const sidebarEl1 = `
 // Remove all the content inside the `` if you don't have a sidebar.
 const sidebarEl2 = `
 <aside class="sidebar" id="right-sidebar">
-
+RIGHT SIDEBAR TEST
 </aside>
 `;
