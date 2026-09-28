@@ -2,13 +2,17 @@ html {
     background-color:#162405;
 }
 
+body {
+    width:60%;
+}
+
 header {
     height: 5rem;
     background-color:#2f4a0e;
 }
 
 main {
-    width: 20rem;
+    width: 40rem;
     background-color: #21310e;
 }
 
@@ -17,19 +21,8 @@ aside {
 }
 
 .sidebar {
-    display:flex;
-    flex-direction:column;
     background-color: rgb(20, 3, 3);
-    width: 10rem;
-}
-
-#left-sidebar {
-    float: left;
-
-}
-
-#right-sidebar {
-    float: right;
+    width: 20rem;
 }
 
 footer  {
