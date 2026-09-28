@@ -171,16 +171,15 @@
                         </details>
                     </div>
                 </div> 
-                <div class="wrapper">         
-                <iframe id="onyx" width="310" height="310" scrolling="no"
-                    src="https://gify.pet/pet/pet.html?name=Onyx&dob=1790055165&gender=m&element=Fire&pet=https%3A%2F%2Flichenthropic.neocities.org%2Fimages%2Fassets%2Fonyx.gif&map=night.gif&background=https%3A%2F%2Flichenthropic.neocities.org%2Fimages%2Fbg-images%2Fgeocities4.jpg&tablecolor=%2300ff2a&textcolor=white"></iframe>
-                    
+                    <div class="wrapper">
+                        <div id="onyx"> 
+                            <iframe id="pet" width="310" height="350" scrolling="no" src="https://gify.pet/pet/pet.html?name=Onyx&dob=1790055165&gender=m&element=Fire&pet=https%3A%2F%2Flichenthropic.neocities.org%2Fimages%2Fassets%2Fonyx.gif&map=night.gif&background=https%3A%2F%2Flichenthropic.neocities.org%2Fimages%2Fbg-images%2Fgeocities4.jpg&tablecolor=%2300ff2a&textcolor=white"></iframe>
+                        </div>
                         <div id="sudoku">
-                            <script src="https://lichenthropic.neocities.org/javascript/sudoku.js" data-difficulty="random"
-                                data-symmetrical="true"></script>
+                            <script src="https://lichenthropic.neocities.org/javascript/sudoku.js" data-difficulty="random" data-symmetrical="true"></script>
                         </div> 
                     </div> 
-                        </main>
+                </main>
                 
             <aside id="rightSidebar">
                 <iframe src="/pages/sidebars/rightsidebar.html" scrolling="no">
@@ -192,67 +191,67 @@
                 </iframe>
             </aside>
             
-            </div>
+        </div>
             
-            <style>
-            #sudoku {
-                float: right;
-                margin: .5rem;
-                background-color: #c6a3a2;
-                color: #020202;
-            }
-            #onyx   {
-                float: left;
-                margin-left: 5px;
-                position: relative;
-                width: 19rem;
-                transform: scale(.85);
-                
-            }
-            #to-do {
-                margin: 0.5rem;
-                float: right;
-                width: 19.5rem;
-                overflow-x:hidden;
+    <style>
+        #sudoku {
+            float: right;
+            margin: .5rem;
+            background-color: #c6a3a2;
+            color: #020202;
+        }
+
+        #onyx   {
+            float: left;
+            position: relative;
+            width: 19rem;
+            transform: scale(.85);  
             }
 
-            #changelog {
-                margin: 0.5rem;
-                float: left;
-                width: 19.5rem;
-                overflow-x:hidden;
+        #to-do  {
+            margin: 0.5rem;
+            float: right;
+            width: 19.5rem;
+            overflow-x:hidden;
             }
 
-            #changelog-box  {
-                color: #f6ded9;
-                height: 100%;
-                background-color: #13092dcd;
-                border: .15rem dashed #2E520B;
-                border-radius: 1rem;
-                height: 30rem;
-                overflow-y: scroll;
-                overflow-x:hidden;
-                flex-wrap: wrap;
-                font-size: smaller;
-                font-family:'Courier New', Courier, monospace;
-                font-weight: bold;
-                line-height: 1.5rem;
+        #changelog {
+            margin: 0.5rem;
+            float: left;
+            width: 19.5rem;
+            overflow-x:hidden;
+            }
+
+        #changelog-box  {
+            color: #f6ded9;
+            height: 100%;
+            background-color: #13092dcd;
+            border: .15rem dashed #2E520B;
+            border-radius: 1rem;
+            height: 30rem;
+            overflow-y: scroll;
+            overflow-x:hidden;
+            flex-wrap: wrap;
+            font-size: smaller;
+            font-family:'Courier New', Courier, monospace;
+            font-weight: bold;
+            line-height: 1.5rem;
             }
         
-            #to-do-box  {
-                color: #f6ded9;
-                height: 100%;
-                font-size: smaller;
-                background-color: #13092dcd;
-                border: .15rem dashed #2E520B;
-                border-radius: 1rem;
-                height: 30rem;
-                overflow-y: scroll;
-                overflow-x:hidden;
-                flex-wrap: wrap;
-                font-family:'Courier New', Courier, monospace;
-                font-weight: bold;
-                line-height: 1.5rem;
+        #to-do-box  {
+            color: #f6ded9;
+            height: 100%;
+            font-size: smaller;
+            background-color: #13092dcd;
+            border: .15rem dashed #2E520B;
+            border-radius: 1rem;
+            height: 30rem;
+            overflow-y: scroll;
+            overflow-x:hidden;
+            flex-wrap: wrap;
+            font-family:'Courier New', Courier, monospace;
+            font-weight: bold;
+            line-height: 1.5rem;
             }
             
             </style>
@@ -296,7 +295,8 @@
             } 
             
         </script>
-<style>
+
+        <style>
             /* Preloader */
         #preloader {
         background: black
@@ -312,8 +312,9 @@
         top: 0;
         z-index: 9999;
         }
-            </style>
-            <script>
+        </style>
+
+        <script>
             var loader = document.getElementById("preloader");
 
         function hideLoader() {
@@ -339,7 +340,7 @@
 
         // Force-hide after 8 seconds even if it can't load
         setTimeout(hideLoader, 8000);
-            </script>
+        </script>
             
   </body>
   </html>
