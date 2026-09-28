@@ -18,4 +18,8 @@ html {
     height: 20px;
     color: transparent;
     background:transparent;
+    display:flex;
+    position:absolute;
+    bottom: 0;
+    left: 10px;
 }
