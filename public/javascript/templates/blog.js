@@ -83,26 +83,14 @@ const headerE1 = `
 <header>
     <a id="top"></a>      
 <div id="header" style="height: 150px;"></div>
-    <div id="headerArea">
-        <nav id="navbar" style="margin-bottom: 10px; margin-top: 10px;">
-            <ul>
-                <li><a href="  ">  </a></li>
-                <li><a href="  ">  </a></li>
-                <li><a href="  ">  </a></li>
-                <li><a href="  ">  </a></li>
-                <li><a href="  ">  </a></li>
-                <li><a href="  ">  </a></li>
-                <li><a href="  ">  </a></li>
-            </ul>
-        </nav>
-    </div>
-</div>
+    
 </header>
 `;
 
 // Insert your footer HTML inside these ``. You can use HTML as usual.
 // Remove all the content inside the `` if you don't have a footer.
-const footerE1 = `<footer>
+const footerE1 = `
+<footer>
 	    |	Lichenthropic   |   Chronic Cryptid 2026    |   
 		<a href="#top">Back to top</a>  |
 </footer>
@@ -111,9 +99,15 @@ const footerE1 = `<footer>
 // Insert your sidebar HTML inside these ``. You can use HTML as usual.
 // Remove all the content inside the `` if you don't have a sidebar.
 const sidebarEl1 = `
+<aside class="sidebar" id="left-sidebar">
+
+</aside>
             `;
 
 // Insert your sidebar HTML inside these ``. You can use HTML as usual.
 // Remove all the content inside the `` if you don't have a sidebar.
 const sidebarEl2 = `
+<aside class="sidebar" id="right-sidebar">
+
+</aside>
 `;
