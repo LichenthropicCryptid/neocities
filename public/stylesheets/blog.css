@@ -20,7 +20,7 @@ html {
     position:absolute;
     bottom: 22px;
     left: 21px;
-    color:transparent;
+    opacity: 0;
     z-index: 10;
 }
 .return-button:hover {
