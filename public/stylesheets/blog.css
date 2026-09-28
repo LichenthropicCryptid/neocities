@@ -22,7 +22,14 @@ main {
     padding: 1rem;
 }
 
-#blog-title {
+.blog-title {
+    width: 80%;
+    background-color: #21310e;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.blog-entry {
     width: 80%;
     background-color: #21310e;
     margin: 0 auto;
