@@ -6,6 +6,7 @@
 html {
     background-color:#070b01;
     font-family:PixelSplitter;
+    overflow: hidden;
 }
 .tumblr {
     width:75rem;
