@@ -19,6 +19,8 @@ html {
     display:flex;
     position:absolute;
     bottom: 23px;
+    background-color: black;
+    color:bisque;
     left: 20px;
     opacity: 0;
     z-index: 10;
