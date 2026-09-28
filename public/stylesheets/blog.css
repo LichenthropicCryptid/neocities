@@ -18,7 +18,9 @@ aside {
 
 .sidebar {
     display:flex;
+    flex-direction:column;
     background-color: rgb(20, 3, 3);
+    width: 10rem;
 }
 
 #left-sidebar {
