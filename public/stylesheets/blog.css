@@ -19,8 +19,10 @@ html {
     display:flex;
     position:absolute;
     bottom: 23px;
-    background-color: black;
-    color:bisque;
+    background-color: #15A500;
+    border-style:groove;
+    border-color: #070b01;
+    color:black;
     left: 20px;
     opacity: 0;
     z-index: 10;
