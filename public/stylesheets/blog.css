@@ -17,15 +17,17 @@ aside {
 }
 
 .sidebar {
-
+    display:flex;
+    background-color: rgb(20, 3, 3);
 }
 
 #left-sidebar {
+    float: left;
 
 }
 
 #right-sidebar {
-
+    float: right;
 }
 
 footer  {
