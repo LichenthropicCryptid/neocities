@@ -24,7 +24,6 @@ main {
 
 .blog-title {
     width: 80%;
-    background-color: #21310e;
     margin: 0 auto;
     padding: 1rem;
     text-align: center;
@@ -32,7 +31,6 @@ main {
 
 .blog-entry {
     width: 80%;
-    background-color: #2a372a;
     margin: 0 auto;
     padding: 1rem;
     text-align: center;
