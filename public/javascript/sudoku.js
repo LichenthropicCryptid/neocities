@@ -35,7 +35,7 @@ Copyright 404City All Rights Reserved
         <style>
             :where(#sudoku, #sudoku *) {margin: 0; padding: 0; box-sizing: border-box;}
             :where(#sudoku) {
-                height: 100%;
+                height: 90%;
                 width: 100%;
                 display: flex;
                 flex-direction: column;
