@@ -20,12 +20,12 @@ html {
     position:absolute;
     bottom: 10px;
     left: 25px;
-    opacity: 1%;
+    color:transparent;
     z-index: 10;
 }
 .return-button:hover {
-    -webkit-box-shadow: 0px 0px 41px 19px #15A500; 
-    box-shadow: 0px 0px 41px 19px #15A500;
+    -webkit-box-shadow: 0px 0px 20px 10px #15A500; 
+    box-shadow: 0px 0px 20px 10px #15A500;
     opacity: 100%;
-    color: transparent;
+    
 }
