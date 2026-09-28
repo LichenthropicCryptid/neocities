@@ -20,6 +20,6 @@ html {
     background:green;
     display:flex;
     position:absolute;
-    bottom: 0;
+    bottom: 5px;
     left: 10px;
 }
