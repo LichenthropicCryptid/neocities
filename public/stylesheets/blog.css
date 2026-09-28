@@ -14,10 +14,10 @@ html {
     margin: 0 auto;
 }
 .return-button  {
-    width: 50px;
+    width: 75px;
     height: 20px;
     color: black;
-    background:green;
+    background:transparent;
     display:flex;
     position:absolute;
     bottom: 5px;
