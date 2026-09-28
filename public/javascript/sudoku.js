@@ -35,14 +35,14 @@ Copyright 404City All Rights Reserved
         <style>
             :where(#sudoku, #sudoku *) {margin: 0; padding: 0; box-sizing: border-box;}
             :where(#sudoku) {
-                height: 330px;
-                width: 260px;
+                height: 350px;
+                width: 275px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 font-family: Arial, Helvetica, sans-serif;
-                font-size: 16px;
+                font-size: 18px;
                 padding: 0.25em;
                 gap: 0.25rem;
                 border: 1px solid #000;
