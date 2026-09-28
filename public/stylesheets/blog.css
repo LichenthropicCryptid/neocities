@@ -1,7 +1,6 @@
 @font-face { 
     font-family:PixelSplitter; 
-    src: url(../fonts/PixelSplitter.ttf);
-    color:bisque;
+    src: url(https://lichenthropic.neocities.org/fonts/PixelSplitter.ttf);
 }
 
 html {
@@ -9,6 +8,7 @@ html {
 }
 
 body {
+    color:bisque;
     background-color:#0f1803;
     width:80%;
     padding: 1rem;
