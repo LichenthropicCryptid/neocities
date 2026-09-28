@@ -16,10 +16,8 @@ html {
 .return-button  {
     width: 100px;
     height: 50px;
-    color: black;
-    background:transparent;
     display:flex;
     position:absolute;
-    bottom: 20px;
+    bottom: 10px;
     left: 30px;
 }
