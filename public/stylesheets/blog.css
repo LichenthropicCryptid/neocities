@@ -10,14 +10,14 @@ body {
 
 header {
     height: 5rem;
-    background-color:#2f4a0e;
+    background-color:#21310e;
     padding: 1rem;
     text-align: center;
 }
 
 main {
     width: 80%;
-    background-color: #21310e;
+    background-color: #2f4a0e;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -32,14 +32,14 @@ main {
 
 .blog-entry {
     width: 80%;
-    background-color: #21310e;
+    background-color: #2a372a;
     margin: 0 auto;
     padding: 1rem;
     text-align: center;
 }
 
 footer  {
-    background-color:#2f4a0e;
+    background-color:#21310e;
     height: 1.5rem;
     padding: 1rem;
     text-align: center;
