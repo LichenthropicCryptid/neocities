@@ -559,15 +559,16 @@ input[type=range] {
         padding:5rem;
     }
     #tracklist {
-        position:fixed;
         height: 200px;
         overflow-y: scroll;
+        z-index: 5;
     }
  </style>
 <script>
         // initiate variables
         let track_name = document.querySelector(".songtitle");
- 
+        let track_artist= document.querySelector(".artist");
+
         let playpause_btn = document.querySelector(".playpause-track");
         let next_btn = document.querySelector(".next-track");
         let prev_btn = document.querySelector(".prev-track");
