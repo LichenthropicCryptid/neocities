@@ -354,6 +354,7 @@ input[type=range] {
 </style>
 </head>
 <body>
+    <div class="boombox-popout">
 <div class="player">
 <div class="window">
   <div class="title-bar">
@@ -400,8 +401,13 @@ input[type=range] {
   </div>
 </div>
     </div>
+    </div>
 </body>
- 
+ <style>
+    .boombox-popout {
+        transform: scale(2.5);
+    }
+ </style>
 <script>
         // initiate variables
         let track_name = document.querySelector(".songtitle");
