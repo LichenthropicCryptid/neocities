@@ -100,6 +100,7 @@
     }
     
     main {
+        align-self: center;
         position: flex;
         flex: 1;
         margin: .5rem 1rem;
@@ -533,7 +534,7 @@
     @media only screen and (min-width: 1000px) {
         main {
             width: 50%;
-            align-self: center;
+           
         }
     }
    @media only screen and (max-width: 1000px) {
