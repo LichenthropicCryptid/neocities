@@ -548,13 +548,13 @@
         #leftSidebar {
             display: flex;
             order: 1;
-            width: 70%;
+            width: 40%;
         }
         
         #rightSidebar {
             display: flex;
             order: 3;
-            width:70%;
+            width:40%;
         }
    }
 /*media queries*/
