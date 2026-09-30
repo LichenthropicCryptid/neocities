@@ -536,12 +536,10 @@
             width: 40%;
             align-self: center;
         }
-        .wrapper {
+    
+        #fun {
             flex-wrap: wrap;
             align-self: center;
-        }
-        #fun {
-            flex-direction: column;
         }
         aside {
          width: fill;
