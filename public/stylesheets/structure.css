@@ -542,19 +542,17 @@
             height: 100%;
         }
         aside {
-         width: fill;   
+            width:40%;   
         }
     
         #leftSidebar {
             display: flex;
             order: 1;
-            width: 40%;
         }
         
         #rightSidebar {
             display: flex;
             order: 3;
-            width:40%;
         }
    }
 /*media queries*/
