@@ -538,6 +538,10 @@
         }
         .wrapper {
             flex-wrap: wrap;
+            align-self: center;
+        }
+        #fun {
+            flex-direction: column;
         }
         aside {
          width: fill;
