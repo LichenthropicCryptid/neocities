@@ -537,7 +537,7 @@
             align-self: center;
         }
         .wrapper {
-            flex-direction: column;
+            flex-wrap: wrap;
         }
         aside {
          width: fill;
