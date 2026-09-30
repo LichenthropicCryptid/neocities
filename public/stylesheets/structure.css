@@ -535,14 +535,11 @@
         main {
             width: 40%;
             align-self: center;
-        }
-    }
-   @media only screen and (max-width: 1000px) {
-        main {
+
             height: 100%;
         }
         aside {
-            width:40%;   
+         width: fill;
         }
     
         #leftSidebar {
