@@ -536,6 +536,9 @@
             width: 40%;
             align-self: center;
         }
+        .wrapper {
+            flex-direction: column;
+        }
         aside {
          width: fill;
         }
