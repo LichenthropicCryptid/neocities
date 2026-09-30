@@ -29,7 +29,7 @@ let particles = [];
 let canvas, context;
  
 let baseImage = new Image();
-baseImage.src = "cursor: var(--cursor) 0 0, auto !important;";
+baseImage.src = "../images/cursor/cursor.png";
  
 function init() {
 canvas = document.createElement("canvas");
