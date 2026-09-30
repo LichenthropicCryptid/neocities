@@ -101,7 +101,6 @@
     }
     
     main {
-        align-self: center;
         position: flex;
         flex: 1;
         margin: .5rem 1rem;
