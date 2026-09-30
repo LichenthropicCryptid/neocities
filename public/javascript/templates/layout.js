@@ -17,13 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     initActiveLinks();
   }         
   // add your own javascript code here...
- 
-        $(document).ready(function () {
-            $(function () {
-                $('[.toggle-gif]').click();
-            });
-    });
-
+  
 });
 
 
