@@ -57,6 +57,26 @@
         }
     </style>
     <script>
+        function crton() {
+            document.getElementById('filter').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/crt.css');
+            localStorage.setItem('filter', 'crt-on');
+        }
+
+        function crtoff() {
+            document.getElementById('filter').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/crt-off.css');
+            localStorage.setItem('filter', 'crt-off');
+        }
+
+        if (localStorage.getItem('filter') == 'crt-on') {
+            crton();
+        }
+
+        if (localStorage.getItem('filter') == 'crt-off') {
+            crtoff();
+        }
+
+    </script>
+    <script>
 
         function lightmode() {
             document.getElementById('colortheme').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/light.css');
@@ -74,26 +94,6 @@
 
         if (localStorage.getItem('theme') == 'darkmode') {
             darkmode();
-        }
-
-    </script>
-    <script>
-        function crton() {
-            document.getElementById('filter').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/crt.css');
-            localStorage.setItem('filter', 'crt-on');
-        }
-
-        function crtoff() {
-            document.getElementById('filter').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/crt-off.css');
-            localStorage.setItem('filter', 'crt-off');
-        }
-
-        if (localStorage.getItem('filter') == 'crt-on') {
-            crton();
-        }
-
-        if (localStorage.getItem('filter') == 'crt-off') {
-            crtoff();
         }
 
     </script>
