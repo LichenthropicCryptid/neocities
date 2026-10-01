@@ -28,937 +28,653 @@
 </head>
 
 <body class="crt">
-    <div class="boombox-popout">
-        <div class="player">
-            <div class="window">
-                <div class="title-bar">
-                    <div class="title-bar-text">
-                        <sub>
-                            <img class="titlebaricon" src="https://files.catbox.moe/tg55zp.png" alt="cd player icon">
-                        </sub>
-                        mp3 player
-                    </div>
-                    <div class="title-bar-controls">
-                        <button aria-label="Minimize"></button>
-                        <button aria-label="Maximize"></button>
-                        <button aria-label="Close" onclick="window.close()"></button>
-                    </div>
-                </div>
-                <div class="window-body">
-                    <div class="flex">
-                        <div id="imagestyle">
-                            <img class="ic" src="https://lichenthropic.neocities.org/images/assets/kirb.gif"
-                                alt="kirby wearing headphones bouncing gif">
-                        </div>
-                        <div id="musicplayer">
-                            <div class="songtitlewindow">
-                                <div class="flex">
-                                    <marquee scrollamount="2.5" class="songtitle"></marquee>
-                                    <details class="hidden">
-                                        <summary>
-                                            <div class="songtitlearrow"></div>
-                                        </summary>
-                                        <div class="mixtape" id="tracklist">
-                                            
-                                        </div>
-                                    </details>
-                                </div>
-                            </div>
-                            <div class="seeking">
-                                <div class="current-time">00:00</div>
 
-                                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
-
-                                <div class="total-duration">0:00</div>
-                            </div>
-
-                            <table class="controls">
-                                <tr>
-                                    <td>
-                                        <div class="btn" id="prev-track" onclick="prevTrack()">
-                                            <button>
-                                                <img src="https://files.catbox.moe/hhoh1h.png" class="controlimg">
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="btn" id="playpause-track" onclick="playpauseTrack()">
-                                            <button>
-                                                <img src="https://files.catbox.moe/w93riq.png" class="controlimg">
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="btn" id="next-track" onclick="nextTrack()">
-                                            <button>
-                                                <img src="https://files.catbox.moe/p4q9gf.png" class="controlimg">
-                                            </button>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-
-                            <audio id="music" src=""></audio>
-                        </div>
-                    </div>
-                </div>
+    <div id="musicplayer">
+        <div class="title-color">
+            <div class="actual-title">
+                <img src="https://loveberry.nekoweb.org/assets/musicplayer/player-icon.png" alt="" height="14px"
+                    width="14px"> Boombox
+            </div>
+            <div class="title-bar-controls">
+                <div class="window-button minimize"></div>
+                <div class="window-button maximize"></div>
+                <div class="window-button close"></div>
             </div>
         </div>
+        <div class="player-flex">
+            <div class="player-icon-holder">
+                <div class="player-icon"></div>
+            </div>
+            <div class="player-main">
+                <div class="select-menu">
+                    <select class="track-select"></select>
+                </div>
+                <div class="controls">
+                    <div class="seeking">
+                        <div class="current-time">00:00</div>
+
+                        <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+
+                        <div class="total-duration">0:00</div>
+                    </div>
+
+                    <div class="player-buttons">
+                        <button class="window-button prev-track" onclick="prevTrack()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-skip-back-icon lucide-skip-back">
+                                <path
+                                    d="M17.971 4.285A2 2 0 0 1 21 6v12a2 2 0 0 1-3.029 1.715l-9.997-5.998a2 2 0 0 1-.003-3.432z" />
+                                <path d="M3 20V4" />
+                            </svg>
+                        </button>
+
+                        <button class="window-button playpause-track" onclick="playpauseTrack()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-play-icon lucide-play">
+                                <path d="M55a220013.008-1.728l11.9976.998a22001.0033.458l-12 7A22001519z" />
+                            </svg>
+                        </button>
+
+                        <button class="window-button next-track" onclick="nextTrack()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-skip-forward-icon lucide-skip-forward">
+                                <path d="M21 4v16" />
+                                <path
+                                    d="M6.029 4.285A2 2 0 0 0 3 6v12a2 2 0 0 0 3.029 1.715l9.997-5.998a2 2 0 0 0 .003-3.432z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <audio id="music" src=""></audio>
     </div>
+
+    <style>
+        @font-face {
+            font-family: "Pixelated MS Sans Serif";
+            src: url("https://files.catbox.moe/qgjjre.woff") format("woff");
+            src: url("https://files.catbox.moe/8fwbkl.woff2") format("woff2");
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Pixelated MS Sans Serif";
+            src: url("https://files.catbox.moe/z7csle.woff") format("woff");
+            src: url("https://files.catbox.moe/moqhx6.woff2") format("woff2");
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        #musicplayer {
+            font-family: "Pixelated MS Sans Serif", Arial;
+            -webkit-font-smoothing: none;
+            font-size: 12px;
+            color: black;
+            width: fit-content;
+            border: #111111 outset 5px;
+            margin: 0 auto;
+            box-shadow: inset -1px -1px #000000, inset 1px 1px #454444, inset -2px -2px rgb(84, 84, 84), inset 2px 2px rgb(53, 52, 52);
+            background: linear-gradient(90deg, #141313, #858082, #3a3939);
+            padding: 3px;
+            width:300px;
+            border-radius: 2.5px;
+        }
+
+        .title-color {
+            padding: 3px 5px 5px 3px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(90deg, #4f0e25, #b3456d, #441822);
+            margin-bottom: 2px;
+            font-weight: bold;
+            font-size: larger;
+            border: 2px inset rgb(37, 37, 37);
+        }
+
+        .actual-title {
+            color: rgb(13, 13, 13);
+            display: flex;
+            gap: 5px;
+        }
+
+        .seeking {
+            font-weight: bold;
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            margin: 12px 0;
+        }
+
+        .player-flex {
+            display: flex;
+            gap: 5px;
+        }
+
+        .player-main {
+            width: calc(100% - 100px);
+            margin-top: 1px;
+        }
+
+        .player-icon-holder {
+            width: 95px;
+            height: 95px;
+            padding: 2px;
+            margin: 2px;
+            background-image: radial-gradient(rgb(26, 152, 12), black);
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: 2.5px inset rgb(60, 63, 61);
+            box-shadow: inset -1px -1px #151414, inset 1px 1px rgb(41, 40, 40), inset -2px -2px #2B2B2B, inset 2px 2px #0a0a0a, 0px 0px 15px 2px #238403;
+            overflow: hidden;
+            position: relative;
+            z-index: 2;
+            border-radius: 2px;
+        }
+
+        .player-icon {
+            background-image: url(https://lichenthropic.neocities.org/images/assets/kirb.gif);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 90px;
+            height: 90px;
+            display: display;
+        }
+
+        /* BELOW IS LARGELY RIPPED FROM 98 CSS */
+        .track-select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            border: 2px inset rgb(39, 38, 38);
+            border-radius: 0;
+            box-sizing: border-box;
+            outline: 0;
+            color: #25c103;
+            text-overflow: ellipsis;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            white-space: nowrap;
+
+            position: relative;
+            padding: 3px 4px;
+            padding-right: 32px;
+            background-image: url("https://loveberry.nekoweb.org/assets/musicplayer/button-down.svg");
+            background-position: top 2px right 2px;
+            background-repeat: no-repeat;
+            width: 100%;
+            box-shadow: inset 0px 0px 28px 6px #000000d4, 0px 0px 20px 5px #269800;
+            background-color: rgb(2, 77, 2);
+            height: 25px;
+            font-family: "Pixelated MS Sans Serif", Arial;
+            -webkit-font-smoothing: none;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .track-select:focus {
+            color: rgb(10, 10, 10);
+            background-color: rgb(1, 41, 1);
+            -webkit-box-shadow: inset 0px 0px 15px 6px #2581076b;
+            box-shadow: inset 0px 0px 15px 6px #2f860365;
+            border: 2px inset rgb(30, 30, 30);
+        }
+
+        .track-select:focus option {
+            color: rgb(157, 156, 156);
+            background-color: rgb(5, 19, 2);
+            outline: 1px;
+            border: none;
+        }
+
+        .track-select:active {
+            background-image: url("https://loveberry.nekoweb.org/assets/musicplayer/button-down-active.svg");
+        }
+
+
+        /* input */
+        #musicplayer input[type="range"] {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 100%;
+            background: transparent;
+        }
+
+        #musicplayer input[type="range"]:focus {
+            outline: none;
+        }
+
+        #musicplayer input[type="range"]::-webkit-slider-thumb {
+            appearance: none;
+            -webkit-appearance: none;
+            height: 21px;
+            width: 11px;
+            background: url("https://loveberry.nekoweb.org/assets/musicplayer/indicator-horizontal.svg");
+            transform: translateY(-8px);
+            box-shadow: none;
+            border: none;
+        }
+
+        #musicplayer input[type="range"].has-box-indicator::-webkit-slider-thumb {
+            background: url("https://loveberry.nekoweb.org/assets/musicplayer/indicator-rectangle-horizontal.svg");
+            transform: translateY(-10px);
+        }
+
+        #musicplayer input[type="range"]::-moz-range-thumb {
+            height: 21px;
+            width: 11px;
+            border: 0;
+            border-radius: 0;
+            background: url("https://loveberry.nekoweb.org/assets/musicplayer/indicator-horizontal.svg");
+            transform: translateY(2px);
+        }
+
+        #musicplayer input[type="range"].has-box-indicator::-moz-range-thumb {
+            background: url("https://loveberry.nekoweb.org/assets/musicplayer/indicator-rectangle-horizontal.svg");
+            transform: translateY(0px);
+        }
+
+        #musicplayer input[type="range"]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 5px;
+            box-sizing: border-box;
+            background: rgb(23, 24, 23);
+            border-right: 1px solid rgb(65, 63, 63);
+            border-bottom: 1px solid rgb(34, 34, 34);
+            box-shadow: 1px 0 0 rgb(69, 68, 68), 1px 1px 0 rgb(33, 45, 33), 0 1px 0 rgb(61, 61, 61), -1px 0 0 rgb(99, 98, 98),
+                -1px -1px 0 rgb(99, 98, 98), 0 -1px 0 rgb(99, 98, 98), -1px 1px 0 rgb(99, 98, 98), 1px -1px rgb(99, 98, 98);
+        }
+
+        #musicplayer input[type="range"]::-moz-range-track {
+            width: 100%;
+            height: 5px;
+            box-sizing: border-box;
+            background: rgb(99, 98, 98);
+            border-right: 1px solid rgb(99, 98, 98);
+            border-bottom: 1px solid rgb(99, 98, 98);
+            box-shadow: 1px 0 0 rgb(99, 98, 98), 1px 1px 0 rgb(99, 98, 98), 0 1px 0 rgb(99, 98, 98), -1px 0 0 rgb(99, 98, 98),
+                -1px -1px 0 rgb(99, 98, 98), 0 -1px 0 rgb(99, 98, 98), -1px 1px 0 rgb(99, 98, 98), 1px -1px rgb(99, 98, 98);
+        }
+
+        .window-button {
+            background: #CECECE;
+            background: linear-gradient(135deg, #CECECE 0%, #232323 100%);
+            border: 4px outset #464A48;
+            border-radius: 1px;
+            box-sizing: border-box;
+            color: inherit;
+            text-shadow: 0 0 grey;
+        }
+
+        .window-button:active {
+            box-shadow: inset -1px -1px rgb(63, 63, 63), inset 1px 1px rgb(72, 71, 71), inset -2px -2px rgb(81, 81, 81), inset 2px 2px rgb(59, 59, 59);
+            text-shadow: 1px 1px rgb(81, 81, 81);
+        }
+
+        .window-button:focus {
+            outline: 1px outset #000;
+        }
+
+        .player-buttons {
+            display: flex;
+            gap: 10px;
+            margin: 5px 5px 0 5px;
+        }
+
+        .player-buttons .window-button {
+            width: 33%;
+            font-size: 10px;
+            padding: 5px 10px;
+        }
+
+        .player-buttons .window-button svg {
+            width: 15px;
+            height: 15px;
+
+        }
+
+        .title-bar-controls {
+            display: flex;
+            background-color: #5f5f5f;
+        }
+
+        .close {
+            margin-left: 2px;
+            background-image: url("https://raw.githubusercontent.com/jdan/98.css/main/icon/close.svg");
+            background-repeat: no-repeat;
+            background-position: top 1.2px left 2px;
+            padding: 5px;
+            display: block;
+            min-width: 18px;
+            min-height: 16px;
+        }
+
+        .minimize {
+            background-image: url("https://raw.githubusercontent.com/jdan/98.css/main/icon/minimize.svg");
+            background-repeat: no-repeat;
+            background-position: bottom 3px left 2px;
+            padding: 5px;
+            display: block;
+            min-width: 18px;
+            min-height: 16px;
+        }
+
+        .maximize {
+            background-image: url("https://raw.githubusercontent.com/jdan/98.css/4a2282dd9170cabf730fb5803d1153d86b2e94e3/icon/maximize.svg");
+            background-repeat: no-repeat;
+            background-position: top 0.25px left 1px;
+            padding: 5px;
+            display: block;
+            min-width: 18px;
+            min-height: 16px;
+        }
+    </style>
+    <script>
+        // DEFINE YOUR SONGS HERE
+        let track_list = [
+            {
+                name: "1. Bong Break",
+                artist: "Michael Serroul",
+                path: "https://files.catbox.moe/7d1fyv.mp3"
+            },
+            {
+                name: "2. Moonlight Ginga",
+                artist: "Soutasei Riron",
+                path: "https://files.catbox.moe/5zy3qy.mp3"
+            },
+            {
+                name: "3. Home",
+                artist: "Bleujetta",
+                path: "https://files.catbox.moe/qha3hq.mp3"
+            },
+            {
+                name: "4. No One To Kill In The Sky",
+                artist: "Seb Lowe",
+                path: "https://files.catbox.moe/tcec0z.mp3"
+            },
+            {
+                name: "5. Same Old Story",
+                artist: "Naethan Apollo",
+                path: "https://files.catbox.moe/4g9dhm.mp3"
+            },
+            {
+                name: "6. Talking Across The Room",
+                artist: "Hearsays",
+                path: "https://files.catbox.moe/sdpjkh.mp3"
+            },
+            {
+                name: "7. Drop The Guillotine",
+                artist: "Peach Pit",
+                path: "https://files.catbox.moe/qe2aat.mp3"
+            },
+            {
+                name: "8. Anime Song",
+                artist: "Death In Venice",
+                path: "https://files.catbox.moe/t3391s.mp3"
+            },
+            {
+                name: "9. Scooby",
+                artist: "Corook",
+                path: "https://files.catbox.moe/nb4j70.mp3"
+            },
+            {
+                name: "10. You're Next",
+                artist: "Moon Walker",
+                path: "https://files.catbox.moe/l2fyqt.mp3"
+            },
+            {
+                name: "11. Be Gay, Do Drugs, Hail Satan",
+                artist: "Super Cassette",
+                path: "https://files.catbox.moe/ybffho.mp3"
+            },
+            {
+                name: "12. The Day The Nazi Died",
+                artist: "Chumbawumba",
+                path: "https://files.catbox.moe/8m2g6q.mp3"
+            },
+            {
+                name: "13. Power Trippin' Dipshits",
+                artist: "The Taxpayers",
+                path: "https://files.catbox.moe/5lexjm.mp3"
+            },
+            {
+                name: "14. Don't Say No To Hitler",
+                artist: "Seb Lowe",
+                path: "https://files.catbox.moe/1yea46.mp3"
+            },
+            {
+                name: "15. Monopoly Money",
+                artist: "Moon Walker",
+                path: "https://files.catbox.moe/l1qp48.mp3"
+            },
+            {
+                name: "16. I Don't Think It's The Right Time For Emojis",
+                artist: "Hot Mulligan",
+                path: "https://files.catbox.moe/py610g.mp3"
+            },
+            {
+                name: "17. Kill The President",
+                artist: "Barnaby Jones",
+                path: "https://files.catbox.moe/1zcw3r.mp3"
+            },
+            {
+                name: "18. Suffer",
+                artist: "Boy Golden",
+                path: "https://files.catbox.moe/5d34az.mp3"
+            },
+            {
+                name: "19. Afraid Of The Dark",
+                artist: "Appleby",
+                path: "https://files.catbox.moe/kbyqnn.mp3"
+            },
+            {
+                name: "20. Cryptid",
+                artist: "Cavetown",
+                path: "https://files.catbox.moe/5cttba.mp3"
+            },
+            {
+                name: "21. Golden Dandelions",
+                artist: "Barns County",
+                path: "https://files.catbox.moe/7vt083.mp3"
+            },
+            {
+                name: "22. Tubthumping",
+                artist: "Chumbawumba",
+                path: "https://files.catbox.moe/ytqo7e.mp3"
+            },
+            {
+                name: "23. Teenagers",
+                artist: "My Chemical Romance",
+                path: "https://files.catbox.moe/ezfdw3.mp3"
+            },
+            {
+                name: "24. Misery Business",
+                artist: "Paramore",
+                path: "https://files.catbox.moe/109t2u.mp3"
+            },
+            {
+                name: "25. Sunlight",
+                artist: "Hozier",
+                path: "https://files.catbox.moe/bwauex.mp3"
+            },
+            {
+                name: "26. Nail Polish",
+                artist: "Holywatr",
+                path: "https://files.catbox.moe/hfu66d.mp3"
+            },
+            {
+                name: "27. Boomslang",
+                artist: "MS",
+                path: "https://files.catbox.moe/4h2sxz.mp3"
+            },
+            {
+                name: "28. Northern Attitude",
+                artist: "Noah Kahan",
+                path: "https://files.catbox.moe/z46l4f.mp3"
+            },
+            {
+                name: "29. Heavy Foot",
+                artist: "Mon Rovia",
+                path: "https://files.catbox.moe/oue5me.mp3"
+            },
+            {
+                name: "30. Tadow",
+                artist: "Masego",
+                path: "https://files.catbox.moe/67wo4x.mp3"
+            },
+            {
+                name: "31. Put Your Records On",
+                artist: "Ritt Momney",
+                path: "https://files.catbox.moe/q0s86w.mp3"
+            },
+            {
+                name: "32. Mykonos",
+                artist: "Fleet Foxes",
+                path: "https://files.catbox.moe/4ln9tm.mp3"
+            },
+            {
+                name: "33. The Moss",
+                artist: "Cosmo Sheldrake",
+                path: "https://files.catbox.moe/8wfa1x.mp3"
+            },
+            {
+                name: "34. Always Tired",
+                artist: "The Bootleg Boy 2",
+                path: "https://files.catbox.moe/mebjh5.mp3"
+            },
+        ];
+
+        // THATS ALL TY :3
+
+        let now_playing = document.querySelector(".now-playing");
+        let track_select = document.querySelector(".track-select");
+        let playpause_btn = document.querySelector(".playpause-track");
+        let seek_slider = document.querySelector(".seek_slider");
+        let curr_time = document.querySelector(".current-time");
+        let total_duration = document.querySelector(".total-duration");
+
+        let track_index = 0;
+        let isPlaying = false;
+        let updateTimer;
+
+        let curr_track = document.getElementById("music");
+
+        function populateDropdown() {
+            if (!track_select) return;
+            track_select.innerHTML = "";
+            track_list.forEach((track, index) => {
+                const option = document.createElement("option");
+                option.value = index;
+                option.textContent = `${track.name} — ${track.artist}`;
+                track_select.appendChild(option);
+            });
+            track_select.value = track_index;
+        }
+
+        function loadTrack(track_index) {
+            clearInterval(updateTimer);
+            resetValues();
+
+            curr_track.src = track_list[track_index].path;
+            curr_track.load();
+
+            if (now_playing) now_playing.textContent = (track_index + 1) + " / " + track_list.length;
+
+            updateTimer = setInterval(seekUpdate, 1000);
+            curr_track.addEventListener("ended", nextTrack);
+
+            if (track_select) track_select.value = track_index;
+        }
+
+        function resetValues() {
+            curr_time.textContent = "0:00";
+            total_duration.textContent = "0:00";
+            seek_slider.value = 0;
+        }
+
+        if (track_select) {
+            track_select.addEventListener("change", function () {
+                track_index = parseInt(this.value);
+                loadTrack(track_index);
+                playTrack();
+            });
+        }
+
+        function playpauseTrack() {
+            if (!isPlaying) playTrack();
+            else pauseTrack();
+        }
+
+        function playTrack() {
+            curr_track.play();
+            isPlaying = true;
+            playpause_btn.innerHTML = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+    viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round"
+    class="lucide lucide-pause-icon"><rect x="14" y="3" width="5" height="18" rx="1"/><rect x="5" y="3" width="5" height="18" rx="1"/></svg>`;
+        }
+
+        function pauseTrack() {
+            curr_track.pause();
+            isPlaying = false;
+            playpause_btn.innerHTML = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+    viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round"
+    class="lucide lucide-play-icon"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003
+    3.458l-12 7A2 2 0 0 1 5 19z"/></svg>`;
+        }
+
+        function nextTrack() {
+            if (track_index < track_list.length - 1) track_index += 1;
+            else track_index = 0;
+            loadTrack(track_index);
+            playTrack();
+        }
+
+        function prevTrack() {
+            if (track_index > 0) track_index -= 1;
+            else track_index = track_list.length - 1;
+            loadTrack(track_index);
+            playTrack();
+        }
+
+        function seekTo() {
+            seekto = curr_track.duration * (seek_slider.value / 100);
+            curr_track.currentTime = seekto;
+        }
+
+        function seekUpdate() {
+            let seekPosition = 0;
+            if (!isNaN(curr_track.duration)) {
+                seekPosition = curr_track.currentTime * (100 / curr_track.duration);
+                seek_slider.value = seekPosition;
+
+                let currentMinutes = Math.floor(curr_track.currentTime / 60);
+                let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
+                let durationMinutes = Math.floor(curr_track.duration / 60);
+                let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
+
+                if (currentSeconds < 10) currentSeconds = "0" + currentSeconds;
+                if (durationSeconds < 10) durationSeconds = "0" + durationSeconds;
+
+                curr_time.textContent = currentMinutes + ":" + currentSeconds;
+                total_duration.textContent = durationMinutes + ":" + durationSeconds;
+            }
+        }
+
+        populateDropdown();
+        loadTrack(track_index);
+    </script>
 </body>
-
-<!-- below is styling to get windows 98 effect. from 98.css [https://jdan.github.io/98.css/] -->
-<style>
-    input[type="range"] {
-        -webkit-appearance: none;
-        appearance: none;
-        width: 100%;
-        background: transparent;
-    }
-
-    input[type="range"]:focus {
-        outline: none;
-    }
-
-    input[type="range"]::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        height: 25px;
-        width: 15px;
-        background: svg-load("https://raw.githubusercontent.com/jdan/98.css/main/icon/indicator-horizontal.svg");
-        transform: translateY(-8px);
-        box-shadow: none;
-        border: none;
-    }
-
-    input[type="range"].has-box-indicator::-webkit-slider-thumb {
-        background: svg-load("https://raw.githubusercontent.com/jdan/98.css/main/icon/indicator-rectangle-horizontal.svg");
-        transform: translateY(-10px);
-    }
-
-    input[type="range"]::-moz-range-thumb {
-        height: 25px;
-        width: 15px;
-        border: 0;
-        border-radius: 0;
-        background: svg-load("https://raw.githubusercontent.com/jdan/98.css/main/icon/indicator-horizontal.svg");
-        transform: translateY(2px);
-    }
-
-    input[type="range"]::-moz-range-thumb {
-        background: url("https://raw.githubusercontent.com/jdan/98.css/main/icon/indicator-horizontal.svg");
-        border: 0;
-        border-radius: 0;
-        height: 25px;
-        transform: translateY(2px);
-        width: 15px;
-    }
-
-    input[type="range"].has-box-indicator::-moz-range-thumb {
-        background: svg-load("https://raw.githubusercontent.com/jdan/98.css/main/icon/indicator-rectangle-horizontal.svg");
-        transform: translateY(0px);
-    }
-
-    input[type="range"]::-webkit-slider-runnable-track {
-        width: 100%;
-        height: 2px;
-        box-sizing: border-box;
-        background: black;
-        border-right: 1px solid black;
-        border-bottom: 1px solid black;
-        box-shadow: 1px 0 0 #333333, 1px 1px 0 black, 0 1px 0 #333333, -1px 0 0 darkgrey,
-            -1px -1px 0 darkgrey, 0 -1px 0 darkgrey, -1px 1px 0 #333333, 1px -1px darkgrey;
-    }
-
-    input[type="range"]::-moz-range-track {
-        width: 100%;
-        height: 2px;
-        box-sizing: border-box;
-        background: black;
-        border-right: 1px solid grey;
-        border-bottom: 1px solid grey;
-        box-shadow: 1px 0 0 #333333, 1px 1px 0 #333333, 0 1px 0 #333333, -1px 0 0 darkgrey,
-            -1px -1px 0 darkgrey, 0 -1px 0 darkgrey, -1px 1px 0 #333333, 1px -1px darkgrey;
-    }
-
-    button,
-    input,
-    label,
-    option,
-    select,
-    table,
-    textarea,
-    ol.tree-view {
-        -webkit-font-smoothing: none;
-        font-family: "Pixelated MS Sans Serif", Arial;
-        font-size: 11px
-    }
-
-    h1 {
-        font-size: 5rem
-    }
-
-    h2 {
-        font-size: 2.5rem
-    }
-
-    h3 {
-        font-size: 2rem
-    }
-
-    h4 {
-        font-size: 1.5rem
-    }
-
-    u {
-        border-bottom: .5px solid #222;
-        text-decoration: none
-    }
-
-    button,
-    input[type=reset],
-    input[type=submit] {
-        border: none;
-        border-radius: 0;
-        box-sizing: border-box;
-        color: transparent;
-        min-height: 23px;
-        min-width: 75px;
-        padding: 0 12px;
-        text-shadow: 0 0 #222
-    }
-
-    .vertical-bar,
-    button,
-    input[type=reset],
-    input[type=submit] {
-        background: silver;
-        box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf
-    }
-
-    .vertical-bar {
-        height: 20px;
-        width: 4px
-    }
-
-    button:not(:disabled):active,
-    input[type=reset]:not(:disabled):active,
-    input[type=submit]:not(:disabled):active {
-        box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px grey;
-        text-shadow: 1px 1px #222
-    }
-
-    @media (not(hover)) {
-
-        button:not(:disabled):hover,
-        input[type=reset]:not(:disabled):hover,
-        input[type=submit]:not(:disabled):hover {
-            box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px grey
-        }
-    }
-
-    button:focus,
-    input[type=reset]:focus,
-    input[type=submit]:focus {
-        outline: 1px dotted #000;
-        outline-offset: -4px
-    }
-
-    button::-moz-focus-inner,
-    input[type=reset]::-moz-focus-inner,
-    input[type=submit]::-moz-focus-inner {
-        border: 0
-    }
-
-    :disabled,
-    :disabled+label,
-    input[readonly],
-    input[readonly]+label {
-        color: grey
-    }
-
-    :disabled+label,
-    button:disabled,
-    input[type=reset]:disabled,
-    input[type=submit]:disabled {
-        text-shadow: 1px 1px 0 #fff
-    }
-
-    .title-bar-controls button {
-        border: none;
-        border-radius: 0;
-        box-sizing: border-box;
-        color: transparent;
-        min-height: 23px;
-        min-width: 75px;
-        padding: 0 12px;
-        text-shadow: 0 0 #222
-    }
-
-    .title-bar-controls button {
-        background: #333333;
-        margin: 2px;
-        box-shadow: inset -1px -1px #333333, inset 1px 1px #333333, inset -2px -2px grey, inset 2px 2px #222;
-    }
-
-    .title-bar-controls button:not(:disabled):active {
-        box-shadow: inset -1px -1px #333333, inset 1px 1px #333333, inset -2px -2px #333333, inset 2px 2px grey;
-        text-shadow: 1px 1px #222
-    }
-
-    @media (not(hover)) {
-        button:not(:disabled):hover {
-            box-shadow: inset -1px -1px #333333, inset 1px 1px #333333, inset -2px -2px #dfdfdf, inset 2px 2px grey
-        }
-    }
-
-    .title-bar-controls button:focus {
-        outline: 1px dotted #000;
-        outline-offset: -4px
-    }
-
-    .title-bar-controls button::-moz-focus-inner {
-        border: 0
-    }
-
-    @font-face {
-        font-family: "Pixelated MS Sans Serif";
-        src: url("https://files.catbox.moe/1za99g.woff") format("woff");
-        src: url("https://files.catbox.moe/8fwbkl.woff2") format("woff2");
-        font-weight: bold;
-        font-style: normal;
-    }
-
-    @font-face {
-        font-family: "Pixelated MS Sans Serif";
-        src: url("https://files.catbox.moe/z7csle.woff") format("woff");
-        src: url("https://files.catbox.moe/moqhx6.woff2") format("woff2");
-        font-weight: bold;
-        font-style: normal;
-    }
-
-    .window,
-    .title-bar {
-        font-family: "Pixelated MS Sans Serif", Arial;
-        -webkit-font-smoothing: none;
-        font-size: 13px;
-    }
-
-    .window {
-        box-shadow: inset -1px -1px #0a0a0a,
-            inset 1px 1px #333333, inset -2px -2px #333333,
-            inset 2px 2px black;
-        background: #333333;
-        padding: 3px;
-        width: 275px;
-    }
-
-    .title-bar {
-        padding: 3px 2px 3px 3px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 4px;
-    }
-
-    .title-bar-text {
-        font-weight: bold;
-        color: rgb(0, 0, 0);
-        letter-spacing: 0;
-        margin-right: 24px;
-    }
-
-    .title-bar-controls {
-        display: flex;
-    }
-
-    .title-bar-controls button {
-        padding: 0;
-        display: block;
-        min-width: 16px;
-        min-height: 14px;
-    }
-
-    .title-bar-controls button:active {
-        padding: 0;
-    }
-
-    .title-bar-controls button:focus {
-        outline: none;
-    }
-
-    .title-bar-controls button[aria-label=Minimize] {
-        background-image: url("https://raw.githubusercontent.com/jdan/98.css/main/icon/minimize.svg");
-        background-position: bottom 3px left 4px;
-        background-repeat: no-repeat
-    }
-
-    .title-bar-controls button[aria-label=Maximize] {
-        background-image: url("https://raw.githubusercontent.com/jdan/98.css/4a2282dd9170cabf730fb5803d1153d86b2e94e3/icon/maximize.svg");
-        background-position: top 2px left 3px;
-        background-repeat: no-repeat
-    }
-
-    .title-bar-controls button[aria-label=Close] {
-        background-image: url("https://raw.githubusercontent.com/jdan/98.css/main/icon/close.svg");
-        background-position: top 3px left 4px;
-        background-repeat: no-repeat;
-        margin-left: 2px
-    }
-
-    .window-body {
-        margin: 0px;
-        height: 105px;
-    }
-
-    input[type=range] {
-        -webkit-appearance: none;
-        appearance: none;
-        width: 100%;
-    }
-
-    input[type=range]:focus {
-        outline: none;
-    }
-
-    /* settings for chrome browsers */
-    input[type=range]::-webkit-slider-runnable-track {
-        width: 100%;
-        height: 5px;
-        /* thickness of seeking track */
-        cursor: help;
-    }
-
-    /* settings for firefox browsers */
-    input[type=range]::-moz-range-track {
-        width: 100%;
-        height: 2px;
-        /* thickness of seeking track */
-        cursor: help;
-    }
-
-    .flex {
-        display: flex;
-    }
-
-    .titlebaricon {
-        height: 14px;
-        width: 14px;
-    }
-
-    .songtitlewindow {
-        background-color: #414141;
-        padding: 2px;
-        height: 37px;
-        box-shadow: inset -1px -1px rgb(14, 13, 13), inset 1px 1px rgb(11, 11, 11), inset -2px -2px rgb(26, 26, 26), inset 2px 2px rgb(12, 12, 12);
-        border-radius: 1px;
-    }
-
-    #musicplayer {
-        border: 5px inset black;
-        /* border around player */
-        border-width: 2px 0px 0px 0px;
-        width: 160px;
-        /* width of the player */
-        border-radius: 2px;
-    }
-
-    #imagestyle {
-        background: rgb(3, 16, 3);
-        /* background color of player */
-        border: 2px inset black;
-        /* border around player */
-        width: 95px;
-        /* width of the player */
-        height: 95px;
-        box-shadow: inset -1px -1px #2B2B2B, inset 1px 1px grey, inset -2px -2px #2B2B2B, inset 2px 2px #0a0a0a;
-        border-radius: 2px;
-        margin: 2px;
-        margin-right: 6px;
-    }
-
-    .ic {
-        width: 90px;
-        position: relative;
-        bottom: 1px;
-        right: 1px;
-        overflow: hidden;
-        padding: 2px;
-        border: 2px solid transparent;
-        border-radius: 2px;
-    }
-
-    .songtitlearrow {
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-image: url(https://files.catbox.moe/f5e8np.png);
-        height: 20px;
-        width: 20px;
-        position: fixed;
-        top: 126px;
-        left: 323px;
-        border: 0px solid transparent;
-        border-width: 0px 0px 0px 0px;
-    }
-
-    .songtitle {
-        width: 130px;
-        height: 28px;
-        margin: 2.5px;
-        padding: 5px;
-        /* padding around song title */
-        border-bottom: 0px;
-        /* border under song title */
-        display: block;
-        font-family: Pixelated MS Sans Serif;
-        background-color: rgb(14, 69, 28);
-        color: green;
-        border: 2px inset #586d5c;
-        box-shadow: 2.5px 2.5px 15px 5px #17dc0954, inset 0px 0px 40px 2px #000000;
-
-    }
-
-    .controls {
-        font-size: 20px !important;
-        /* size of controls */
-        text-align: center;
-        width: 100%;
-        position: relative;
-        bottom: 15px;
-        background-color: #2b2b2b00;
-    }
-
-    .controls td {
-        padding: 8px 5px 0px 5px;
-        /* padding around controls */
-    }
-
-    button {
-        min-width: 40px;
-        border-radius: 1px;
-        background: linear-gradient(90deg, #5b5b5b, rgb(177, 178, 177), rgb(52, 53, 52));
-    }
-
-    .seeking {
-        background-color: #2b2b2b00;
-        /* background color of seeking bar */
-        display: flex;
-        justify-content: space-evenly;
-        padding: 14px;
-        border-radius: 1px;
-        /* padding around seeking bar */
-    }
-
-    .current-time {
-        padding-right: 4px;
-    }
-
-    .total-duration {
-        padding-left: 4px;
-    }
-
-    .controlimg {
-        height: 15px;
-        width: 15px;
-    }
-</style>
-<!-- base styling -->
-<style>
-    body {
-        height: 200px;
-        overflow: hidden;
-        display: flex;
-    }
-
-    .boombox-popout {
-        transform: scale(1.5);
-        padding: 5rem;
-        display: flex;
-        position: fixed;
-    }
-
-    .window {
-        background: linear-gradient(90deg, #181818, rgb(64, 64, 64), rgb(21, 21, 21));
-    }
-
-    #tracklist {
-        text-align: left;
-        height: 75px;
-        width: 126px;
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        z-index: 10;
-        top: 145px;
-        left: 193px;
-        background: linear-gradient(90deg, #070707, rgb(9, 17, 8), rgb(5, 10, 5));
-        font-size: small;
-        border-radius: 1px;
-    }
-
-    .title-bar {
-        background: linear-gradient(90deg, #570000, #c01085, #B0001A);
-        border: 2px inset rgb(130, 17, 62);
-        border-radius: 1px;
-    }
-
-    .player {
-        width: fit-content;
-        border: black solid 1px;
-        border-width: 1px 0px 0px 1px;
-        display: flex;
-        position: relative;
-        margin: 0 auto;
-    }
-
-    .controlimg:hover {
-        cursor: help;
-    }
-</style>
-<!--music player-->
-<script>
-    // initiate variables
-    let track_name = document.querySelector(".songtitle");
-    let track_artist = document.querySelector(".artist");
-
-    let playpause_btn = document.querySelector("#playpause-track");
-    let next_btn = document.querySelector("#next-track");
-    let prev_btn = document.querySelector("#prev-track");
-
-    let seek_slider = document.querySelector(".seek_slider");
-    let curr_time = document.querySelector(".current-time");
-    let total_duration = document.querySelector(".total-duration");
-
-    let track_index = 0;
-    let isPlaying = false;
-    let updateTimer;
-
-    // create new audio element
-    let curr_track = document.getElementById("music");
-
-    //
-    // DEFINE YOUR SONGS HERE!!!!!
-    // MORE THAN FOUR SONGS CAN BE ADDED!!
-    // JUST ADD ANOTHER BRACKET WITH NAME AND PATH
-    // CATBOX.MOE IS RECOMMENDED FOR UPLOADING MP3 FILES
-    let track_list = [
-        {
-            name: "Bong Break",
-            artist: "Michael Serroul",
-            path: "https://files.catbox.moe/7d1fyv.mp3"
-        },
-        {
-            name: "Moonlight Ginga",
-            artist: "Soutasei Riron",
-            path: "https://files.catbox.moe/5zy3qy.mp3"
-        },
-        {
-            name: "Home",
-            artist: "Bleujetta",
-            path: "https://files.catbox.moe/qha3hq.mp3"
-        },
-        {
-            name: "No One To Kill In The Sky",
-            artist: "Seb Lowe",
-            path: "https://files.catbox.moe/tcec0z.mp3"
-        },
-        {
-            name: "Same Old Story",
-            artist: "Naethan Apollo",
-            path: "https://files.catbox.moe/4g9dhm.mp3"
-        },
-        {
-            name: "Talking Across The Room",
-            artist: "Hearsays",
-            path: "https://files.catbox.moe/sdpjkh.mp3"
-        },
-        {
-            name: "Drop The Guillotine",
-            artist: "Peach Pit",
-            path: "https://files.catbox.moe/qe2aat.mp3"
-        },
-        {
-            name: "Anime Song",
-            artist: "Death In Venice",
-            path: "https://files.catbox.moe/t3391s.mp3"
-        },
-        {
-            name: "Scooby",
-            artist: "Corook",
-            path: "https://files.catbox.moe/nb4j70.mp3"
-        },
-        {
-            name: "You're Next",
-            artist: "Moon Walker",
-            path: "https://files.catbox.moe/l2fyqt.mp3"
-        },
-        {
-            name: "Be Gay, Do Drugs, Hail Satan",
-            artist: "Super Cassette",
-            path: "https://files.catbox.moe/ybffho.mp3"
-        },
-        {
-            name: "The Day The Nazi Died",
-            artist: "Chumbawumba",
-            path: "https://files.catbox.moe/8m2g6q.mp3"
-        },
-        {
-            name: "Power Trippin' Dipshits",
-            artist: "The Taxpayers",
-            path: "https://files.catbox.moe/5lexjm.mp3"
-        },
-        {
-            name: "Don't Say No To Hitler",
-            artist: "Seb Lowe",
-            path: "https://files.catbox.moe/1yea46.mp3"
-        },
-        {
-            name: "Monopoly Money",
-            artist: "Moon Walker",
-            path: "https://files.catbox.moe/l1qp48.mp3"
-        },
-        {
-            name: "I Don't Think It's The Right Time For Emojis",
-            artist: "Hot Mulligan",
-            path: "https://files.catbox.moe/py610g.mp3"
-        },
-        {
-            name: "Kill The President",
-            artist: "Barnaby Jones",
-            path: "https://files.catbox.moe/1zcw3r.mp3"
-        },
-        {
-            name: "Suffer",
-            artist: "Boy Golden",
-            path: "https://files.catbox.moe/5d34az.mp3"
-        },
-        {
-            name: "Afraid Of The Dark",
-            artist: "Appleby",
-            path: "https://files.catbox.moe/kbyqnn.mp3"
-        },
-        {
-            name: "Cryptid",
-            artist: "Cavetown",
-            path: "https://files.catbox.moe/5cttba.mp3"
-        },
-        {
-            name: "Golden Dandelions",
-            artist: "Barns County",
-            path: "https://files.catbox.moe/7vt083.mp3"
-        },
-        {
-            name: "Tubthumping",
-            artist: "Chumbawumba",
-            path: "https://files.catbox.moe/ytqo7e.mp3"
-        },
-        {
-            name: "Teenagers",
-            artist: "My Chemical Romance",
-            path: "https://files.catbox.moe/ezfdw3.mp3"
-        },
-        {
-            name: "Misery Business",
-            artist: "Paramore",
-            path: "https://files.catbox.moe/109t2u.mp3"
-        },
-        {
-            name: "Sunlight",
-            artist: "Hozier",
-            path: "https://files.catbox.moe/bwauex.mp3"
-        },
-        {
-            name: "Nail Polish",
-            artist: "Holywatr",
-            path: "https://files.catbox.moe/hfu66d.mp3"
-        },
-        {
-            name: "Boomslang",
-            artist: "MS",
-            path: "https://files.catbox.moe/4h2sxz.mp3"
-        },
-        {
-            name: "Northern Attitude",
-            artist: "Noah Kahan",
-            path: "https://files.catbox.moe/z46l4f.mp3"
-        },
-        {
-            name: "Heavy Foot",
-            artist: "Mon Rovia",
-            path: "https://files.catbox.moe/oue5me.mp3"
-        },
-        {
-            name: "Tadow",
-            artist: "Masego",
-            path: "https://files.catbox.moe/67wo4x.mp3"
-        },
-        {
-            name: "Put Your Records On",
-            artist: "Ritt Momney",
-            path: "https://files.catbox.moe/q0s86w.mp3"
-        },
-        {
-            name: "Mykonos",
-            artist: "Fleet Foxes",
-            path: "https://files.catbox.moe/4ln9tm.mp3"
-        },
-        {
-            name: "The Moss",
-            artist: "Cosmo Sheldrake",
-            path: "https://files.catbox.moe/8wfa1x.mp3"
-        },
-        {
-            name: "Always Tired",
-            artist: "The Bootleg Boy 2",
-            path: "https://files.catbox.moe/mebjh5.mp3"
-        },
-    ];
-    //
-    //
-    //
-    //
-    //
-
-    function loadTrack(track_index) {
-        clearInterval(updateTimer);
-        resetValues();
-
-        // load a new track
-        curr_track.src = track_list[track_index].path;
-        curr_track.load();
-
-        // update details of the track
-        track_name.textContent = "playing " + (track_index + 1) + " of " + track_list.length + ": " + track_list[track_index].name;
-
-        // set an interval of 1000 milliseconds for updating the seek slider
-        updateTimer = setInterval(seekUpdate, 1000);
-
-        // move to the next track if the current one finishes playing 
-        curr_track.addEventListener("ended", nextTrack);
-    }
-
-    // reset values
-    function resetValues() {
-        curr_time.textContent = "0:00";
-        total_duration.textContent = "0:00";
-        seek_slider.value = 0;
-    }
-
-    // checks if song is playing
-    function playpauseTrack() {
-        if (!isPlaying) playTrack();
-        else pauseTrack();
-    }
-
-    // plays track when play button is pressed
-    function playTrack() {
-        curr_track.play();
-        isPlaying = true;
-
-        // replace icon with the pause icon
-        playpause_btn.innerHTML = '<button><img src="https://files.catbox.moe/njer0s.png" class="controlimg"></i></button>';
-    }
-
-    // pauses track when pause button is pressed
-    function pauseTrack() {
-        curr_track.pause();
-        isPlaying = false;
-
-        // replace icon with the play icon
-        playpause_btn.innerHTML = '<button><img src="https://files.catbox.moe/w93riq.png" class="controlimg"></button>';
-    }
-
-    // moves to the next track
-    function nextTrack() {
-        if (track_index < track_list.length - 1)
-            track_index += 1;
-        else track_index = 0;
-        loadTrack(track_index);
-        playTrack();
-    }
-
-    // moves to the previous track
-    function prevTrack() {
-        if (track_index > 0)
-            track_index -= 1;
-        else track_index = track_list.length;
-        loadTrack(track_index);
-        playTrack();
-    }
-
-    // seeker slider
-    function seekTo() {
-        seekto = curr_track.duration * (seek_slider.value / 100);
-        curr_track.currentTime = seekto;
-    }
-
-    function seekUpdate() {
-        let seekPosition = 0;
-
-        // check if the current track duration is a legible number
-        if (!isNaN(curr_track.duration)) {
-            seekPosition = curr_track.currentTime * (100 / curr_track.duration);
-            seek_slider.value = seekPosition;
-
-            // calculate the time left and the total duration
-            let currentMinutes = Math.floor(curr_track.currentTime / 60);
-            let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
-            let durationMinutes = Math.floor(curr_track.duration / 60);
-            let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
-
-            // adding a zero to the single digit time values
-            if (currentSeconds < 10) { currentSeconds = "0" + currentSeconds; }
-            if (durationSeconds < 10) { durationSeconds = "0" + durationSeconds; }
-            if (currentMinutes < 10) { currentMinutes = currentMinutes; }
-            if (durationMinutes < 10) { durationMinutes = durationMinutes; }
-
-            curr_time.textContent = currentMinutes + ":" + currentSeconds;
-            total_duration.textContent = durationMinutes + ":" + durationSeconds;
-        }
-    }
-
-    // load the first track in the tracklist
-    loadTrack(track_index);
-</script>
-<!--dark/light theme-->
-<script>
-    function lightmode() {
-        document.getElementById('colortheme').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/light.css');
-        localStorage.setItem('theme', 'lightmode');
-    }
-
-    function darkmode() {
-        document.getElementById('colortheme').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/crt-off.css');
-        localStorage.setItem('theme', 'darkmode');
-    }
-
-    function crtdark() {
-        document.getElementById('colortheme').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/crt-on.css');
-        localStorage.setItem('theme', 'crtdark');
-    }
-
-    function crtlight() {
-        document.getElementById('colortheme').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/crt-light.css');
-        localStorage.setItem('theme', 'crtlight');
-    }
-
-    if (localStorage.getItem('theme') == 'lightmode') {
-        lightmode();
-    }
-
-    if (localStorage.getItem('theme') == 'darkmode') {
-        darkmode();
-    }
-
-    if (localStorage.getItem('theme') == 'crtdark') {
-        crtdark();
-    }
-
-    if (localStorage.getItem('theme') == 'crtlight') {
-        crtlight();
-    }
-
-</script>
-
 </html>
