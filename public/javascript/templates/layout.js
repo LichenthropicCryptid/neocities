@@ -120,14 +120,14 @@ const headerE1 = `
             
                     <nav id="navbar" style="margin-bottom: 10px; margin-top: 10px;">
                         <ul>
-                            <li><a href="/pages/homepage">HOME</a></li>
-                            <li><a href="/pages/about">ABOUT</a></li>
-                            <li><a href="/pages/gallery">GALLERY</a></li>
-                            <li><a href="/pages/smokeroom">SMOKE ROOM</a></li>
-                            <li><a href="/pages/links">CREDITS + LINKS</a></li>
-                            <li><a href="/pages/blog">BLOG</a></li>
-                            <li><a href="/pages/critters">CRITTERS</a></li>
-                            <li><a href="/pages/collection">COLLECTIONS</a></li>
+                            <li><a href="${nesting}/pages/homepage">HOME</a></li>
+                            <li><a href="${nesting}/pages/about">ABOUT</a></li>
+                            <li><a href="${nesting}/pages/gallery">GALLERY</a></li>
+                            <li><a href="${nesting}/pages/smokeroom">SMOKE ROOM</a></li>
+                            <li><a href="${nesting}/pages/links">CREDITS + LINKS</a></li>
+                            <li><a href="${nesting}/pages/blog">BLOG</a></li>
+                            <li><a href="${nesting}/pages/critters">CRITTERS</a></li>
+                            <li><a href="${nesting}/pages/collection">COLLECTIONS</a></li>
                         </ul>
                 </nav>
             </div>
