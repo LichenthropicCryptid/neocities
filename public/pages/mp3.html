@@ -111,8 +111,11 @@
             font-weight: bold;
             font-style: normal;
         }
-
+        body {
+            overflow:hidden;
+        }
         #musicplayer {
+            transform: scale(1.25);
             font-family: "Pixelated MS Sans Serif", Arial;
             -webkit-font-smoothing: none;
             font-size: 12px;
@@ -120,10 +123,12 @@
             width: fit-content;
             border: #111111 outset 5px;
             margin: 0 auto;
+            margin-top: 50px;
             box-shadow: inset -1px -1px #000000, inset 1px 1px #454444, inset -2px -2px rgb(84, 84, 84), inset 2px 2px rgb(53, 52, 52);
             background: linear-gradient(90deg, #141313, #858082, #3a3939);
             padding: 3px;
             width:300px;
+            height: 150px;
             border-radius: 2.5px;
         }
 
