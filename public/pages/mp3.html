@@ -60,7 +60,9 @@
                                         <summary>
                                             <div class="songtitlearrow"></div>
                                         </summary>
-                                        <div class="mixtape" id="tracklist"> </div>
+                                        <div class="mixtape" id="tracklist">
+                                            
+                                        </div>
                                     </details>
                                 </div>
                             </div>
@@ -187,7 +189,7 @@
     select,
     table,
     textarea,
-    ul.tree-view {
+    ol.tree-view {
         -webkit-font-smoothing: none;
         font-family: "Pixelated MS Sans Serif", Arial;
         font-size: 11px
@@ -581,11 +583,14 @@
     }
 
     #tracklist {
+        text-align: left;
         height: 75px;
         width: 126px;
-        display: inline-flex;
+        display: flex;
+        flex-direction: column;
         position: fixed;
         overflow-y: scroll;
+        overflow-x: hidden;
         z-index: 10;
         top: 145px;
         left: 193px;
