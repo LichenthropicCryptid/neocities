@@ -30,59 +30,49 @@
 </head>
         
 <body class="crt">
-
-  <div  id="crt" style="display: block;">
-
-    <div id="preloader"></div>
-      <details class="accessability-menu">
-        <summary>
-          <div>
-            <img id="access-fairy" src="images/assets/navi.gif" title="accessability fairy" alt="accessability menu" width="100px">
-          </div>
-           
-        </summary>
-        <div class="accessability">
-          
-              <button class="filter" onclick="crtoff(), location.reload()">CRT OFF</button>
-
-              <button class="filter" onclick="crton(), location.reload()">CRT ON</button>
-
-              <button class="colortheme" onclick="darkmode(), location.reload()">DARK</button>
-
-              <button class="colortheme" onclick="lightmode(), location.reload()">LIGHT</button>
-            
+  <div id="preloader"></div>
+    <details class="hidden">
+      <summary>
+        <div>
+          <img id="access-fairy" src="images/assets/navi.gif" title="accessability fairy" alt="accessability menu" width="100px">
         </div>
-      </details>
-           <div class="layout" style="text-align:center">
-            
-                <div class="adult">
-                
-                    ADULTS <br/>
-                    
-                    ONLY
-                    
-                </div>
-            
-                    <button class="glow-button" onclick="createRipple(event)">
-                                   
-                        <a href="/pages/homepage.html">
-                        
-                        ENTER
-                        
-                        </a>
-                    
-                    </button>
-              
-            <div class="cw" width="10rem;">
-                <p>
-                    CONTENT WARNING
-                </p>
-                <p>
-                    CANNABIS
-                </p>
-            </div>
-        </div>  
+      </summary>
+      <div class="accessability">
+        <ul>
+          <li>
+            <button class="filter" onclick="crtoff(), location.reload()">CRT OFF</button>
+          </li>
+          <li>
+            <button class="filter" onclick="crton(), location.reload()">CRT ON</button>
+          </li>
+          <li>
+            <button class="colortheme" onclick="darkmode(), location.reload()">DARK</button>
+          </li>
+          <li>
+            <button class="colortheme" onclick="lightmode(), location.reload()">LIGHT</button>
+          </li>
+        </ul>  
       </div>
+    </details>
+    <div class="layout" style="text-align:center">
+      <div class="adult">
+        ADULTS <br/>
+        ONLY
+      </div>
+        <button class="glow-button" onclick="createRipple(event)">                   
+          <a href="/pages/homepage.html">
+            ENTER          
+          </a>            
+        </button> 
+          <div class="cw" width="10rem;">
+            <p>
+              CONTENT WARNING
+            </p>
+            <p>
+               CANNABIS
+            </p>
+          </div>
+    </div>  
          <style>
 
           @font-face { 
