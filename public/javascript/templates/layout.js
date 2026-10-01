@@ -96,7 +96,7 @@ const headerE1 = `
 		<details class="accessability-menu">
         <summary>
           <div>
-            <img id="access-fairy" src="${nesting}images/assets/navi.gif" title="accessability fairy" alt="accessability menu" width="100px">
+            <img id="access-fairy" src="./images/assets/navi.gif" title="accessability fairy" alt="accessability menu" width="100px">
           </div>
             <br/>
         </summary>
