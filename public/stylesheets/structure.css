@@ -340,21 +340,21 @@
         width: 5rem;
         border-radius: 1rem;
         padding: .5rem;
-        margin: 0 auto;
+        margin: 10px;
     }
 
     .toggle-gif {
         width: 5rem;
         border-radius: 1rem;
         padding: .5rem;
-        margin: 0 auto;
+        margin: 10px;
     }
 
     .filter {
         width: 5rem;
         border-radius: 1rem;
         padding: .5rem;
-        margin: 0 auto;
+        margin: 20px;
     }
 
     .no-click   {
