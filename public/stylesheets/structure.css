@@ -118,22 +118,22 @@
         height:auto;
     }
 
-    #sidebar    {
+    .sidebar    {
         overflow-x: hidden;
+        height: 1000px;
     }
 
     #leftSidebar {
         display: flex;
         float: left;
         order: 1;
-        height: 1000px;
+       
     }
     
     #rightSidebar {
         display: flex;
         float: right;
         order: 3;
-        height:1000px;
     }
 
     #container {
