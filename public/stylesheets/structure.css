@@ -506,99 +506,13 @@
 
 /* Base styles = desktop. Strip away as the screen shrinks. */
 @media (max-width: 1199px) { /* small desktops and below */ 
-    main {
-        width: 40%;
-        align-self: center;
-    }
-
-    .wrapper {
-        flex-wrap: wrap;
-        align-self: center;
-    }
-    aside {
-     width: fill;
-     height: fit-content;
-    }
-
-    #leftSidebar {
-        display: flex;
-        order: 1;
-    }
-    
-    #rightSidebar {
-        display: flex;
-        order: 3;
-    }
+   
 }
 @media (max-width: 991px)  { /* tablets and below */ 
-    main {
-        width: 100%;
-        height: fit-content;
-        align-self: center;
-    }
-
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-self: center;
-    }
-
-    aside {
-     width: fill;
-     height: fit-content;
-    }
-
-    #leftSidebar {
-        display: flex;
-        order: 1;
-        width: 100%;
-        height: fit-content;
-        align-self: center;
-    }
     
-    #rightSidebar {
-        display: flex;
-        order: 3;
-        width: 100%;
-        height: fit-content;
-        align-self: center;
-    }
 }
 @media (max-width: 767px)  { /* mobile and below */ 
-    main {
-        width: 100%;
-        height: fit-content;
-        align-self: center;
-    }
-
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-self: center;
-    }
-
-    aside {
-     width: fill;
-     height: fit-content;
-    }
-
-    #leftSidebar {
-        display: flex;
-        order: 1;
-        width: 100%;
-        height: fit-content;
-        align-self: center;
-    }
     
-    #rightSidebar {
-        display: flex;
-        order: 3;
-        width: 100%;
-        height: fit-content;
-        align-self: center;
-    }
 }
 
 /*media queries*/
