@@ -83,7 +83,7 @@ const headerE1 = `
             <br/>
         </summary>
         <div class="accessability">
-          ACCESSABILITY
+          <p style="text-align:center" ACCESSABILITY </p>
           <br/>
             <div class="access-options">
               <button class="toggle-gif">GIF</button>
