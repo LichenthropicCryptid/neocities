@@ -106,7 +106,7 @@
         margin: .5rem 1rem;
         padding: 1.5rem;
         order: 2;  
-        height:fit-content;
+        height:max-content;
         width: 550px;
         border-radius: 1rem;
     }
