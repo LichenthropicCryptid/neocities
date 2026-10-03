@@ -321,12 +321,12 @@
         color: whitesmoke;
         position: fixed;
         left: 10rem;
-        top:6rem;
+        top:8rem;
         display: flex;
         flex-direction: horizontal;
         flex-wrap: wrap;
         justify-content: center;
-        background: rgba(0, 0, 0, 0.922);
+        background: rgba(0, 0, 0, 0.535);
         border-radius: 0rem 2.5rem 2.5rem 2.5rem;
         width: 14rem;
         height: 14rem;
