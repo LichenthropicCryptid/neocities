@@ -126,12 +126,14 @@
         display: flex;
         float: left;
         order: 1;
+        height: 1000px;
     }
     
     #rightSidebar {
         display: flex;
         float: right;
         order: 3;
+        height:1000px;
     }
 
     #container {
