@@ -100,7 +100,7 @@ const headerE1 = `
             <br/>
         </summary>
         <div class="accessability">
-          <p style="text-align:center" ACCESSABILITY </p>
+          <p style="text-align:center"> ACCESSABILITY </p>
           <br/>
             <div class="access-options">
               <button class="filter" onclick="crtoff(), location.reload()">CRT OFF</button>

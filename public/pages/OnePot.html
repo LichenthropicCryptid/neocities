@@ -19,8 +19,6 @@
     <link id="filter" rel="stylesheet" href="../stylesheets/crt.css" type="text/css" media="all">
 
     <script src="https://u.widget.st/ar.js"></script>
-
-    <script src="../javascript/templates/access-fairy.js"></script>
     
        <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
        
@@ -40,6 +38,29 @@
 
   </head>
   <div id="preloader"></div>
+  <header>
+    <div class="fairy-container">
+        <details class="accessability-menu">
+            <summary>
+                <div>
+                    <img id="access-fairy" src="https://lichenthropic.neocities.org/images/assets/navi.gif"
+                        title="accessability fairy" alt="accessability menu" width="100px">
+                </div>
+                <br />
+            </summary>
+            <div class="accessability">
+                <p style="text-align:center">ACCESSABILITY </p>
+                    <br />
+                <div class="access-options">
+                    <button class="filter" onclick="crtoff(), location.reload()">CRT OFF</button>
+                    <button class="filter" onclick="crton(), location.reload()">CRT ON</button>
+                    <button class="colortheme" onclick="darkmode(), location.reload()">DARK</button>
+                    <button class="colortheme" onclick="lightmode(), location.reload()">LIGHT</button>
+                </div>
+            </div>
+        </details>
+    </div>
+  </header>
   <body class="crt">
   
             <div id="flex">
@@ -84,6 +105,55 @@
  
              
             </style>
+            <style>
+                #access-fairy {
+                    position: fixed;
+                    left: 3rem;
+                    top: 3rem;
+                    border-radius: 5rem;
+                    background-color: #ff0a789f;
+                    -webkit-box-shadow: 0px 0px 50px 30px #ff0a78c0;
+                    box-shadow: 0px 0px 50px 30px #ff0a78c0;
+                    z-index: 100;
+                    opacity: 60%;
+                }
+            
+                #access-fairy:hover {
+                    opacity: 100%;
+                }
+            
+                .accessability {
+                    color: whitesmoke;
+                    position: fixed;
+                    left: 8rem;
+                    top: 8rem;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    background: rgba(0, 0, 0, 0.422);
+                    box-shadow: 0px 0px 105px 12px rgba(0, 0, 0, 0.961),
+                        inset 0px 0px 55px 12px rgba(0, 0, 0, 0.506);
+                    border-radius: 0rem 2.5rem 2.5rem 2.5rem;
+                    width: 12.5rem;
+                    height: 12rem;
+                    z-index: 99;
+                    padding: 5px;
+                }
+            
+            
+                .colortheme {
+                    width: 5rem;
+                    border-radius: 1rem;
+                    padding: .5rem;
+                    margin: 5px;
+                }
+            
+                .filter {
+                    width: 5rem;
+                    border-radius: 1rem;
+                    padding: .5rem;
+                    margin: 5px;
+                } </style>
             <script>
                 function crton() {
                     document.getElementById('filter').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/crt.css');
