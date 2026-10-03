@@ -73,7 +73,6 @@ const nesting = getNestingString();
 
 // Insert your header HTML inside these ``. You can use HTML as usual.
 const headerE1 = `
-<header>
 		<a id="top"></a>
     <div class="fairy-container">
 		<details class="accessability-menu">
@@ -96,5 +95,4 @@ const headerE1 = `
         </div>
       </details>
     </div>
-</header>
 `;
