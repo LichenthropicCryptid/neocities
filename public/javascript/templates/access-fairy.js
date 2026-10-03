@@ -86,7 +86,6 @@ const headerE1 = `
           <p style="text-align:center" ACCESSABILITY </p>
           <br/>
             <div class="access-options">
-              <button class="toggle-gif">GIF</button>
               <button class="filter" onclick="crtoff(), location.reload()">CRT OFF</button>
               <button class="filter" onclick="crton(), location.reload()">CRT ON</button>
               <button class="colortheme" onclick="darkmode(), location.reload()">DARK</button>
