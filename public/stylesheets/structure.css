@@ -323,7 +323,7 @@
         left: 8rem;
         top:8rem;
         display: flex;
-        flex-direction: horizontal;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         background: rgba(0, 0, 0, 0.422);
