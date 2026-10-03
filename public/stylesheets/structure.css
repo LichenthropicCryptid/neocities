@@ -320,8 +320,8 @@
     .accessability  {
         color: whitesmoke;
         position: fixed;
-        left: 10rem;
-        top:8rem;
+        left: 8rem;
+        top:7rem;
         display: flex;
         flex-direction: horizontal;
         flex-wrap: wrap;
