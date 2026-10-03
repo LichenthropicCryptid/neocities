@@ -492,6 +492,13 @@
 
 /*media queries*/
 
+@media (prefers-color-scheme: light) { /*auto light mode*/
+
+}
+@media (prefers-color-scheme: dark) { /*auto dark mode*/
+
+}
+
 @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
         animation: none !important;
@@ -502,9 +509,30 @@
     img.freeze {
         visibility: hidden;
     }
+    /*add crt disabled to reduced motion*/
+}
+
+@media (orientation: landscape) { /*landscape mode*/
+
+}
+
+@media (orientation: portrait) { /*portrait mode*/
+
 }
 
 /* Base styles = desktop. Strip away as the screen shrinks. */
+
+@media (max-width: 1921px) { /*Right monitor and below*/
+
+}
+
+@media (max-width: 1920px) { /*Middle monitor and below*/
+
+}
+@media (max-width: 1681px) { /*Left monitor and below*/
+
+}
+
 @media (max-width: 1199px) { /* small desktops and below */ 
    
 }
@@ -514,6 +542,6 @@
 @media (max-width: 767px)  { /* mobile and below */ 
     
 }
-
+@media 
 /*media queries*/
 
