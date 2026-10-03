@@ -115,6 +115,7 @@
         font-size: smaller;
         background: black;
         border-radius: 1rem;
+        height:max-content;
     }
 
     #sidebar    {
