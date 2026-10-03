@@ -515,6 +515,7 @@
     }
     aside {
      width: fill;
+     height: fit-content;
     }
 
     #leftSidebar {
@@ -543,6 +544,7 @@
 
     aside {
      width: fill;
+     height: fit-content;
     }
 
     #leftSidebar {
@@ -577,6 +579,7 @@
 
     aside {
      width: fill;
+     height: fit-content;
     }
 
     #leftSidebar {
