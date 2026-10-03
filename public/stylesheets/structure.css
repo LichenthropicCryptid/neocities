@@ -323,7 +323,8 @@
         left: 10rem;
         top:6rem;
         display: flex;
-        flex-direction: column;
+        flex-direction: horizontal;
+        flex-wrap: wrap;
         background: rgba(0, 0, 0, 0.922);
         border-radius: 1rem;
         width: 12rem;
