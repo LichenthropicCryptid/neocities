@@ -327,7 +327,8 @@
         flex-wrap: wrap;
         background: rgba(0, 0, 0, 0.922);
         border-radius: 1rem;
-        width: 12rem;
+        width: 14rem;
+        height: 14rem;
         padding: 1rem;
         z-index: 100;
     }
