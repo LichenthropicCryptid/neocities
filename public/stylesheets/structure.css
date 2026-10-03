@@ -387,16 +387,16 @@
                 margin: 0 auto;
                 display: flex;
                 align-content: center;
-                top:12rem;
+                top:8rem;
                 left: 4rem;
                 width: 100px;
-                height:3rem;
+                height:25px;
                 font-weight: bold;
                 font-size: 2rem;
                 color: black;
                 background: black;
                 border-radius: .5rem;
-                opacity: 15%;
+                opacity: 1%;
                 transition:
                     opacity .15s,
                     box-shadow .25s;
