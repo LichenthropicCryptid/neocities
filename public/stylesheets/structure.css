@@ -549,7 +549,12 @@
 
 }
 
-@media (max-width: 1921px) { /*Middle + Right monitor*/
+/*MY MONITOR
+@media (max-width: 1921px) { /*Middle + Right monitor*
+}
+MY MONITOR*/
+
+@media (max-width: 1920px) { /*large monitor*/
 
 }
 
