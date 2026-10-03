@@ -145,7 +145,7 @@
     }
 
     .box {
-        border: 1rem inset;
+        border: .15rem dashed;
         padding: 1rem;
         justify-content:center;
         margin: 0 auto;
