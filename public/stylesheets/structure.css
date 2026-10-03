@@ -328,8 +328,8 @@
         justify-content: center;
         background: rgba(0, 0, 0, 0.535);
         border-radius: -2.5rem 2.5rem 2.5rem 2.5rem;
-        width: 14rem;
-        height: 14rem;
+        width: 12rem;
+        height: 12rem;
         padding: 1rem;
         z-index: 100;
     }
