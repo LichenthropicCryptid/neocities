@@ -106,7 +106,7 @@
         margin: .5rem 1rem;
         padding: 1.5rem;
         order: 2;  
-        height:max-content;
+        height:auto;
         width: 550px;
         border-radius: 1rem;
     }
@@ -115,7 +115,7 @@
         font-size: smaller;
         background: black;
         border-radius: 1rem;
-        height:max-content;
+        height:auto;
     }
 
     #sidebar    {
