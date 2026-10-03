@@ -87,11 +87,30 @@ const nesting = getNestingString();
 // Insert your header HTML inside these ``. You can use HTML as usual.
 const headerE1 = `
 <header>
+<a id="top"></a>
 	<div class="container" id="header">
-		<a id="top"></a>
 	
 		<marquee class="updates" direction="left" scrollamount="5" behavior="infinate;">|  CLICK THE RED BUTTON  |  LAST UPDATED: OCT 1 2026 |  TAKE A TOKE AND COZY UP  |  SITE UNDER CONSTRUCTION   |  CLICK THE RED BUTTON  |  ACAB  |  BLACK LIVES MATTER  |  FREE PALESTINE  |  QUEER RIGHTS NOW  |  CLICK THE RED BUTTON  |  BE GAY DO CRIME  |  COVID NEVER ENDED  |  TRANS RIGHTS ARE HUMAN RIGHTS   |  CLICK THE RED BUTTON  |  CANNABIS IS MEDICINE  |  FREE HEALTHCARE FOR ALL  |  PUNCH A NAZI  |  THE ONE PIECE IS REAL  |  CLICK THE RED BUTTON  | </marquee>
-         
+    <div class="fairy-container">
+		<details class="accessability-menu">
+        <summary>
+          <div>
+            <img id="access-fairy" src="https://lichenthropic.neocities.org/images/assets/navi.gif" title="accessability fairy" alt="accessability menu" width="100px">
+          </div>
+            <br/>
+        </summary>
+        <div class="accessability">
+          <p style="text-align:center" ACCESSABILITY </p>
+          <br/>
+            <div class="access-options">
+              <button class="filter" onclick="crtoff(), location.reload()">CRT OFF</button>
+              <button class="filter" onclick="crton(), location.reload()">CRT ON</button>
+              <button class="colortheme" onclick="darkmode(), location.reload()">DARK</button>
+              <button class="colortheme" onclick="lightmode(), location.reload()">LIGHT</button>
+            </div>
+        </div>
+      </details>
+    </div>  
 	    <div id="header" style="height: 150px;">
 		</div>
             <div id="headerArea">
