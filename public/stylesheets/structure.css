@@ -309,7 +309,7 @@
         background-color:#ff0a789f;
         -webkit-box-shadow: 0px 0px 50px 30px #ff0a78c0; 
         box-shadow: 0px 0px 50px 30px #ff0a78c0;
-        z-index: 3;
+        z-index: 100;
         opacity: 60%;
     }
 
@@ -328,6 +328,7 @@
         border-radius: 1rem;
         width: 12rem;
         padding: 1rem;
+        z-index: 100;
     }
 
 
@@ -336,7 +337,6 @@
         border-radius: 1rem;
         padding: .5rem;
         margin: 0 auto;
-        
     }
 
     .toggle-gif {
