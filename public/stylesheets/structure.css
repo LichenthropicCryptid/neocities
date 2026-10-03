@@ -380,33 +380,6 @@
             height: 6rem;
             }
         
-            .boombox {
-                font-family: 'pixelSplitter', 'Courier New', Monospace;
-                z-index: 3;
-                position: absolute;
-                margin: 0 auto;
-                display: flex;
-                align-content: center;
-                bottom:50px;
-                left: 20px;
-                width: 100px;
-                height:25px;
-                font-weight: bold;
-                font-size: 2rem;
-                color: black;
-                background: black;
-                border-radius: .5rem;
-                opacity: 0%;
-                transition:
-                    opacity .15s,
-                    box-shadow .25s;
-            }
-            
-            .boombox:hover {
-                color:green;
-                opacity: 100%;
-                box-shadow: 0px 0px 25px 18px rgba(49,221,0,1);
-            }
 /*buttons*/
 
 /*links*/
