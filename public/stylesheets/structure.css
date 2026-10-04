@@ -578,14 +578,12 @@ MY MONITOR*/
 }
 
 @media (max-width: 1285px) { /*small monitor or tablet*/
+    
     main {
-       display: flex;
-       position:fixed;
-       justify-self: center;
+    width: 50%;
     }
     aside {
-       display: flex;
-        width:75%;
+
     }
 }
 
