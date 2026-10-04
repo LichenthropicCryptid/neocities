@@ -583,7 +583,7 @@ MY MONITOR*/
 
 @media (max-width: 1280px) { /*small desktop or tablet*/
     main {
-       justify-content: center;
+       width: 20rem;
     }
 }
 
