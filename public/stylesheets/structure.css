@@ -74,7 +74,8 @@
 
     iframe {
         border-radius: 1rem;
-        border: .5rem solid black;   
+        border: .5rem inset #2d2d2d;
+        background-color: #2d2d2d97;
     }
 
     #flex {
