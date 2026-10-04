@@ -577,37 +577,15 @@ MY MONITOR*/
 
 }
 
-@media (max-width: 1285px) { /*small monitor or tablet*/
-    
-    main {
-    width: 50%;
-    }
-    aside {
-
-    }
-}
-
 @media (max-width: 1200px) { /* small desktop + tablet*/ 
    
-}
-
-@media (max-width: 1025px) { /*tablet*/
-
 }
 
 @media (max-width: 992px)  { /* tablet*/ 
     
 }
 
-@media (max-width: 913px) { /*phone/tablet*/
-
-}
-
 @media (max-width: 886px) { /*phone + tablet*/
-
-}
-
-@media (max-width: 801px) { /*phone + tablet*/
 
 }
 
@@ -615,23 +593,11 @@ MY MONITOR*/
 
 }
 
-@media (max-width: 721px)  { /*phone + tablet*/ 
-    
-}
-
 @media (max-width: 601px) { /*phone*/
 
 }
 
-@media (max-width: 481px) { /*phone*/
-
-}
-
 @media (max-width: 413px) { /*phone*/
-
-}
-
-@media (max-width: 376px) { /*phone*/
 
 }
 
