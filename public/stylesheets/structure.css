@@ -74,7 +74,7 @@
 
     iframe {
         border-radius: 1rem;
-        border: .25rem solid #000000;
+        border: .25rem solid;
     }
 
     #flex {
