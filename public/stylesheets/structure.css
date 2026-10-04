@@ -583,7 +583,7 @@ MY MONITOR*/
 
 @media (max-width: 1280px) { /*small desktop or tablet*/
     body {
-       right: 25px;
+       right: 100px;
     }
 }
 
