@@ -522,31 +522,31 @@
 
 /*Responsive Display*/
 /*Strip away as the screen shrinks. */
-@media (max-width: 7680px) { /*extra large tv*/
+@media (max-width: 7681px) { /*extra large tv*/
 
 }
 
-@media (max-width: 5120px) { /*huge monitor + tv*/
+@media (max-width: 5121px) { /*huge monitor + tv*/
 
 }
 
-@media (max-width: 4096px) { /*extra large monitor + tv*/
+@media (max-width: 4097px) { /*extra large monitor + tv*/
 
 }
 
-@media (max-width: 3840px) { /*extra large monitor + tv*/
+@media (max-width: 3841px) { /*extra large monitor + tv*/
 
 }
 
-@media (max-width: 3440px) { /*extra large monitor*/
+@media (max-width: 3441px) { /*extra large monitor*/
 
 }
 
-@media (max-width: 2560px) { /*large monitor*/
+@media (max-width: 2561px) { /*large monitor*/
 
 }
 
-@media (max-width: 2000px) { /*large monitor*/
+@media (max-width: 2001px) { /*large monitor*/
 
 }
 
@@ -555,33 +555,29 @@
 }
 MY MONITOR*/
 
-@media (max-width: 1920px) { /*large monitor*/
+@media (max-width: 1729px) { /*monitor*/
 
 }
 
-@media (max-width: 1728px) { /*monitor*/
-
-}
-
-@media (max-width: 1681px) { /*Left monitor*/
+@media (max-width: 1682px) { /*Left monitor*/
 
 }
 /*tested. no adjustments neccessary
 @media (max-width: 1600px) { /*monitor*/
 
-@media (max-width: 1512px) { /*monitor*/
+@media (max-width: 1513px) { /*monitor*/
 
 }
 
-@media (max-width: 1440px) { /*monitor*/
+@media (max-width: 1441px) { /*monitor*/
 
 }
 
-@media (max-width: 1366px) { /*monitor*/
+@media (max-width: 1367px) { /*monitor*/
 
 }
 
-@media (max-width: 1280px) { /*small monitor or tablet*/
+@media (max-width: 1285px) { /*small monitor or tablet*/
     main {
        display: flex;
        position:fixed;
@@ -593,55 +589,55 @@ MY MONITOR*/
     }
 }
 
-@media (max-width: 1199px) { /* small desktop + tablet*/ 
+@media (max-width: 1200px) { /* small desktop + tablet*/ 
    
 }
 
-@media (max-width: 1024px) { /*tablet*/
+@media (max-width: 1025px) { /*tablet*/
 
 }
 
-@media (max-width: 991px)  { /* tablet*/ 
+@media (max-width: 992px)  { /* tablet*/ 
     
 }
 
-@media (max-width: 912px) { /*phone/tablet*/
+@media (max-width: 913px) { /*phone/tablet*/
 
 }
 
-@media (max-width: 885px) { /*phone + tablet*/
+@media (max-width: 886px) { /*phone + tablet*/
 
 }
 
-@media (max-width: 800px) { /*phone + tablet*/
+@media (max-width: 801px) { /*phone + tablet*/
 
 }
 
-@media (max-width: 768px) { /*phone + tablet*/
+@media (max-width: 769px) { /*phone + tablet*/
 
 }
 
-@media (max-width: 720px)  { /*phone + tablet*/ 
+@media (max-width: 721px)  { /*phone + tablet*/ 
     
 }
 
-@media (max-width: 600px) { /*phone*/
+@media (max-width: 601px) { /*phone*/
 
 }
 
-@media (max-width: 480px) { /*phone*/
+@media (max-width: 481px) { /*phone*/
 
 }
 
-@media (max-width: 412px) { /*phone*/
+@media (max-width: 413px) { /*phone*/
 
 }
 
-@media (max-width: 375px) { /*phone*/
+@media (max-width: 376px) { /*phone*/
 
 }
 
-@media (max-width: 320px) { /*phone*/
+@media (max-width: 321px) { /*phone*/
 
 }
 
