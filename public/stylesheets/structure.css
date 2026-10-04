@@ -520,6 +520,7 @@
 
 }
 
+/*Responsive Display*/
 /*Strip away as the screen shrinks. */
 @media (max-width: 7680px) { /*extra large tv*/
 
@@ -565,10 +566,8 @@ MY MONITOR*/
 @media (max-width: 1681px) { /*Left monitor*/
 
 }
-
+/*tested. no adjustments neccessary
 @media (max-width: 1600px) { /*monitor*/
-
-}
 
 @media (max-width: 1512px) { /*monitor*/
 
@@ -583,7 +582,9 @@ MY MONITOR*/
 }
 
 @media (max-width: 1280px) { /*small desktop or tablet*/
-
+    body {
+       right: 25px;
+    }
 }
 
 @media (max-width: 1199px) { /* small desktop + tablet*/ 
