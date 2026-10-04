@@ -583,7 +583,10 @@ MY MONITOR*/
 
 @media (max-width: 1280px) { /*small desktop or tablet*/
     main {
-       width: 20rem;
+       width: 25%;
+    }
+    .sidebar {
+        width: 25%;
     }
 }
 
