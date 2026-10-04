@@ -581,7 +581,7 @@ MY MONITOR*/
 
 }
 
-@media (max-width: 1280px) { /*small desktop or tablet*/
+@media (max-width: 1280px) { /*small monitor or tablet*/
     main {
        width: 25%;
     }
