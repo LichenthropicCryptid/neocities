@@ -550,10 +550,9 @@
 
 }
 
-/*MY MONITOR
-@media (max-width: 1921px) { /*Middle + Right monitor*
+@media (min-width: 1921px) { /*Middle + Right monitor*/
 }
-MY MONITOR*/
+
 
 @media (max-width: 1729px) { /*monitor*/
 
