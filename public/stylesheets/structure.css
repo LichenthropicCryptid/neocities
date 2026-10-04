@@ -583,10 +583,13 @@ MY MONITOR*/
 
 @media (max-width: 1280px) { /*small monitor or tablet*/
     main {
-       width: 25%;
+       display: flex;
+       position:fixed;
+       justify-self: center;
     }
     aside {
-        width: 25%;
+       display: flex;
+        width:75%;
     }
 }
 
