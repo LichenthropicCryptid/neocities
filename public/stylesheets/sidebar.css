@@ -76,9 +76,9 @@ aside {
     }
     
 #moon   {
-    transform: scale(1.5);
-    padding-top: 1rem;
-    padding-left: 1rem;
+    transform: scale(1.25);
+    padding-top: 2rem;
+    padding-left: 2rem;
     }
     
 .date-time  {    
