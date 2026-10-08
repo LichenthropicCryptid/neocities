@@ -46,7 +46,7 @@ Copyright 404City All Rights Reserved
                 padding: 0.25em;
                 gap: 0.25rem;
                 border: 5px solid #000;
-                margin: 0 auto;
+                margin: 2rem;
             }
             :where(#sudokuGrid) {
                 --sudokuBorder: 1px solid #000;
