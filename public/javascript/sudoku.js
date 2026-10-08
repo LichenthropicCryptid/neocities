@@ -123,15 +123,15 @@ Copyright 404City All Rights Reserved
             }
             :where(.sudokuCell:focus) {
                 outline: none;
-                background: #00f;
+                background: rgb(165, 0, 83);
                 color: #fff;
             }
             :where(.sudokuCell.sudokuMistakeHighlight) {
                 color: #fff;
-                background: #f00;
+                background: rgb(255, 140, 0);
             }
             :where(#sudokuText) {
-                font-size: 14px;
+                font-size: 20px;
                 user-select: none;
                 margin-bottom: -0.125rem;
                 &.sudokuTextBlink {animation: sudokuTextBlink 1s steps(1) infinite;}
@@ -158,7 +158,7 @@ Copyright 404City All Rights Reserved
                 width: 100%;
                 display: flex;
                 align-items: center;
-                font-size: 14px;
+                font-size: 20px;
                 gap: 0.25rem;
             }
             :where(#sudokuTime) {
