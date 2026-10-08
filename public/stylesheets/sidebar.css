@@ -144,17 +144,17 @@ important {
     margin: 0 auto;
     display: flex;
     align-self:center;
-    width: 80%;
-    height:45px;
+    width: 90%;
+    height:4rem;
     font-weight: bold;
     font-size: 2rem;
     color: black;
     background: black;
     border-radius: .5rem;
-    opacity: 15%;
+    opacity: 0%;
     transition:
-        opacity .15s,
-        box-shadow .25s;
+        opacity .25s,
+        box-shadow .5s;
 }
 
 .boombox:hover {
