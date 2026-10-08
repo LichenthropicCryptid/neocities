@@ -245,14 +245,14 @@
             }
 
         #to-do  {
-            margin: 1rem;
+            margin: 2rem;
             float: right;
             width: 19.5rem;
             overflow-x:hidden;
             }
 
         #changelog {
-            margin: 1rem;
+            margin: 2rem;
             float: left;
             width: 19.5rem;
             overflow-x:hidden;
