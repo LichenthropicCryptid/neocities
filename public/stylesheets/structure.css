@@ -236,9 +236,9 @@
         .sudoku {
             background-color: #c6a3a2;
             color: #020202;
-            margin: 1rem;
-            float: right;
-            width: 100%;
+            margin: 2rem;
+            width: 80%;
+            height: fit-content;
         }
 
         #onyx   {
