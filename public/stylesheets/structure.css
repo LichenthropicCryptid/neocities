@@ -236,23 +236,23 @@
         .sudoku {
             background-color: #c6a3a2;
             color: #020202;
-            margin: 1rem;
+            margin: 4rem;
         }
 
         #onyx   {
-            margin: 0.05rem;
+            margin: 1rem;
             width: 100%;
             }
 
         #to-do  {
-            margin: 2rem;
+            margin: 2.5rem;
             float: right;
             width: 19.5rem;
             overflow-x:hidden;
             }
 
         #changelog {
-            margin: 2rem;
+            margin: 2.5rem;
             float: left;
             width: 19.5rem;
             overflow-x:hidden;
