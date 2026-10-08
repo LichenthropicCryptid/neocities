@@ -50,6 +50,7 @@ aside {
 #rightsidebar a {
     text-decoration: none;
     padding: 100;
+
     }
             
 #rightsidebar a:hover {
@@ -57,6 +58,7 @@ aside {
     box-shadow: 0 0 .25em 0;
     font-weight: bold; 
     padding: 100;
+    cursor: url("../images/cursor/cursor-pink.png") 0 0, auto !important;
     }    
 
 .box {
@@ -76,6 +78,7 @@ aside {
     transform: scale(1.25);
     padding-top: 2rem;
     padding-left: 2rem;
+
     }
     
 .date-time  {    
@@ -97,6 +100,7 @@ aside {
     position: center;
     width: 15rem;
     }
+
 .no-click   {
     width: 175px;
     height: 50px;
@@ -177,6 +181,7 @@ important {
     color:green;
     opacity: 100%;
     box-shadow: 0px 0px 25px 18px rgba(49,221,0,1);
+    cursor: url("../images/cursor/cursor-pink.png") 0 0, auto !important;
 }
 
 
