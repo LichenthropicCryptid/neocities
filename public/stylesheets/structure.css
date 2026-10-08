@@ -450,6 +450,7 @@ iframe {
 @media (max-width: 601px) { /*phone*/
     main {
         width: 100%;
+        margin: 0 auto;
     }
     body {
        margin: 0 auto;
