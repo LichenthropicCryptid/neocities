@@ -28,13 +28,6 @@ body {
     cursor:  url("../images/cursor/cursor.png") 0 0, auto !important;
     }
 
-aside {
-    font-size: smaller;
-    background: black;
-    border-radius: 1rem;
-    height:2800px;
-    }
-
 #leftsidebar a {
     text-decoration: none;
     padding: 100;
@@ -50,7 +43,6 @@ aside {
 #rightsidebar a {
     text-decoration: none;
     padding: 100;
-
     }
             
 #rightsidebar a:hover {
@@ -120,7 +112,7 @@ aside {
         opacity .4s;   
     }
 
-    .no-click:hover {
+.no-click:hover {
     opacity: 100%;
     }
     
@@ -169,6 +161,7 @@ important {
     font-size: 2.5rem;
     margin: 0 auto;
 }
+
 .boombox {
     font-family: 'pixelSplitter', 'Courier New', Monospace;
     z-index: 3;
@@ -222,3 +215,33 @@ important {
     /*add crt disabled to reduced motion*/
 }
 
+@media (max-width: 1200px) { /* small desktop + tablet*/ 
+   body {
+
+   }
+   #moon {
+
+   }
+   .date-time {
+
+   }
+   .box {
+
+   }
+   #mp3-boombox {
+
+   }
+   .no-click   {
+
+   }
+   #no-click-box   {
+
+   }
+   .boombox {
+
+   }
+   #chatbox, #fuck-ai, #clicksforpalestine, #madefordark, #pothead, #maskup, #construction, #neocitiesbutton, #guestbook {
+    transform: scale(2)
+   }
+
+}
