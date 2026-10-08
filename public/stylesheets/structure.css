@@ -91,7 +91,7 @@
     }
     body {
         height: auto;
-        width: 90%;
+        width: 100%;
         font-size: 1.25rem;
         background-image: var(--body-bg-image);
         font-family: 'PixelSplitter', 'Courier New', monospace;
