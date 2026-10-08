@@ -96,7 +96,7 @@
         background-image: var(--body-bg-image);
         font-family: 'PixelSplitter', 'Courier New', monospace;
         overflow-x: hidden;
-        margin: 5%;
+        margin: 2rem;
         align-self: center;
     }
     
