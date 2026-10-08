@@ -232,6 +232,9 @@ important {
    #mp3-boombox {
     width: 100%;
    }
+   .boombox {
+    font-size: 5rem;
+   }
    #boombox-container  {
     height: fit-content;
    }
