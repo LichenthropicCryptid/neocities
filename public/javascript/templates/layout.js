@@ -117,14 +117,14 @@ const headerE1 = `
             
                     <nav id="navbar" style="margin-bottom: 10px; margin-top: 10px;">
                         <ul>
-                            <li><a href="${nesting}/pages/homepage">HOME</a></li>
-                            <li><a href="${nesting}/pages/about">ABOUT</a></li>
-                            <li><a href="${nesting}/pages/gallery">GALLERY</a></li>
-                            <li><a href="${nesting}/pages/smokeroom">SMOKE ROOM</a></li>
-                            <li><a href="${nesting}/pages/links">CREDITS + LINKS</a></li>
-                            <li><a href="${nesting}/pages/blog">BLOG</a></li>
-                            <li><a href="${nesting}/pages/critters">CRITTERS</a></li>
-                            <li><a href="${nesting}/pages/collection">COLLECTIONS</a></li>
+                            <li class="click"><a href="${nesting}/pages/homepage">HOME</a></li>
+                            <li class="click"><a href="${nesting}/pages/about">ABOUT</a></li>
+                            <li class="click"><a href="${nesting}/pages/gallery">GALLERY</a></li>
+                            <li class="click"><a href="${nesting}/pages/smokeroom">SMOKE ROOM</a></li>
+                            <li class="click"><a href="${nesting}/pages/links">CREDITS + LINKS</a></li>
+                            <li class="click"><a href="${nesting}/pages/blog">BLOG</a></li>
+                            <li class="click"><a href="${nesting}/pages/critters">CRITTERS</a></li>
+                            <li class="click"><a href="${nesting}/pages/collection">COLLECTIONS</a></li>
                         </ul>
                 </nav>
             </div>
