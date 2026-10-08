@@ -102,9 +102,10 @@ aside {
     }
 
 .no-click   {
+    position: relative;
+    margin-top: 0;
     width: 101px;
     height: 35px;
-    margin-bottom: 10rem;
     background-color: black;
     border-radius: .25rem;
     border-color: black;
