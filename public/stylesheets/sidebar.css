@@ -2,7 +2,7 @@
     font-family:PixelSplitter; 
     src: url(../fonts/PixelSplitter.ttf); 
     }
-    
+
 * {
     cursor: var(--cursor) 0 0, auto !important;
     }
@@ -89,7 +89,7 @@ aside {
     
 .date-time  {    
     width:100%;
-    height:100%;
+    height:50%;
     align-content: center; 
     }
     
