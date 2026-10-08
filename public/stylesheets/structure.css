@@ -96,6 +96,8 @@
         font-family: 'PixelSplitter', 'Courier New', monospace;
         overflow-x: hidden;
         align-items: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
     
     main {
