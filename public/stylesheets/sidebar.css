@@ -144,10 +144,11 @@ important {
     margin: 0 auto;
     display: flex;
     align-self:center;
-    width: 90%;
-    height:4rem;
+    text-align: center;
+    width: 85%;
+    height:4.5rem;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 4rem;
     color: black;
     background: black;
     border-radius: .5rem;
