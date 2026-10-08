@@ -107,7 +107,14 @@ aside {
     background-color: black;
     border-radius: .25rem;
     border-color: black;
-    box-shadow: 0 0 1rem 0 black;     
+    box-shadow: 0 0 1rem 0 black;  
+    opacity: 0%;
+    transition: 
+        opacity .5s;   
+    }
+
+    .no-click:hover {
+    opacity: 100%;
     }
     
 .no-click-button {
