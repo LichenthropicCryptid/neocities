@@ -21,6 +21,7 @@ iframe {
     }
 
 body {
+    font-family:PixelSplitter; 
     width: 95%;
     height: 100%;
     }
@@ -63,6 +64,7 @@ aside {
     margin: 0 auto;
     border-radius: 1rem           
     }
+
 #mp3-player  { 
     margin: 0 auto;
     height: 100%; 
@@ -70,6 +72,7 @@ aside {
     padding: 0;
     overflow: hidden;
     }
+
 #globe  {
     width: 90%;
     margin: 1rem;
@@ -171,7 +174,7 @@ important {
 }
 
 #no-click-box   {
-    height: 6rem;
+    height: 4rem;
 }
 
 #fuck-ai, #clicksforpalestine, #madefordark, #pothead, #maskup, #construction, #neocitiesbutton, #guestbook {
