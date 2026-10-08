@@ -229,20 +229,19 @@
 
         #fun    {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             width: 100%;
         }
 
         .sudoku {
             background-color: #c6a3a2;
             color: #020202;
-            margin: 2rem;
-            width: 500px;
-            height: 800px;
+            margin: 0.05rem;
+            float: right;
         }
 
         #onyx   {
-            margin: 1rem;
+            margin: 0.05rem;
             float: left;
             width: 100%;
             }
