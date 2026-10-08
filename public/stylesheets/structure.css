@@ -442,7 +442,9 @@
 
 
 @media (max-width: 1200px) { /* small desktop + tablet*/ 
-   
+   .sidebar {
+    width: 90%;
+   }
 }
 
 @media (max-width: 601px) { /*phone*/
