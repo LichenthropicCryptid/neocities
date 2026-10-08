@@ -107,14 +107,7 @@ const headerE1 = `
               <button class="filter" onclick="crton(), location.reload()">CRT ON</button>
               <button class="colortheme" onclick="darkmode(), location.reload()">DARK</button>
               <button class="colortheme" onclick="lightmode(), location.reload()">LIGHT</button>
-              <button class="motion-toggle">Reduce Motion</button>
-                  <script type="text/javascript">
-                      $(function () {
-                      $(".motion-toggle").on("click", function () {
-                      $(".freeze").toggle();
-                      });
-                    });
-                  </script>
+              
             </div>
         </div>
       </details>
