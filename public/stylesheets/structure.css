@@ -445,6 +445,9 @@
 iframe {
     width: 100%;
 }
+body {
+    margin: 0 auto;
+}
 }
 
 @media (max-width: 601px) { /*phone*/
