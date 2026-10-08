@@ -237,6 +237,7 @@
             background-color: #c6a3a2;
             color: #020202;
             margin: 5rem;
+            position: fixed;
         }
 
         #onyx   {
@@ -246,6 +247,7 @@
             margin-top: 5rem;
             margin-bottom: 2.5rem;
             width: 100%;
+            position:fixed;
             }
 
         #to-do  {
