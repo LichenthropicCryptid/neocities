@@ -186,7 +186,12 @@ important {
 
 
 #fuck-ai, #clicksforpalestine, #madefordark, #pothead, #maskup, #construction, #neocitiesbutton, #guestbook {
-    width: 250px;
+    width: 175px;
+    height: 50px;
+    background-color: black;
+    border-radius: .25rem;
+    border-color: black;
+    box-shadow: 0 0 1rem 0 black; 
 }
 @media (prefers-reduced-motion: reduce) {
     *,
