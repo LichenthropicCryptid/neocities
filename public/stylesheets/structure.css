@@ -444,6 +444,7 @@
 @media (max-width: 1200px) { /* small desktop + tablet*/ 
 iframe {
     width: 100%;
+    height: fit-content;
 }
 }
 
