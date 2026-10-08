@@ -80,7 +80,6 @@
     #flex {
         display: flex;
     }
-    
     #navbar {
         height: 100%;
         width: 100%;
@@ -99,7 +98,6 @@
         margin-left: 2.5rem;
         margin-right: 2.5rem;
     }
-    
     main {
         position: flex;
         flex: 1;
@@ -117,7 +115,6 @@
         border-radius: 1rem;
         height:2800px;
     }
-
     .sidebar    {
         overflow-x: hidden;
     }
@@ -248,43 +245,7 @@
             border: none;
             }
             
-            #globe  {
-                width: 90%;
-                margin: 0 auto;
-            }
             
-            #moon   {
-                transform: scale(1.5);
-                padding-top: 1rem;
-                padding-left: 2rem;
-            }
-            
-            #date-time  {
-             width:18rem;
-             height:10rem;
-             align-content: center;
-            }
-            
-            .date-time  {
-            
-             width:15rem;
-             height:5.5rem;
-             align-content: center; 
-            }
-            
-            #boombox-container  {
-                position: inline-block;
-                text-align: center;
-                z-index: 1;
-                height: 15rem;
-            }
-            
-            #mp3-boombox {
-                z-index: 2;
-                display: inline;
-                position: center;
-                width: 15rem;
-            }
 
 /*assets*/
 
@@ -352,36 +313,7 @@
         margin: 5px;
     }
 
-    .no-click   {
-        width: 175px;
-        height: 50px;
-        background-color: black;
-        border-radius: .25rem;
-        border-color: black;
-        box-shadow: 0 0 1rem 0 black;     
-    }
     
-     .no-click-button {
-            margin: 0 auto;
-            display: flex;
-            align-content: center;
-            justify-content: center;
-            width: 5px;
-            height: 5px;
-            background: transparent;
-            border: none;
-        
-        }
-        
-        .no-click:hover {
-            box-shadow: 0 0 5rem 0 red;
-        }
-
-       
-        #no-click-box   {
-            height: 6rem;
-            }
-        
 /*buttons*/
 
 /*links*/
@@ -410,29 +342,7 @@
             font-weight: bold;
         }
 
-    #leftsidebar a {
-        text-decoration: none;
-        padding: 100;
-    } 
 
-        #leftsidebar a:hover {
-            border-radius: .5em;
-            box-shadow: 0 0 .25em 0;
-            font-weight: bold; 
-            padding: 100;
-    }
-
-    #rightsidebar a {
-        text-decoration: none;
-        padding: 100;
-    }
-
-        #rightsidebar a:hover {
-            border-radius: .5em;
-            box-shadow: 0 0 .25em 0;
-            font-weight: bold; 
-            padding: 100;
-        } 
 
     footer a {
         padding: .15rem .15rem;
