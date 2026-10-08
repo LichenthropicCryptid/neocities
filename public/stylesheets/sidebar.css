@@ -102,8 +102,8 @@ aside {
     }
 
 .no-click   {
-    width: 88px;
-    height: 31px;
+    width: 101px;
+    height: 35px;
     background-color: black;
     border-radius: .25rem;
     border-color: black;
@@ -115,8 +115,6 @@ aside {
     display: flex;
     align-content: center;
     justify-content: center;
-    width: 88px;
-    height: 31px;
     background: transparent;
     border: none;
     }
@@ -130,8 +128,8 @@ aside {
     }
 
 #chatbox  {
-    width: 88px;
-    height: 31px;
+    width: 101px;
+    height: 35px;
     background-color: black;
     border-radius: .25rem;
     border-color: black;
@@ -188,8 +186,8 @@ important {
 
 
 #fuck-ai, #clicksforpalestine, #madefordark, #pothead, #maskup, #construction, #neocitiesbutton, #guestbook {
-    width: 88px;
-    height: 31px;
+    width: 101px;
+    height: 35px;
     background-color: black;
     border-radius: .25rem;
     border-color: black;
