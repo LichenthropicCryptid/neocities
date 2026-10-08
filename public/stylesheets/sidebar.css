@@ -155,7 +155,7 @@ important {
     border-radius: .5rem;
     opacity: 0%;
     transition:
-        opacity .25s,
+        opacity .5s,
         box-shadow .5s;
 }
 
