@@ -229,22 +229,22 @@
 
         #fun    {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             width: 100%;
         }
 
         .sudoku {
             background-color: #c6a3a2;
             color: #020202;
-            margin: 0.05rem;
+            margin: 1rem;
             float: right;
+            width: 100%;
         }
 
         #onyx   {
-            transform: scale(.85);
-            margin: 0.05rem;
+            margin: 1rem;
             float: left;
-            width: 50%;
+            width: 100%;
             }
 
         #to-do  {
