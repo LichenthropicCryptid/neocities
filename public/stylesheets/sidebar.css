@@ -101,6 +101,10 @@ aside {
     width: 15rem;
     }
 
+#topsecret {
+    padding-top: 1rem;
+}
+
 .no-click   {
     position: relative;
     top: -3.5rem;
