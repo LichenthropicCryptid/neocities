@@ -240,8 +240,9 @@
         }
 
         #onyx   {
-            margin-left: 7rem;
-            margin-right: 7rem;
+            transform: scale(2);
+            margin-left: 6rem;
+            margin-right: 6rem;
             width: 100%;
             }
 
