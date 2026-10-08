@@ -122,18 +122,12 @@ aside {
 #no-click-box   {
     height: 3rem;
     }
-    
+
 #chatbox  {
     flex: inline;
     align-content: center;
     border: transparent;
     width: 17rem;
-    float: left;
-    }
-        
-#chatbox a:hover  {
-    box-shadow: 0 0 5rem 0 red;
-    background: darkred;
     }
         
 .chatbox-bg {
