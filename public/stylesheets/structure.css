@@ -236,15 +236,16 @@
         .sudoku {
             background-color: #c6a3a2;
             color: #020202;
-            margin: 5rem;
+            margin:1rem;
+
         }
 
         #onyx   {
             transform: scale(1.25);
-            margin-left: 6rem;
-            margin-right: 6rem;
-            margin-top: 5rem;
-            margin-bottom: 2.5rem;
+            margin-left: 2rem;
+            margin-right: 2rem;
+            margin-top: 4rem;
+            margin-bottom: 2rem;
             width: 100%;
             }
 
