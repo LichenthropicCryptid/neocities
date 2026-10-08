@@ -227,6 +227,9 @@ important {
    }
    #chatbox, #fuck-ai, #clicksforpalestine, #madefordark, #pothead, #maskup, #construction, #neocitiesbutton, #guestbook {
     transform: scale(2);
+    flex-wrap: wrap;
    }
-
+   #mp3-boombox {
+    width: 100%;
+   }
 }
