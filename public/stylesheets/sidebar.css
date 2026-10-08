@@ -142,6 +142,7 @@ important {
     z-index: 3;
     position: absolute;
     margin: 0 auto;
+    padding: 5px;
     display: flex;
     align-self:center;
     text-align: center;
