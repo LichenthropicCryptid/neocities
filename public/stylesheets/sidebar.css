@@ -217,7 +217,7 @@ important {
 
 @media (max-width: 1200px) { /* small desktop + tablet*/ 
    body {
-    font-size-adjust: 150%;
+    font-size: larger;
    }
    #moon {
 
