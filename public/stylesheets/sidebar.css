@@ -130,10 +130,12 @@ aside {
     }
 
 #chatbox  {
-    flex: inline;
-    align-content: center;
-    border: transparent;
-    width: 15rem;
+    width: 88px;
+    height: 31px;
+    background-color: black;
+    border-radius: .25rem;
+    border-color: black;
+    box-shadow: 0 0 1rem 0 black; 
     }
         
 .chatbox-bg {
