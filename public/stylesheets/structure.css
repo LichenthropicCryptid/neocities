@@ -225,8 +225,6 @@
     .thumbnail:hover {
             transform: scale(2);
         }
-
-
             
 /*assets*/
 
@@ -322,8 +320,6 @@
             box-shadow: 0 0 1em 0;
             font-weight: bold;
         }
-
-
 
     footer a {
         padding: .15rem .15rem;

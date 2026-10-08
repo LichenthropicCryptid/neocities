@@ -1,18 +1,19 @@
+
 @font-face { 
     font-family:PixelSplitter; 
     src: url(../fonts/PixelSplitter.ttf); 
     }
 
 * {
-    cursor: var(--cursor) 0 0, auto !important;
+    cursor:  url("../images/cursor/cursor.png") 0 0, auto !important;
     }
     
 a :hover {
-    cursor: var(--cursor-pink) 0 0, auto !important;
+    cursor: url("../images/cursor/cursor-pink.png") 0 0, auto !important;
     }
 
 .click :hover {
-    cursor: var(--cursor-pink) 0 0, auto !important; 
+    cursor: url("../images/cursor/cursor-pink.png") 0 0, auto !important; 
     }
 
 iframe {
