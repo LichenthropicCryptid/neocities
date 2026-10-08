@@ -445,6 +445,12 @@
    .sidebar {
     width: 90%;
    }
+   #leftsidebar {
+    width: 100%;
+   }
+   #rightsidebar {
+    width: 100%;
+   }
 }
 
 @media (max-width: 601px) { /*phone*/
