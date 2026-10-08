@@ -42,7 +42,7 @@ Copyright 404City All Rights Reserved
                 justify-content: center;
                 align-items: center;
                 font-family: Arial, Helvetica, sans-serif;
-                font-size: 18px;
+                font-size: 20px;
                 padding: 0.25em;
                 gap: 0.25rem;
                 border: 5px solid #000;
