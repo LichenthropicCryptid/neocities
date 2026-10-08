@@ -170,7 +170,7 @@ important {
     padding: 5px;
     display: flex;
     align-self:center;
-    justify-self: center;
+    text-align: center;
     width: 85%;
     height:4.5rem;
     font-weight: bold;
@@ -226,13 +226,13 @@ important {
 
    }
    #mp3-boombox {
-    transform: scale(2.5);
+    width: 100%;
    }
    .boombox {
-
+    width: 100%;
    }
    #chatbox, #fuck-ai, #clicksforpalestine, #madefordark, #pothead, #maskup, #construction, #neocitiesbutton, #guestbook {
-    
+    transform: scale(2);
    }
 
 }
