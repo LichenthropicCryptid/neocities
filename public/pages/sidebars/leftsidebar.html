@@ -185,7 +185,45 @@ rssfeed_cache = "86db238dcd562b16e9a90a1475d242ee";
             </div>
             </div>
 </div>
+<style>
+    /*tooltips*/
 
+.page-link {
+    position: relative;
+  }
+  
+  .page-preview {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 0;
+    box-shadow: 0 0 10px rgba(84, 17, 64, 0.25);
+    z-index: 9999;
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  
+  .page-preview iframe {
+    width: 1920px;
+    height: 1080px;
+    transform: scale(0.1);
+    transform-origin: top left;
+    pointer-events: none;
+  }
+  
+  .page-preview.page-preview--visible {
+    display: block;
+    width: 192px;
+    height: 108px;
+  }
+  /*
+  .page-preview.page-preview--loading::before {
+    /* style for loading state here... */
+
+/*tooltips*/
+</style>
 <script>
     function crton() {
         document.getElementById('filter').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/crt.css');
