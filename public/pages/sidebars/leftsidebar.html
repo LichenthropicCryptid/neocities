@@ -115,6 +115,9 @@ rssfeed_cache = "86db238dcd562b16e9a90a1475d242ee";
                 <a class="click" href="https://www.dungeonsanddaddies.com/episodes/ep1" target="_blank" title="link to dungeons and daddies website">
                     <h4 style="text-align:center;"><strong>Dungeons & Daddies</strong></h4>
                 </a>
+                <div class="tooltip">
+                    fuck
+                </div>
             
             <h3 style="text-align:center;">Watching:</h3> 
             
@@ -183,7 +186,30 @@ rssfeed_cache = "86db238dcd562b16e9a90a1475d242ee";
             </div>
             </div>
 </div>
+<style>
+    /* HTML: <div class="tooltip">This is a Tooltip with a gradient coloration and without border radius </div> */
+.tooltip {
+  color: #fff;
+  font-size: 18px;
+  max-width: 28ch;
+  text-align: center;
+}
+.tooltip {
+  /* triangle dimension */
+  --b: 2em; /* base */
+  --h: 1em; /* height */
 
+  --p: 50%; /* triangle position (0%:top 100%:bottom) */
+  
+  padding: 1em;
+  clip-path: polygon(0 100%,100% 100%,100% 0,0 0,
+    0 max(0%  ,var(--p) - var(--b)/2),
+    calc(-1*var(--h)) var(--p),
+    0 min(100%,var(--p) + var(--b)/2));
+  border-image: fill 0/0 0 0 var(--h)
+    linear-gradient(-30deg,#563444,#cf9d38); /* the gradient */
+}
+</style>
 <script>
     function crton() {
         document.getElementById('filter').setAttribute('href', 'https://lichenthropic.neocities.org/stylesheets/crt.css');
