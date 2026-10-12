@@ -481,10 +481,9 @@
     width: 192px;
     height: 108px;
   }
-  
+  /*
   .page-preview.page-preview--loading::before {
     /* style for loading state here... */
-  }
 
 /*tooltips*/
 
