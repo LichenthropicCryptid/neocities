@@ -22,8 +22,6 @@
        
     <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
        
-    <script src="https://lichenthropic.neocities.org/javascript/page-preview.js"></script>
-       
     <script type="module">
                  
   import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
@@ -113,12 +111,11 @@ rssfeed_cache = "86db238dcd562b16e9a90a1475d242ee";
             <h4 style="text-align:center;"><a class="click" href="https://www.allbud.com/marijuana-strains/sativa-dominant-hybrid/lemon-meringue" target="_blank" title="allbud link"><strong>Lemon Meringue</strong></a></h4>
             
             <h3 style="text-align:center;">Listening:</h3> 
-            <h4 style="text-align:center;"><strong>
-                <a class="page-preview" href="https://www.dungeonsanddaddies.com/episodes/ep1" target="_blank">
-                    Dungeons & Daddies
+            
+                <a href="https://www.dungeonsanddaddies.com/episodes/ep1" target="_blank" class="pppp-link">
+                    <h4 style="text-align:center;"><strong>Dungeons & Daddies</strong></h4>
                 </a>
-            </strong>
-            </h4>
+            
             <h3 style="text-align:center;">Watching:</h3> 
             
             <h4 style="text-align:center;"><strong>Katekyo Hitman: Reborn!</strong></h4>
@@ -188,89 +185,84 @@ rssfeed_cache = "86db238dcd562b16e9a90a1475d242ee";
 </div>
 <style>
     /*tooltips*/
+    .pppp-link {
+  position: relative;
+}
 
-.page-link {
-    position: relative;
-  }
-  
-  .page-preview {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 0;
-    box-shadow: 0 0 10px rgba(84, 17, 64, 0.25);
-    z-index: 9999;
-    width: 0;
-    height: 0;
-    display: none;
-  }
-  
-  .page-preview iframe {
-    width: 1920px;
-    height: 1080px;
-    transform: scale(0.1);
-    transform-origin: top left;
-    pointer-events: none;
-  }
-  
-  .page-preview.page-preview--visible {
-    display: block;
-    width: 192px;
-    height: 108px;
-  }
-  /*
-  .page-preview.page-preview--loading::before {
-    /* style for loading state here... */
+.pppp-preview {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 0;
+  box-shadow: 0 0 10px rgba(84, 17, 64, 0.25);
+  z-index: 9999;
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.pppp-preview iframe {
+  width: 1920px;
+  height: 1080px;
+  transform: scale(0.1);
+  transform-origin: top left;
+  pointer-events: none;
+}
+
+.pppp-preview.pppp-preview--visible {
+  display: block;
+  width: 192px;
+  height: 108px;
+}
 
 /*tooltips*/
 </style>
 <script>
 addEventListener("DOMContentLoaded")
-    const mobileBreakpoint = 480; // (px) Plugin is not activated on screens of less than this width
-        const delayLoadingByMs = 500; // (recommended!) Delay before loading preview after hovering on link
+const mobileBreakpoint = 480; // (px) Plugin is not activated on screens of less than this width
+    const delayLoadingByMs = 500; // (recommended!) Delay before loading preview after hovering on link
 
-        if (screen.width >= mobileBreakpoint) initPetrapixelPreviewPlugin();
+    if (screen.width >= mobileBreakpoint) initPetrapixelPreviewPlugin();
 
-        function initPetrapixelPreviewPlugin() {
-            const linkEls = document.querySelectorAll("a[href].page-link");
-            linkEls.forEach((linkEl) => {
-                let previewEl = document.createElement("div");
-                previewEl.classList.add("page-preview");
-                previewEl.innerHTML = `<iframe></iframe>`;
-                previewEl.setAttribute("sandbox", "allow-same-origin");
-                let waitABit;
-                linkEl.addEventListener("mouseenter", () => {
-                    waitABit = setTimeout(() => {
-                        const thisPreviewEl = linkEl.querySelector(".page-preview");
-                        if (!thisPreviewEl) {
-                            linkEl.appendChild(previewEl);
-                            const iFrameEl = previewEl.querySelector("iframe");
-                            iFrameEl.setAttribute("src", linkEl.getAttribute("href"));
-                            previewEl.classList.add("page-preview--visible");
-                            previewEl.classList.add("page-preview--loading");
-                            iFrameEl.onload = () => {
-                                previewEl.classList.remove("page-preview--loading");
-                            };
-                            iFrameEl.onerror = () => {
-                                iFrameEl.setAttribute("src", "");
-                                previewEl.classList.remove("page-preview--visible");
-                            };
-                        } else {
-                            thisPreviewEl.classList.add("page-preview--visible");
-                        }
-                    }, delayLoadingByMs);
-                });
-
-                linkEl.addEventListener("mouseleave", () => {
-                    clearTimeout(waitABit);
-                    const thisPreviewEl = linkEl.querySelector(".page-preview");
-                    if (thisPreviewEl)
-                        thisPreviewEl.classList.remove("page-preview--visible");
-                });
+    function initPetrapixelPreviewPlugin() {
+        const linkEls = document.querySelectorAll("a[href].pppp-link");
+        linkEls.forEach((linkEl) => {
+            let previewEl = document.createElement("div");
+            previewEl.classList.add("pppp-preview");
+            previewEl.innerHTML = `<iframe></iframe>`;
+            previewEl.setAttribute("sandbox", "allow-same-origin");
+            let waitABit;
+            linkEl.addEventListener("mouseenter", () => {
+                waitABit = setTimeout(() => {
+                    const thisPreviewEl = linkEl.querySelector(".pppp-preview");
+                    if (!thisPreviewEl) {
+                        linkEl.appendChild(previewEl);
+                        const iFrameEl = previewEl.querySelector("iframe");
+                        iFrameEl.setAttribute("src", linkEl.getAttribute("href"));
+                        previewEl.classList.add("pppp-preview--visible");
+                        previewEl.classList.add("pppp-preview--loading");
+                        iFrameEl.onload = () => {
+                            previewEl.classList.remove("pppp-preview--loading");
+                        };
+                        iFrameEl.onerror = () => {
+                            iFrameEl.setAttribute("src", "");
+                            previewEl.classList.remove("pppp-preview--visible");
+                        };
+                    } else {
+                        thisPreviewEl.classList.add("pppp-preview--visible");
+                    }
+                }, delayLoadingByMs);
             });
-        }
 
+            linkEl.addEventListener("mouseleave", () => {
+                clearTimeout(waitABit);
+                const thisPreviewEl = linkEl.querySelector(".pppp-preview");
+                if (thisPreviewEl)
+                    thisPreviewEl.classList.remove("pppp-preview--visible");
+            });
+        });
+    }
 </script>
 <script>
     function crton() {
