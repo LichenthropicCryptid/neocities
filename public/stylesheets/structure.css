@@ -186,6 +186,19 @@
         /*clouds*/
     
     /*draggable*/
+
+    
+    .hiddentooltip:hover .tooltip {
+      display:block;
+    }
+    .tooltip {
+      display:none;
+      position: absolute;
+      font-size:18px;
+      background-color: black;
+      pointer-events: none;
+    }
+
     #mp3-player  { 
         margin: 0 auto;
         height: 100%; 
