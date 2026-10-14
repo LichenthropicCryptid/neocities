@@ -97,6 +97,10 @@ body {
     margin: 1rem;
 }
 
+#topsecret:hover {
+    opacity: 0%;
+}
+
 .no-click   {
     position: relative;
     top: -4rem;
