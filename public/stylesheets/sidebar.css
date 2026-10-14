@@ -95,10 +95,7 @@ body {
 
 #topsecret {
     margin: 1rem;
-}
-
-#topsecret:hover {
-    opacity: 0%;
+    padding: .5rem;
 }
 
 .no-click   {
